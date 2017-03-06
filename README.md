@@ -32,6 +32,10 @@ The key to the Green Boilerplate concept was realizing that older browsers had f
 
 6. For development environments, the results of local feature detects were relayed to the server, which could in turn incorporate them as hard-coded features keyed to the current user-agent of the browser. In this way, the percent of feature values would increase and the number of dynamic feature detects would decline over time.
 
+7. This approach made it practical to create compact JavaScript objects with a very large number of valid feature detects. The image below shows a complete feature readout by GBP prior to loading its JSON feature detection files.
+
+ [GBP Object Readout Sample](assets/gpb_object_readout.png)
+
 ## History
 
 Today, there is less need for a GPB approach. Modern web browsers almost universally support web standards, so the need for feature detects and polyfill loads is much less than in 2011. In addition, the GBP system could be better implemented using server-side JavaScript rather than the PHP in which it was written.
