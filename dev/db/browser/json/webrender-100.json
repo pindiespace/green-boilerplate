@@ -1,0 +1,17 @@
+{
+	"browserName":"webrender",
+	"browserFork":"safari",
+	"browserVersion":"100",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"safari clone",
+	"ualist": [
+		"mozilla/5.0 (windows; u; windows nt 5.1; cs-cz) applewebkit/533.3 (khtml, like gecko) webrender safari/533.3",
+		"mozilla/5.0 (windows; u; windows nt 6.1; cs-cz) applewebkit/533.3 (khtml, like gecko) webrender safari/533.3"
+]}

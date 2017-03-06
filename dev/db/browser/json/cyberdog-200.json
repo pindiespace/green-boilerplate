@@ -1,0 +1,17 @@
+{
+	"browserName":"cyberdog",
+	"browserFork":"wordwideweb",
+	"browserVersion":"200",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"cannot handle XHTML or CSS",
+	"ualist": [
+		"cyberdog/2.0 (macintosh; 68k)",
+		"cyberdog/2.0 (macintosh; ppc)"
+]}

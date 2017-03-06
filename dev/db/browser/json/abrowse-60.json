@@ -1,0 +1,18 @@
+{
+	"browserName":"abrowse",
+	"browserFork":"abrowse",
+	"browserVersion":"60",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"420",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (compatible; u; abrowse 0.6; syllable) applewebkit/420+ (khtml, like gecko)",
+		"mozilla/5.0 (compatible; abrowse 0.4; syllable)",
+		"mozilla/5.0 (compatible; u; abrowse 0.6; syllable) applewebkit/420+ (khtml, like gecko)",
+		"mozilla/5.0 (compatible; u; abrowse 0.7; syllable) applewebkit/420+ (khtml, like gecko)"
+	]}

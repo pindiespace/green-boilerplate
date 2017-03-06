@@ -1,0 +1,18 @@
+{
+	"browserName":"navscape",
+	"browserFork":"safari",
+	"browserVersion":"100",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"534",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (x11; u; linux i686; pt-br) applewebkit/533.3 (khtml, like gecko) navscape/pre-0.2 safari/533.3",
+		"mozilla/5.0 (windows; u; windows nt 5.1; pt-br) applewebkit/534.8 (khtml, like gecko) navscape/pre-0.2 safari/534.8",
+		"mozilla/5.0 (windows; u; windows nt 5.1; pt-br) applewebkit/534.12 (khtml, like gecko) navscapenavigator/pre-0.1 safari/534.12",
+		"mozilla/5.0 (windows; u; windows nt 5.1; pt-br) applewebkit/534.12 (khtml, like gecko) navscape/pre-0.1 safari/534.12"
+	]}

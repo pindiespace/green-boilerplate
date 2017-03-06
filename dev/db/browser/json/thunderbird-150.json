@@ -1,0 +1,20 @@
+{
+	"browserName":"thunderbird",
+	"browserFork":"thunderbird",
+	"browserVersion":"150",
+	"browserEngineName":"gecko",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+"mozilla/5.0 (windows; u; windows nt 5.1; fr; rv:1.8.0.14) gecko/20071210 thunderbird/1.5.0.14",
+"mozilla/5.0 (windows; u; windows nt 5.1; en-gb; rv:1.8.0.14) gecko/20071210 thunderbird/1.5.0.14",
+"mozilla/5.0 (x11; u; linux i686; en-us; rv:1.8.0.10) gecko/20070403 thunderbird/1.5.0.10",
+"mozilla/5.0 (x11; u; linux i686; en-us; rv:1.8.0.10) gecko/20070306 thunderbird/1.5.0.10",
+"mozilla/5.0 (windows; u; windows nt 5.1; de; rv:1.8.0.10) gecko/20070221 thunderbird/1.5.0.10"
+]}
+

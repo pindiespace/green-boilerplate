@@ -1,0 +1,20 @@
+{
+	"browserName":"dorothy",
+	"browserFork":"dorothy",
+	"browserVersion":"100",
+	"browserEngineName":applewebkit",
+	"browserEngineVersion":"533",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"http://www.dorothybrowser.com/",
+	"ualist": [
+		"mozilla/5.0 (windows; u; windows ce; mobile; like iphone; ko-kr) applewebkit/533.3 (khtml, like gecko) version/4.0 mobile safari/533.3 dorothy",
+		"mozilla/5.0 (windows; u; windows ce; mobile; like android; ko-kr) applewebkit/533.3 (khtml, like gecko) version/4.0 mobile safari/533.3 dorothy",
+		"mozilla/5.0 (windows; u; mobile; dorothy ; en-us) applewebkit/533.3 (khtml, like gecko) version/3.1.2 mobile safari/533.3",
+		"mozilla/5.0 (windows; u; dorothy ; ko-kr) applewebkit/533.3 (khtml, like gecko) version/4.0 mobile safari/533.3"
+]}
+

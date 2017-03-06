@@ -1,0 +1,16 @@
+{
+	"browserName":"lynx",
+	"browserFork":"lynx",
+	"browserVersion":"980",
+	"browserEngineName":"libwww",
+	"browserEngineVersion":"2.14",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"lynx/9.8rel.1 (windows 7; ultimate) [en]",
+]}
+

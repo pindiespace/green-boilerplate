@@ -1,0 +1,19 @@
+{
+	"browserName":"ice",
+	"browserFork":"ice",
+	"browserVersion":"600",
+	"browserEngineName":"java",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"embedded java - http://developer.novell.com/yes/47697.htm",
+	"ualist": [
+		"mozilla/5.0 (java 1.6.0_01; windows xp 5.1 x86; en) ice/v6_1_2",
+		"mozilla/5.0 (java 1.6.0_01; windows xp 5.1 x86; en) ice/v6_1_2",
+		"ice /5.05 (java 1.4.0; windows 2000 5.0 x86)",
+		"ice /v5_4_3 (java 1.4.2; windows xp 5.1 x86)"
+]}

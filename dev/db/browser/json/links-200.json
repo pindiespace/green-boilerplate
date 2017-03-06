@@ -1,0 +1,22 @@
+{
+	"browserName":"links",
+	"browserFork":"links",
+	"browserVersion":"200",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"text only",
+	"ualist": [
+		"links (2.1pre15; freebsd 5.3-release i386; 196x84)",
+		"links (2.3pre1; linux 2.6.38-8-generic x86_64; 170x48",
+		"links (2.1pre15; linux 2.4.26 i686; 158x61)",
+		"links (2.3pre1; linux 2.6.35-22-generic i686; 177x51)",
+		"links (2.2; linux 2.6.25-gentoo-r9 sparc64; 166x52)",
+		"links (2.1; linux 2.6.18-gentoo-r6 x86_64; 80x24)",
+		"links (2.1pre18; linux 2.4.31 i686; 100x37)"
+]}

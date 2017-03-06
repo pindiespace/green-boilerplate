@@ -1,0 +1,1 @@
+{"300":{"browser":{"searchgroup":"15003","releasedate":"2010-01-01","version":"3.0","versionname":"MiniBrowser 3.0"}},"500":{"browser":{"releasedate":"2011-01-01","version":"5.0","versionname":"MiniBrowser 5.0"}},"600":{"browser":{"releasedate":"2012-01-01","version":"6.0","versionname":"MiniBrowser 6.0"}}}

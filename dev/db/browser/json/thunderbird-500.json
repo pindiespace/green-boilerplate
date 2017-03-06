@@ -1,0 +1,16 @@
+{
+	"browserName":"thunderbird",
+	"browserFork":"thunderbird",
+	"browserVersion":"500",
+	"browserEngineName":"gecko",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+"mozilla/5.0 (windows nt 6.1; wow64; rv:5.0) gecko/20110624 thunderbird/5.0 lightning/1.0b4",
+"mozilla/5.0 (windows nt 6.1; rv:5.0) gecko/20110624 thunderbird/5.0"
+]}

@@ -1,0 +1,1 @@
+{"500":{"browser":{"searchgroup":"15004","releasedate":"2006-01-01","version":"5.0","versionname":"Polaris 5.0"}},"600":{"browser":{"releasedate":"2007-04-01","version":"6.0","versionname":"Polaris 6.0"}},"700":{"browser":{"searchgroup":"15001","releasedate":"2009-12-01","version":"7.0","versionname":"Polaris 7.0"}}}

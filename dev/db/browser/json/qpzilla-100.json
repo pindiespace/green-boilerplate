@@ -1,0 +1,23 @@
+{
+	"browserName":"qpzilla",
+	"browserFork":"qpzilla",
+	"browserVersion":"100",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"533",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (windows; u; windows nt 6.1; cs-cz) applewebkit/533.3 (khtml, like gecko) qupzilla/1.1.5 safari/533.3",
+		"mozilla/5.0 (windows; u; windows nt 5.1; cs-cz) applewebkit/533.3 (khtml, like gecko) qupzilla/1.1.5 safari/533.3",
+		"mozilla/5.0 (macintosh; u; ppc mac os x; en-us) applewebkit/533.3 (khtml, like gecko) qupzilla/1.1.5 safari/533.3",
+		"mozilla/5.0 (windows; u; windows nt 5.1; es-es) applewebkit/533.3 (khtml, like gecko) qupzilla/1.1.0 safari/533.3",
+		"mozilla/5.0 (x11; u; linux i686; pl-pl) applewebkit/533.3 (khtml, like gecko) qupzilla/1.0.0-rc1 safari/533.3",
+		"mozilla/5.0 (x11; linux i686) applewebkit/534.34 (khtml like gecko) qupzilla/1.3.5 safari/534.34",
+		"mozilla/5.0 (windows nt 6.1) applewebkit/534.34 (khtml like gecko) qupzilla/1.3.0 safari/534.34",
+		"mozilla/5.0 (x11; linux x8664) applewebkit/534.34 (khtml like gecko) qupzilla/1.3.5 safari/534.34",
+		"mozilla/5.0 (x11; linux x8664) applewebkit/534.34 (khtml like gecko) qupzilla/1.3.1 safari/534.34"
+	]}

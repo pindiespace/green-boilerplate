@@ -1,0 +1,21 @@
+{
+	"browserName":"shiira",
+	"browserFork":"shiira",
+	"browserVersion":"100",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"125",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (macintosh; u; ppc mac os x; ja-jp) applewebkit/419 (khtml, like gecko) shiira/1.2.3 safari/125",
+		"mozilla/5.0 (macintosh; u; ppc mac os x; en_ca) applewebkit/522+ (khtml, like gecko) shiira/1.2.3 safari/125",
+		"mozilla/5.0 (macintosh; u; ppc mac os x; en) applewebkit/419 (khtml, like gecko) shiira/1.2.3 safari/125",
+		"mozilla/5.0 (macintosh; u; ppc mac os x; en) applewebkit/522.10.1 (khtml, like gecko) shiira/1.2.2 safari/125",
+		"mozilla/5.0 (macintosh; u; ppc mac os x; en) applewebkit/419 (khtml, like gecko) shiira/1.2.2 safari/125",
+		"mozilla/5.0 (macintosh; u; ppc mac os x; en) applewebkit/418.9 (khtml, like gecko) shiira/1.2.2 safari/125",
+		"mozilla/5.0 (macintosh; u; ppc mac os x; de-de) applewebkit/312.8 (khtml, like gecko) shiira/1.2.2 safari/125"
+	]}

@@ -1,0 +1,17 @@
+{
+	"browserName":"googleearth",
+	"browserFork":"googleearth",
+	"browserVersion":"600",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"532",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (windows; u; windows nt 6.1; cs-cz) applewebkit/532.4 (khtml, like gecko) google earth/6.0.3.2197 safari/532.4",
+		"mozilla/5.0 (windows; u; windows nt 6.0; en-us) applewebkit/532.4 (khtml, like gecko) google earth/6.0.0.1735 safari/532.4"
+]}
+

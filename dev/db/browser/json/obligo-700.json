@@ -1,0 +1,20 @@
+{
+	"browserName":"obligo",
+	"browserFork":"obligo",
+	"browserVersion":"500",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"newer versions support html5 older versions are acid2 compliant",
+	"ualist": [
+		"lg-gs390/v10p obigo/q7.3 profile/midp-2.1 configuration/cldc-1.1 novarra-vision/8.0",
+		"lg-gs390/v10p obigo/q7.3 profile/midp-2.1 configuration/cldc-1.1",
+		"lg-gs390/v10k obigo/q7.3 profile/midp-2.1 configuration/cldc-1.1 novarra-vision/8.0",
+		"lg-gs390/v10k obigo/q7.3 profile/midp-2.1 configuration/cldc-1.1",
+		"lg-gd570 /obigo-q7.3 mms/lg-mms-v1.0/1.2 mediaplayer/lgplayer/1.0 profile/midp-2.1 configuration/cldc-1.1"
+]}

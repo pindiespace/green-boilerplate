@@ -1,0 +1,18 @@
+{
+	"browserName":"openwave",
+	"browserFork":"openwave",
+	"browserVersion":"700",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"ancient java based WAP mobile",
+	"ualist": [
+		"opwv-sdk/7.0.2.3 mobile version: 7",
+		"opwv-sdk up./7.0.2.3.119 (gui) mmp/2.0 push/po",
+		"opwv-sdk up./7.0.2.115 (gui) mmp/2.0",
+]}

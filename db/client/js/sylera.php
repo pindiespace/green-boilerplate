@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"2002-08-04","version":"1.0","versionname":"Sylera 1.0"}},"200":{"browser":{"releasedate":"2004-03-15","version":"2.0","versionname":"Sylera 2.0"}},"300":{"browser":{"version":"3.0","versionname":"Sylera 3.0","searchgroup":"15004","releasedate":"2006-06-02"}}}

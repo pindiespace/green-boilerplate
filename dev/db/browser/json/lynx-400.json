@@ -1,0 +1,16 @@
+{
+	"browserName":"lynx",
+	"browserFork":"lynx",
+	"browserVersion":"400",
+	"browserEngineName":"libwww",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"lynx/4.0 (unicos; cray t3e-1200)",
+]}
+

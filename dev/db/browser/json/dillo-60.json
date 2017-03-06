@@ -1,0 +1,16 @@
+{
+	"browserName":"dillo",
+	"browserFork":"dillo",
+	"browserVersion":"60",
+	"browserEngineName":"fltk",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"0",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"dillo/0.6.4",
+		"dillo 0.6.4"
+]}

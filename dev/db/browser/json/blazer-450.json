@@ -1,0 +1,22 @@
+{
+	"browserName":"blazer",
+	"browserFork":"palms",
+	"browserVersion":"450",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/4.0 (compatible; msie 6.0; windows 98; palmsource/palm-d062; blazer/4.5) palm 690p 16;320x320",
+		"mozilla/4.0 (compatible; msie 6.0; windows 98; palmsource/palm-d062; blazer/4.5) 16;320x320",
+		"mozilla/4.0 (compatible; msie 6.0; windows 98; palmsource/palm-d060; blazer/4.5) 16;320x320",
+		"mozilla/4.0 (compatible; msie 6.0; windows 98; palmsource/palm-d052; blazer/4.5) 16;320x320",
+		"mozilla/4.0 (compatible; msie 6.0; windows 98; palmsource/palm-d052; blazer/4.5) 16; 320x320",
+		"mozilla/4.0 (compatible; msie 6.0; windows 98; palmsource/hspr-d052; blazer/4.5) 16;320x320",
+		"mozilla/4.0 (compatible;msie 6.0; windows 98; palmsource/palm-d062; blazer/4.5) palm 690p 16;320x320"
+
+	]}

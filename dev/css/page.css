@@ -1,0 +1,286 @@
+/* 
+
+styles for GBP dev page
+
+Color scheme
+#333; = charcoal grey background
+#eee; = most white-ish text
+#131; = very dark green
+#363  = somewhat brighter green
+#586; = brighter green
+#8c6; = bright green
+#be8; = brightest green
+
+
+ */
+
+html, body {
+	height: 100%;
+}
+
+
+/* make the footer "sticky */
+.main {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 0 -50px 0; /* the bottom margin is the negative value of the footer's height */
+	background-color:#333;
+	color:#eee;
+}
+
+.page-footer, .push {
+	height: 50px; /* .push must be the same height as .footer */
+}
+
+
+/* top-level page elements after .main */
+header, section, footer {
+	background-color:#333;
+	color:#eee;
+}
+
+
+header {
+	width:100%;
+	float:left;
+	background-color:#333;
+	padding-bottom:0;
+	border-bottom:0.25rem solid #586;
+
+}
+
+
+/* white text with light green underline */
+header h1 {
+	width:38%;
+	margin-right:2%;
+	line-height:1.259; /* needs to align at top with small <nav> and <ul> */
+	border-bottom:1rem solid #8c6;
+	color:#fff;
+
+}
+
+
+/* inside a wrapper #page-menu, floated right, 50% */
+
+header nav {
+	margin:0;
+	width:40%; /*allow 2% border or margin*/
+	padding-right:10%;
+}
+
+
+nav h2 {
+	color:#eee;
+}
+
+nav ul li {
+	color:#aaa; /* inactive link */
+}
+
+
+nav ul li a {
+	/*float:left;*/
+}
+
+nav ul li a:link {
+	color:#586;
+}
+
+
+nav ul li a:hover {
+	color:#CF0;
+}
+
+
+nav ul li a:visited {
+	color:#494;
+}
+
+
+section {
+	width:100%;
+	/* border-bottom:1px solid red; */
+}
+
+
+/* we float the h2 and make go completely across the screen 
+to push down other section content, namely <article> */
+section h2 {
+	width:50%;
+	float:right;
+	text-align:right;
+	padding-right:0.5rem;
+	padding-bottom:0.75rem;
+	color: #8c6;
+	border-right:0.5em solid #586;
+
+}
+
+
+/* since the articles come after the right-floated <h2>, we 
+always clear them */
+article {
+	background-color:#eee;
+	color:#333;
+	clear:both;
+}
+
+
+article h3 {
+	padding:0.5rem;
+}
+
+
+article pre {
+	padding:0.5rem;
+	color:#333;
+	border-bottom:0.1em solid #333;
+}
+
+
+footer {
+	border-top:0.25rem solid #586;	
+	padding-top:0.5rem;
+}
+
+
+/* 
+ * =======================================
+ * CLASS SELECTORS
+ * =======================================
+ */
+ 
+ 
+/* used on <section> header, also in <header> */
+.float-left {
+	float:left;
+}
+
+
+.float-right {
+	float:right;
+}
+
+
+.hide {
+	display:none;
+}
+
+
+/* a white, rounded box */
+.balloon {
+	/* in some cases, the element immediately above is floated */
+	clear:both;
+	width:98%;
+	margin: 1.5rem auto;
+	border-radius:0.2rem;
+	background-color:#eee;
+	color:#333;
+}
+
+
+/* a class for our dark background color */
+.dark-grey {
+	background-color:#333;
+}
+
+
+/* description box above main page content */
+.description {
+	width:38%;
+	float:left;
+	margin:0.5em;
+	padding:0.2em;
+	padding 0.2rem 0.2rem 0.2rem 0;
+	border-left:1rem solid #586;
+	color:#eee;
+}
+
+
+/* 
+ * applied to headers that stay visible when an accordion 
+ * panel is shown or hidden
+ */
+.accordion-header {
+	cursor:pointer;
+	font-size:1.25rem;
+	padding: 0.25rem;
+	color:#eee;
+	background-color: #111;
+	border-top:1px solid #586; /* darker green */
+	border-left:4px solid #586;
+}
+
+.accordion-header:hover {
+	background-color:#131;
+}
+
+
+/* 
+ * =======================================
+ * ID SELECTORS
+ * =======================================
+ */
+ 
+/* wrapper for left-floated titling of page */
+#page-heading {
+	width:55%;
+	background:linear-gradient(-30deg,#444 0 , #444 50%, #000 50%, #000 100%); /* titling &&&&&&&&&&&&&&&&&&&&&&&&&&& */
+}
+
+/* title elements inside a larger left-floated element */
+#page-title {
+	width:90%;
+}
+
+
+/* in <header>, contains two <nav> elements */
+#page-menu {
+	width:40%;
+	float:right;
+	background-color:#444;
+	padding-bottom:0.25rem;
+	padding-left:5%;
+}
+
+/* hyperlink should not affect appearance */
+#page-title a:link {
+	color:#eee;
+	text-decoration:none;
+}
+
+#page-title a:visited {
+	color:#eee;
+}
+
+/* sub-title under the title element, and its border-bottom */
+#page-sub-title {
+	width:90%;
+	text-align:right;
+	margin-right:0.5rem;
+	color:#eee;
+}
+
+
+#top-nav-highlight {
+	color:#be8;
+}
+
+
+/* 
+ * unit test panels
+ * the overall <section> holding individual <articles> 
+ * with tables to show and hide
+ */
+#accordion-unittests {
+}
+
+
+/* 
+ * GBP object readout panels
+ */
+#accordion-object {
+	
+}

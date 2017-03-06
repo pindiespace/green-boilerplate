@@ -1,0 +1,1 @@
+{"100":{"browser":{"searchgroup":"15004","releasedate":"2012-08-06","version":"1.0","versionname":"Ryouko 1.0"}}}

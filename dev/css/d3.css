@@ -1,0 +1,43 @@
+/* d3 SVG styles */
+			
+#d3-tree-graph {
+	background-color:#fff;
+}
+
+/* default style for nodes */
+circle {
+	fill: #ccc;
+	stroke: #333;
+	stroke-width: 1.5px;
+}
+
+/* default graph style for text */
+text {
+	font: 10px sans-serif;
+	pointer-events: none;
+	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+		
+/* default style for arrow connecting nodes */		
+.link {
+	fill: none;
+ 	stroke: #666;
+	stroke-width: 1.5px;
+}
+
+/* node fill when the GBP property is NOT a function */
+#property {
+	fill: green;
+}
+
+/* link stroke when GBP property is not a function */
+.link.property {
+	stroke: green;
+}
+
+/* link arrow when GBP property is a function */
+.link.function {
+	stroke-dasharray: 0,2 1;
+}
+
+			

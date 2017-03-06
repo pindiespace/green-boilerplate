@@ -1,0 +1,1 @@
+{"200":{"browser":{"version":"2.0","versionname":"ReqwirelessWeb 2.0","releasedate":"2002-01-01"}},"300":{"browser":{"searchgroup":"15004","releasedate":"2004-01-01","version":"3.0","versionname":"ReqwirelessWeb 3.0"}}}

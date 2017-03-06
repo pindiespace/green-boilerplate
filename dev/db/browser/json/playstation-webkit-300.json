@@ -1,0 +1,19 @@
+{
+	"browserName":"playstation webkit 3",
+	"browserFork":"playstation",
+	"browserVersion":"300",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"531",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+"mozilla/5.0 (playstation 3 4.10) applewebkit/531.22.8 (khtml, like gecko)",
+"mozilla/5.0 (playstation 3 4.11) applewebkit/531.22.8 (khtml, like gecko)",
+"mozilla/5.0 (playstation 3 4.11) applewebkit/531.22.8 (khtml, like gecko) yandex.translate",
+"mozilla/5.0 (playstation 3 4.20) applewebkit/531.22.8 (khtml, like gecko)",
+"mozilla/5.0 (playstation 3 4.21) applewebkit/531.22.8 (khtml, like gecko)"
+]}

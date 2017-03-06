@@ -1,0 +1,91 @@
+GREEN BOILERPLATE
+
+TODO LIST AND REFERENCES
+
+------------------------
+BUGS - INITIALIZR
+
+
+------------------------
+GBP OBJECT
+
+Timestamp for
+-start of detector function execution
+-end of detector function execution
+
+Performance API
+-run on diagnostic pages
+
+Creators - ck, for humans.txt?
+
+Add HAR File support
+
+------------------------
+GBP TEST PAGES
+
+bootstrap.php
+Add a tree graph to show the completed object
+
+
+------------------------
+INITIALIZR DATABASE
+
+Bugs
+When creating new property, "New Property" selection 
+jumps to the bottom. Fix
+
+Features
+Get rid of component datatype
+
+Get rid of component parent
+
+"Must be function" property (can't ever be in client database)
+This would be true of dynamic server-side detectors (e.g. 
+detecting incoming client IP
+
+Get rid of "dependency" in Properties
+
+
+------------------------
+GBP COMPILER
+
+Detect callbacks, encapsulate in binary. Compiler should 
+Build a tree of dependent executions.
+
+Strip function name in detector cdode
+
+Save function signatures for node visualization
+
+convert to FASTER FORMAT
+This is faster than concatenation
+echo 'something and more' , $i , $i+100 , 'something else and then some';
+
+convert to STRING LITERALS where possible
+
+------------------------
+GBP BOOTSTRAP
+
+Write native PHP array, not JSON
+
+convert to FASTER FORMAT
+This is faster than concatenation
+echo 'something and more' , $i , $i+100 , 'something else and then some';
+
+convert to STRING LITERALS where possible
+
+------------------------
+APIs
+
+Scan Wayback sites for javascript usage.
+
+Scan old statscounter for relative browser levels in different years
+
+Download WebPageTest code. Generate HAR files which can in turn 
+fill in data in GBP 
+
+
+
+
+
+
+

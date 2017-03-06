@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"2001-09-01","version":"1.0","versionname":"X-Smiles 1.0"}},"120":{"browser":{"releasedate":"2008-04-04","version":"1.2","versionname":"X-Smiles 1.2","searchgroup":"15004"}}}

@@ -1,0 +1,2912 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Green Boilerplate - Dev Tools</title>
+<script>
+/** 
+ *****************************************************************
+ * simple console object
+ *****************************************************************
+ */
+window.console = window.console || (function (str) {
+		
+		var log = function (str) {
+			if(!window.consolelist) {
+				window.consolelist = '';
+			}
+			window.consolelist += str + "\n";
+		}
+		
+		var logshow = function () { 
+			alert(window.consolelist);
+		}
+		
+		return {
+			log: log,
+			logshow: logshow
+		}
+	})();
+</script>
+<script>
+var GBP = (function () {
+
+	 function exeCallback (args) { 
+		var arr = [].slice.apply(args);
+		if(typeof arr[0] === "function") { 
+			arr[0](); 
+		} 
+	}
+
+	var ecma = {
+		trycatch : undefined,
+		ecmastrict : undefined,
+		promise : function promise () {
+	if(window.Promise) {
+		this.promise = true;
+	}
+	this.promise = false;
+},
+		typedarrays : undefined,
+		versionecma : undefined
+
+	};
+
+	var javascript = {
+		json : function json () {
+	
+	if(!window.JSON || typeof JSON.parse !== "function" || typeof JSON.stringify !== "function" ||
+		!JSON.parse("{\"h\":\"h\"}") || !JSON.stringify({"h":"h"})) {
+		this.json = false;
+	}
+	this.json = true;
+},
+		localstorage : undefined,
+		audioapi : undefined,
+		base64 : function base64 () {
+		
+		this.base64 = !!(window.btoa && window.atob);
+	},
+		battery : undefined,
+		blobbuilder : undefined,
+		bloburl : undefined,
+		canvasdataurljpeg : undefined,
+		canvasdataurlwebp : undefined,
+		canvastext : undefined,
+		classlist : undefined,
+		connection : undefined,
+		contenteditable : undefined,
+		cors : undefined,
+		draganddrop : undefined,
+		emojicanvas : undefined,
+		eventlistener : undefined,
+		eventsource : undefined,
+		fileapi : undefined,
+		filewriter : undefined,
+		fullscreen : undefined,
+		gamepad : undefined,
+		geolocation : undefined,
+		getcomputedstyle : undefined,
+		getelementbyid : undefined,
+		getelementsbyclassname : undefined,
+		getusermedia : undefined,
+		history : undefined,
+		indexeddb : undefined,
+		javascript : undefined,
+		matchmedia : undefined,
+		navtiming : undefined,
+		notification : undefined,
+		orientationevent : undefined,
+		pagevisibility : undefined,
+		peerconnection : undefined,
+		pointerevent : undefined,
+		pointerlock : undefined,
+		postmessage : undefined,
+		queryselector : undefined,
+		queryselectorall : undefined,
+		requestanimationframe : undefined,
+		sessionstorage : undefined,
+		sharedworkers : undefined,
+		speechinput : undefined,
+		testfeature : undefined,
+		touch : undefined,
+		versionjavascript : undefined,
+		vibrate : undefined,
+		webgl : undefined,
+		websockets : undefined,
+		websqldatabase : undefined,
+		webworkers : undefined,
+		windowevent : undefined,
+		xhr : undefined,
+		xhr2 : undefined,
+		jsprophelper : 	
+	function jsprophelper (prop, elem, attr) {
+		var prefixes,
+			len,
+			val = false;
+		
+		if (helper.dom1 && prop && elem && attr) {
+			
+			if (typeof elem === "string") { 
+				elem = document.createElement(elem); 
+			}
+			if (elem) {
+				
+				
+				console.log("analyzing property " + prop);
+				if (attr in elem) {
+					val = true;
+				}
+				else if(typeof helper.vendorprefix === "string") {
+					
+					prefixes = [helper.vendorprefix.toLowerCase()];
+					
+					len = prefixes.length;
+					attr = attr.charAt(0).toUpperCase() + attr.slice(1); 
+					for (var i = 0; i < len; i++) {
+
+						if (!!(prefixes[i] + attr in elem)) {
+							val = true;
+							break;
+						}
+					}
+				}
+			}
+			elem = null;	
+		}
+		return val; 
+	}
+
+	};
+
+	var accessibility = {
+		alttag : undefined,
+		aria : undefined,
+		hicontrast : undefined,
+		labeltags : undefined,
+		linearizeok : undefined,
+		linkorder : undefined,
+		noblink : undefined,
+		norichmedia : undefined,
+		sensiblenocss : undefined,
+		sensiblenojs : undefined,
+		tablehead : undefined,
+		tablesummary : undefined,
+		titletag : undefined
+
+	};
+
+	var audio = {
+		aac : undefined,
+		aiff : undefined,
+		amr : undefined,
+		amrwb : undefined,
+		audio3gpp : undefined,
+		audio3gpp2 : undefined,
+		midi : undefined,
+		mp3 : undefined,
+		mp4 : undefined,
+		oggopus : undefined,
+		oggvorbis : undefined,
+		wav : undefined
+
+	};
+
+	var browser = {
+		activex : undefined,
+		ancient : undefined,
+		bot : undefined,
+		comments : undefined,
+		datauri : undefined,
+		documentsize : undefined,
+		enginename : undefined,
+		engineversion : undefined,
+		fork : undefined,
+		ftp : undefined,
+		future : undefined,
+		hardwareaccel : undefined,
+		highcontrast : function highcontrast() {
+
+	if(helper.dom1 === true && helper.domready === true) {
+
+		var e,c;
+		
+		console.log("in browser.highcontrast, at this point, document is:"+document);
+		e=document.createElement("div");
+
+		
+		e.style.color="rgb(31,41,59)";
+
+		
+		document.body.appendChild(e);
+
+		
+		c=document.defaultView?document.defaultView.getComputedStyle(e,null).color:e.currentStyle.color;
+
+		
+		document.body.removeChild(e);
+
+		
+		c=c.replace(/ /g,"");
+
+		
+		
+		if (c!="rgb(31,41,59)"){
+			this.highcontrast = true;
+		}
+		else {
+			this.highcontrast = false;
+		}
+	}
+	else {
+		this.highcontrast = false;
+	}
+},
+		http : undefined,
+		httpacceptcharset : undefined,
+		httpacceptencoding : undefined,
+		httpacceptlanguage : undefined,
+		httpreferer : undefined,
+		https : undefined,
+		httpxrequestedwith : undefined,
+		httpxuacompatible : undefined,
+		imagesoff : function imagesoff () {
+	if(!document.images) {
+		this.imagesoff = false;
+	}
+	else {
+		var image = new Image();
+		image.onload = function() {
+		if (image.width > 0) {
+			this.imagesoff = false;
+			}
+		else {
+			this.imagesoff = true;
+			}
+		};
+		image.width  = 1;
+		image.height = 1;
+	image.src = "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+		
+	}
+},
+		imode : undefined,
+		javascriptengine : undefined,
+		javascriptengineversion : undefined,
+		memleak : undefined,
+		name : undefined,
+		oldie : function oldie () {
+
+
+
+
+
+
+	if(document.createElement) {
+
+		
+		
+		var x = document.createElement("p");
+		if(!!(x.applyElement || x.mergeAttributes || x.clearAttributes)) {
+
+			
+
+			if(!document.getElementsByClassName) {
+				
+				this.oldie = true;
+			}
+
+		}
+
+	x = null;
+	}
+
+	this.oldie = false;
+
+}
+,
+		releasedate : "2014-06-10",
+		rendercloud : undefined,
+		rtsp : undefined,
+		searchgroup : "common",
+		spdy : function spdy () {
+		
+		this.spdy = !!(window.chrome && window.chrome.loadTimes && window.chrome.loadTimes().wasFetchedViaSpdy);
+	},
+		spellcheck : undefined,
+		spider : undefined,
+		uaregex : undefined,
+		unicode : undefined,
+		useragent : "linux cl18 3.14.5mtv15 #1 smp tue jun 10 15:51:17 pdt 2014 x86_64",
+		vendorprefix : 
+function vendorprefix() {
+	var regex = /^(webkit|Moz|O|ms|Webkit|Khtml|Icab)(?=[A-Z])/,
+	val = false,
+	num = 0,
+	someScript;
+
+console.log("executing vendorprefix");
+		
+	if (helper.dom1) {
+		(function () {
+			someScript = document.getElementsByTagName("script")[0];
+			
+			if (someScript.style) {
+				for(var prop in someScript.style) {
+					
+					num++;
+					if(regex.test(prop)) {
+						
+						
+						val = prop.match(regex)[0];
+						
+						break;
+					}
+				}
+					
+				
+				
+				
+				if (!val) {
+					if("WebkitOpacity" in someScript.style) {
+						val = "Webkit";
+					}
+					if("KhtmlOpacity" in someScript.style)  {
+						val = "Khtml";
+					}
+				}
+			}
+			someScript = null;
+			
+		})();
+	}
+	
+	console.log("finished vendorprefix, value:"+val);
+	this.vendorprefix = val;
+
+
+//WOW
+exeCallback (arguments);
+},
+		version : 30.0,
+		versionname : "Firefox 30.0",
+		viewportsize : undefined,
+		wap : undefined,
+		yuiclass : undefined
+
+	};
+
+	var chtml = {
+		chtml : undefined
+
+	};
+
+	var configuration = {
+		gbpversion : undefined,
+		jsonpolyfill : undefined,
+		nofouc : undefined,
+		nofout : undefined,
+		overrideclient : undefined,
+		returntoserver : undefined,
+		storagepolyfill : undefined,
+		useclientdetect : undefined,
+		usecookies : undefined,
+		useheaderstorage : undefined,
+		uselocalstorage : undefined,
+		useserverdetect : undefined,
+		useuahash : undefined,
+		vampirelibrary : undefined
+
+	};
+
+	var creators = {
+		agileworkflow : undefined
+
+	};
+
+	var css1 = {
+		backgroundattachment : undefined,
+		backgroundcolor : undefined,
+		backgroundimage : undefined,
+		backgroundposition : undefined,
+		backgroundpositionx : undefined,
+		backgroundpositiony : undefined,
+		backgroundrepeat : undefined,
+		border : undefined,
+		borderbottom : undefined,
+		borderbottomwidth : undefined,
+		bordercolor : undefined,
+		borderleft : undefined,
+		borderright : undefined,
+		borderrightwidth : undefined,
+		borderstyle : undefined,
+		bordertop : undefined,
+		bordertopwidth : undefined,
+		borderwidth : undefined,
+		clear : undefined,
+		color : undefined,
+		css : function css () {
+	if ("supportsCSS" in window) { 
+		this.css = true;
+	}
+	else if ("CSS" in window && "supports" in window.CSS) {
+		this.css = true;
+	}
+	else if (document && document.documentElement && document.documentElement.style) {
+		this.css = true;
+	}
+	else {
+		this.css = false;
+	}
+},
+		cssfloat : undefined,
+		cssimport : undefined,
+		display : undefined,
+		font : undefined,
+		fontfamily : undefined,
+		fontsize : undefined,
+		fontstyle : undefined,
+		fontvariant : undefined,
+		fontweight : undefined,
+		height : undefined,
+		letterspacing : undefined,
+		lineheight : undefined,
+		liststyle : undefined,
+		liststyleimage : undefined,
+		liststyleposition : undefined,
+		liststyletype : undefined,
+		margin : undefined,
+		marginbottom : undefined,
+		marginleft : undefined,
+		marginright : undefined,
+		margintop : undefined,
+		padding : undefined,
+		paddingbottom : undefined,
+		paddingleft : undefined,
+		paddingright : undefined,
+		paddingtop : undefined,
+		textdecoration : undefined,
+		textindent : undefined,
+		texttransform : undefined,
+		verticalalign : undefined,
+		whitespace : undefined,
+		width : undefined,
+		wordspacing : undefined,
+		cssprophelper : 	
+	function cssprophelper (cssProp, cssVal) {
+		
+		function testProp (prop, val) {
+			var v = false,
+			win = window,
+			style;
+			if("supportsCSS" in win){
+				v = win.supportsCSS(prop, val);    
+			}
+			else if("CSS" in win && "supports" in win.CSS) {
+				v = win.CSS.supports(prop, val);   
+			}
+			else if (document && document.documentElement && document.documentElement.style) {
+     
+				
+
+				style = document.documentElement.style;
+	
+				if (prop in style) {
+					var elem = win.document.createElement("div");
+
+					if (elem && elem.style) {
+
+						elem.style.cssText = prop + ":" + val;
+						v = (elem.style[prop] !== "");
+					}
+					elem = null;
+				}
+			}
+			return v;
+		}; 
+		
+		
+		var val = false;
+		if (cssProp && cssVal) {
+			if (val === false && helper.vendorprefix) {
+				var camelRe = /-([a-z]|[0-9])/ig;
+				var camelProp = helper.vendorprefix + cssProp.charAt(0).toUpperCase() + cssProp.slice(1);
+
+				
+				
+				camelProp = camelProp.replace(camelRe, function(all, c){
+					return (c + "").toUpperCase();
+					});
+				val = testProp(camelProp, cssVal);
+			}
+			
+			return val;
+		}
+		
+	}
+
+	};
+
+	var css2 = {
+		absolute : undefined,
+		azimuth : undefined,
+		background : undefined,
+		borderbottomcolor : undefined,
+		borderbottomstyle : undefined,
+		bordercollapse : undefined,
+		borderleftcolor : undefined,
+		borderleftstyle : undefined,
+		borderleftwidth : undefined,
+		borderrightcolor : undefined,
+		borderrightstyle : undefined,
+		borderspacing : undefined,
+		bordertopcolor : undefined,
+		bordertopstyle : undefined,
+		bottom : undefined,
+		captionside : undefined,
+		clip : undefined,
+		counter : undefined,
+		counterreset : undefined,
+		css2 : undefined,
+		csscharset : undefined,
+		csspage : undefined,
+		cssselectors2 : undefined,
+		cssstatic : undefined,
+		cue : undefined,
+		cursor : undefined,
+		direction : undefined,
+		emptycells : undefined,
+		filterdirectx : undefined,
+		fixed : undefined,
+		inherit : undefined,
+		inlineblock : undefined,
+		left : undefined,
+		max : undefined,
+		maxheight : undefined,
+		mediaqueries : undefined,
+		minheight : undefined,
+		minwidth : undefined,
+		orphans : undefined,
+		outline : undefined,
+		outlinecolor : undefined,
+		outlinestyle : undefined,
+		outlinewidth : undefined,
+		overflow : undefined,
+		pagebreakafter : undefined,
+		pagebreakbefore : undefined,
+		pagebreakinside : undefined,
+		pause : undefined,
+		pauseafter : undefined,
+		pausebefore : undefined,
+		pitch : undefined,
+		pitchrange : undefined,
+		playduring : undefined,
+		quotes : undefined,
+		relative : undefined,
+		richness : undefined,
+		right : undefined,
+		speak : undefined,
+		speakheader : undefined,
+		speaknumeral : undefined,
+		speakpunctuation : undefined,
+		speechrate : undefined,
+		stress : undefined,
+		tablelayout : undefined,
+		textalign : undefined,
+		top : undefined,
+		visibility : undefined,
+		voicefamily : undefined,
+		volume : undefined,
+		widows : undefined,
+		zindex : undefined
+
+	};
+
+	var css3 = {
+		alignmentadjust : undefined,
+		alignmentbaseline : undefined,
+		animation : undefined,
+		appearance : undefined,
+		backgroundbreak : undefined,
+		backgroundclip : undefined,
+		backgroundimagemultiple : undefined,
+		backgroundorigin : undefined,
+		backgroundsize : undefined,
+		base64 : undefined,
+		baselineshift : undefined,
+		binding : undefined,
+		bookmarklabel : undefined,
+		bookmarklevel : undefined,
+		bookmarktarget : undefined,
+		borderbottomleftradius : undefined,
+		borderbottomrightradius : undefined,
+		borderbreak : undefined,
+		borderimage : undefined,
+		borderlength : undefined,
+		borderradius : function borderradius () {
+	this.borderradius = helper.cssprophelper("border-radius", "1px");
+},
+		bordertopleftradius : undefined,
+		bordertoprightradius : undefined,
+		boxalign : undefined,
+		boxdirection : undefined,
+		boxflex : undefined,
+		boxflexgroup : undefined,
+		boxlines : undefined,
+		boxorient : undefined,
+		boxpack : undefined,
+		boxreflect : undefined,
+		boxshadow : undefined,
+		boxsizing : undefined,
+		calc : undefined,
+		canvasbkgnd : undefined,
+		columnbreakafter : undefined,
+		columnbreakbefore : undefined,
+		columncount : undefined,
+		columnfill : undefined,
+		columngap : undefined,
+		columnrule : undefined,
+		columnrulecolor : undefined,
+		columnrulestyle : undefined,
+		columnrulewidth : undefined,
+		columns : undefined,
+		columnspan : undefined,
+		columnwidth : undefined,
+		css3 : undefined,
+		csskeyframes : undefined,
+		cssnamespace : undefined,
+		cssselectors3 : undefined,
+		csssupports : undefined,
+		cssviewport : undefined,
+		cssviewportunits : undefined,
+		dominantbaseline : undefined,
+		dropinitialafteradjust : undefined,
+		dropinitialafteralign : undefined,
+		dropinitialbeforeadjust : undefined,
+		dropinitialbeforealign : undefined,
+		dropinitialsize : undefined,
+		dropinitialvalue : undefined,
+		featurequeries : undefined,
+		filter : undefined,
+		fit : undefined,
+		fitposition : undefined,
+		floatoffset : undefined,
+		flowinto : undefined,
+		fonteffect : undefined,
+		fontemphasize : undefined,
+		fontemphasizeposition : undefined,
+		fontemphasizestyle : undefined,
+		fontface : undefined,
+		gradient : undefined,
+		gridcolumns : undefined,
+		hsla : undefined,
+		hypenation : undefined,
+		objectfit : undefined,
+		opacity : undefined,
+		overflowx : undefined,
+		overflowy : undefined,
+		rem : undefined,
+		repeatinglineargradient : undefined,
+		repeatingradialgradient : undefined,
+		resize : undefined,
+		rgba : undefined,
+		svg : undefined,
+		textoverflow : undefined,
+		textshadow : undefined,
+		textstroke : undefined,
+		transforms2d : undefined,
+		transition : undefined,
+		wordbreak : undefined,
+		wordwrap : undefined,
+		wrapflow : undefined
+
+	};
+
+	var device = {
+		battery : undefined,
+		devicecolordepth : undefined,
+		devicename : undefined,
+		deviceos : undefined,
+		deviceosversion : undefined,
+		deviceretina : undefined,
+		devicescreenresolution : undefined,
+		devicescreensize : undefined,
+		devicetextureunit : undefined,
+		devicetimestamp : undefined,
+		devicetype : undefined,
+		deviceversion : undefined,
+		domainname : undefined,
+		geolocation : undefined,
+		httpxwapprofile : undefined,
+		ip : "71.93.115.201",
+		mobile : undefined
+
+	};
+
+	var dom = {
+		dom1 : function dom1 () {
+
+	
+
+	if(helper.dom0 === false) {
+		this.dom1 = false;
+	}
+	else {
+		this.dom1 = !!(document.implementation && document.implementation.hasFeature("HTML", "1.0") &&
+		document.childNodes && (document.documentElement || document.body) && 
+		document.getElementById && document.createElement  && document.getElementsByTagName && document.getElementsByName && 
+		document.createTextNode && document.insertBefore && document.replaceChild && document.removeChild && document.appendChild);
+	}
+
+//WOW
+exeCallback (arguments);
+},
+		dom2 : function dom2 () {
+
+	
+
+	if(helper.dom1 === false) {
+		this.dom2 = false;
+	}
+	else {
+		this.dom2 = !!(document.implementation && 
+		document.implementation.hasFeature("Core", "2.0") && 
+		document.implementation.hasFeature("HTML", "2.0") && document.createElementNS && 
+		document.implementation.createHTMLDocument && document.createDocumentFragment && 
+		window.addEventListener && window.attachEvent);
+	}
+
+//WOW
+exeCallback (arguments);
+},
+		dom2events : function dom2events () {
+	if(helper.dom1 === false) {
+		this.dom2events = false;
+	}
+	else {
+		this.dom2events = !!(document.implementation && 
+		document.implementation.hasFeature("Events", "2.0") &&
+		document.addEventListener && document.removeEventListener);
+	}
+},
+		dom3 : function dom3 () {
+	if(helper.dom2 === false) {
+		this.dom3 = false;
+	}
+	else {
+		this.dom3 = !!(document.implementation.hasFeature("Core", "3.0") && 
+		document.implementation.hasFeature("HTML", 3.0) && document.evaluate
+		);
+	}
+},
+		dom3xpath : function dom3xpath () { 
+
+if(helper.dom0 && helper.dom1) { 
+if(!!(document.evaluate)) { 
+this.dom3xpath = true;
+ } 
+} else { 
+this.dom3xpath = false; 
+} 
+},
+		nodom : function nodom () {
+
+	if(!window && (!document || !(document.documentElement || !document.body))) {
+		this.nodom = true;
+	}
+	else {
+		this.nodom = false;
+	}
+},
+		dom0 : function dom0 () {
+	
+	this.dom0 = !!(window && document && document.forms && document.images && window.history && document.location && window.setTimeout);
+
+//WOW
+exeCallback (arguments);
+}
+
+	};
+
+	var events = {
+		abort : undefined,
+		afterprint : undefined,
+		animationend : undefined,
+		animationiteration : undefined,
+		animationstart : undefined,
+		audioprocess : undefined,
+		beforeprint : undefined,
+		beforeunload : undefined,
+		beginevent : undefined,
+		blur : undefined,
+		cached : undefined,
+		canplay : undefined,
+		canplaythrough : undefined,
+		change : undefined,
+		chargingchange : undefined,
+		chargingtimechange : undefined,
+		checking : undefined,
+		click : undefined,
+		close : undefined,
+		compassneedscalibration : undefined,
+		complete : undefined,
+		compositionend : undefined,
+		compositionstart : undefined,
+		compositionupdate : undefined,
+		contextmenu : undefined,
+		copy : undefined,
+		cut : undefined,
+		dblclick : undefined,
+		devicelight : undefined,
+		devicemotion : undefined,
+		deviceorientation : undefined,
+		deviceproximity : undefined,
+		dischargingtimechange : undefined,
+		domready : function domready (callback) {
+			
+			
+			
+			var that = this;
+			
+			
+							
+			that.tmpdomready = {
+				id:-1, 
+				maxPoll:0,
+				callback:callback
+				}
+			
+			function finish () {
+				console.log("in finish");
+				if(document.body || document.documentElement) {
+					console.log("domready is true");
+					clearInterval(that.tmpdomready.id);
+					delete that.tmpdomready;
+					if(callback) {
+						callback();
+					}
+					return (that.domready = true);
+				}
+				else if(that.tmpdomready.maxPoll > 100) {
+					delete that.tmpdomready;
+					return (that.domready = false);
+				}
+			}
+			
+			if(that.tmpdomready) {
+				clearInterval(that.tmpdomready.id);
+			}
+			else {
+				that.tmpdomready.maxPoll++;
+			}
+			that.tmpdomready.id = setInterval(finish, 40);
+		
+//WOW
+exeCallback (arguments);
+},
+		downloading : undefined,
+		drag : undefined,
+		dragend : undefined,
+		dragenter : undefined,
+		dragleave : undefined,
+		dragover : undefined,
+		drop : undefined,
+		durationchange : undefined,
+		emptied : undefined,
+		ended : undefined,
+		endevent : undefined,
+		error : undefined,
+		eventhelper : function eventhelper (eventName) {
+	
+	
+	
+
+	var isSupported = false;
+	if(!helper.dom1) {
+		return isSupported;
+	}
+
+	var TAGNAMES = { 'select':'input','change':'input','submit':'form','reset':'form','error':'img','load':'img','abort':'img'}
+
+	var el = document.createElement(TAGNAMES[eventName] || 'div');
+	eventName = 'on' + eventName;
+	isSupported = (eventName in el);
+	if (!isSupported) {
+		el.setAttribute(eventName, 'return;');
+		isSupported = typeof el[eventName] == 'function';
+	}
+	el = null;
+	return isSupported;
+},
+		focus : undefined,
+		focusin : undefined,
+		focusout : undefined,
+		fullscreenchange : undefined,
+		fullscreenerror : undefined,
+		gamepadconnected : undefined,
+		gamepaddisconnected : undefined,
+		gotpointercapture : undefined,
+		hashchangeevent : undefined,
+		input : undefined,
+		invalid : undefined,
+		keydown : undefined,
+		keypress : undefined,
+		keyup : undefined,
+		levelchange : undefined,
+		load : undefined,
+		loadeddata : undefined,
+		loadedmetadata : undefined,
+		loadend : undefined,
+		loadstart : undefined,
+		lostpointercapture : undefined,
+		message : undefined,
+		mousedown : undefined,
+		mousemove : undefined,
+		mouseout : undefined,
+		mouseover : undefined,
+		mouseup : undefined,
+		noupdate : undefined,
+		obsolete : undefined,
+		offline : undefined,
+		open : undefined,
+		orientationchange : undefined,
+		pagehide : undefined,
+		pageshow : undefined,
+		paste : undefined,
+		pause : undefined,
+		play : undefined,
+		playing : undefined,
+		pointercancel : undefined,
+		pointerdown : undefined,
+		pointerenter : undefined,
+		pointerlockchange : undefined,
+		pointerlockerror : undefined,
+		pointermove : undefined,
+		pointerout : undefined,
+		pointerover : undefined,
+		pointerup : undefined,
+		ponterleave : undefined,
+		popstate : undefined,
+		progress : undefined,
+		ratechange : undefined,
+		readystatechange : undefined,
+		repeatevent : undefined,
+		reset : undefined,
+		resize : undefined,
+		scroll : undefined,
+		select : undefined,
+		show : undefined,
+		stalled : undefined,
+		storage : undefined,
+		submit : undefined,
+		suspend : undefined,
+		svgabort : undefined,
+		svgerror : undefined,
+		svgresize : undefined,
+		svgscroll : undefined,
+		svgunload : undefined,
+		svgzoom : undefined,
+		timeout : undefined,
+		timeupdate : undefined,
+		touchcancel : undefined,
+		touchend : undefined,
+		touchenter : undefined,
+		touchleave : undefined,
+		touchmove : undefined,
+		touchstart : undefined,
+		transitionend : undefined,
+		unload : undefined,
+		updateready : undefined,
+		userproximity : undefined,
+		visibilitychange : undefined,
+		volumechange : undefined,
+		waiting : undefined,
+		wheel : undefined
+
+	};
+
+	var fonts = {
+		eot : undefined,
+		otf : undefined,
+		svg : undefined,
+		ttf : undefined,
+		woff : undefined
+
+	};
+
+	var html = {
+		a : undefined,
+		applicationcache : undefined,
+		conditionalcomments : undefined,
+		dataset : undefined,
+		forms : undefined,
+		html : undefined,
+		html4 : undefined,
+		html5 : undefined,
+		iframe : undefined,
+		img : undefined,
+		microdata : undefined,
+		ruby : undefined,
+		sandbox : undefined,
+		scriptasync : undefined,
+		scriptdefer : undefined,
+		seamless : undefined,
+		srcdoc : undefined,
+		stylescoped : undefined,
+		xhtml : undefined,
+		xhtmlmp : undefined
+
+	};
+
+	var html4 = {
+		object : undefined
+
+	};
+
+	var html5 = {
+		audio : undefined,
+		canvas : function canvas () {
+		this.canvas =  !!document.createElement('canvas').getContext;
+	},
+		captions : undefined,
+		details : undefined,
+		html5forms : undefined,
+		html5formvalidation : undefined,
+		inputdatalist : undefined,
+		menu : function menu () {
+		this.menu = helper.jsprophelper("menu", "menu", "type");
+},
+		menuitem : undefined,
+		meter : undefined,
+		picture : undefined,
+		poster : undefined,
+		progress : undefined,
+		semantic : undefined,
+		template : undefined,
+		track : undefined,
+		video : undefined
+
+	};
+
+	var image = {
+		base64 : undefined,
+		bmp : undefined,
+		gif : undefined,
+		gifanimated : undefined,
+		img : undefined,
+		jpeg : undefined,
+		png : undefined,
+		pngalpha : undefined,
+		pnganimated : undefined,
+		tiff : undefined,
+		wbmp : undefined,
+		webp : undefined,
+		xbitmap : undefined
+
+	};
+
+	var input = {
+		inputautocomplete : undefined,
+		inputautofocus : undefined,
+		inputcolor : undefined,
+		inputdate : undefined,
+		inputdatetime : undefined,
+		inputdatetimelocal : undefined,
+		inputemail : undefined,
+		inputfile : undefined,
+		inputfilemultiple : undefined,
+		inputmax : undefined,
+		inputmin : undefined,
+		inputnumber : undefined,
+		inputpattern : undefined,
+		inputplaceholder : undefined,
+		inputrange : undefined,
+		inputrequired : undefined,
+		inputsearch : undefined,
+		inputstep : undefined,
+		inputtel : undefined,
+		inputtime : undefined,
+		inputurl : undefined
+
+	};
+
+	var isp = {
+		isp : undefined,
+		ispdomain : undefined,
+		ispgreenindex : undefined
+
+	};
+
+	var link = {
+		adownload : undefined,
+		prefetch : undefined,
+		prerender : undefined
+
+	};
+
+	var mathml = {
+		inline : undefined,
+		mathml : function mathml () {
+	
+	
+	if(helper.dom1 === true && helper.domready === true) {
+		var div = document.createElement("div"), box;
+		div.innerHTML = "<math><mspace height='23px' width='77px'/></math>";
+		document.body.appendChild(div);
+		box = div.firstChild.firstChild.getBoundingClientRect();
+		document.body.removeChild(div);
+		this.mathml = (Math.abs(box.height - 23) <= 1 && Math.abx(box.width - 77) <= 1);
+	}
+}
+
+	};
+
+	var network = {
+		index : undefined,
+		type : undefined,
+		utilityindex : undefined
+
+	};
+
+	var performance = {
+		client : undefined,
+		server : undefined
+
+	};
+
+	var plugins = {
+		acrobat : undefined,
+		director : undefined,
+		flash : undefined,
+		java : function java () {
+		this.java = navigator.javaEnabled();
+	},
+		quicktime : undefined,
+		realplayer : undefined,
+		silverlight : undefined,
+		unity3d : undefined,
+		windowsmedia : undefined
+
+	};
+
+	var security = {
+		donottrack : function donottrack () {
+	
+	this.donottrack = !!(navigator && (helper.vendorprefix + "doNotTrack" in navigator));
+	},
+		hipaa : undefined,
+		httpdnt : undefined,
+		parentalcontrols : undefined,
+		securitywarning : undefined
+
+	};
+
+	var server = {
+		adaptscontent : undefined,
+		bits : "32bit",
+		cloud : undefined,
+		cpuload : undefined,
+		cpunum : 8,
+		domainname : "acmkokecog.gs01.gridserver.com",
+		geolocation : undefined,
+		hardware : "x86_64",
+		ip : undefined,
+		memory : undefined,
+		os : "linux",
+		osversion : "3.14.5mtv15",
+		software : "Apache/2.2.22",
+		spdy : "",
+		timestamp : 1405264538,
+		useragent : "linux cl18 3.14.5mtv15 #1 smp tue jun 10 15:51:17 pdt 2014 x86_64",
+		utilityindex : undefined
+
+	};
+
+	var smil = {
+		inline : undefined,
+		smil : undefined,
+		svg : undefined
+
+	};
+
+	var svg = {
+		clippaths : undefined,
+		filter : undefined,
+		inline : undefined,
+		textpath : undefined
+
+	};
+
+	var tests = {
+		acid1 : undefined,
+		acid2 : undefined,
+		acid3 : undefined,
+		css3 : undefined,
+		html5test : undefined,
+		mathmlacid1 : undefined,
+		mathmlacid2 : undefined,
+		mathmltest3 : undefined,
+		mqtest : undefined,
+		palmreadermq : undefined,
+		test262 : undefined,
+		wctmb2 : undefined
+
+	};
+
+	var video = {
+		h264 : undefined,
+		m4v : undefined,
+		mp4 : undefined,
+		oggtheora : undefined,
+		video3gpp : undefined,
+		video3gpp2 : undefined,
+		webm : undefined
+
+	};
+
+	var wml = {
+		wml : undefined,
+		wmlc : undefined,
+		wmlcscript : undefined
+
+	};
+
+	var xml = {
+		xml : undefined,
+		xslt : undefined
+
+	};
+
+	var helper = {
+		vendorprefix : browser.vendorprefix,
+		dom1 : dom.dom1,
+		domready : events.domready,
+		cssprophelper : css1.cssprophelper,
+		dom0 : dom.dom0,
+		dom2 : dom.dom2,
+		jsprophelper : javascript.jsprophelper
+
+	};
+
+function run0 (callback) {
+console.log("in run0");
+	events.domready (callback0);
+	function callback0 () {
+		browser.highcontrast (callback20);
+		function callback20 () {
+		};
+		mathml.mathml (callback21);
+		function callback21 () {
+		};
+	};
+};
+function run1 (callback) {
+console.log("in run1");
+	dom.dom0 (callback0);
+	function callback0 () {
+		dom.dom1 (callback22);
+		function callback22 () {
+			javascript.jsprophelper (callback23);
+			function callback23 () {
+				html5.menu (callback24);
+				function callback24 () {
+				};
+			};
+			browser.vendorprefix (callback26);
+			function callback26 () {
+				css1.cssprophelper (callback29);
+				function callback29 () {
+					css3.borderradius (callback30);
+					function callback30 () {
+					};
+				};
+				security.donottrack (callback31);
+				function callback31 () {
+				};
+			};
+			dom.dom2 (callback32);
+			function callback32 () {
+				dom.dom3 (callback33);
+				function callback33 () {
+				};
+			};
+			dom.dom2events (callback34);
+			function callback34 () {
+			};
+			dom.dom3xpath (callback35);
+			function callback35 () {
+			};
+			events.eventhelper (callback36);
+			function callback36 () {
+			};
+		};
+	};
+};
+function run () {
+
+	//run dependent detectors with callbacks
+
+	run0();
+	run1();
+
+	//run independent detectors
+
+	if(typeof ecma.promise == "function") ecma.promise();
+	if(typeof javascript.json == "function") javascript.json();
+	if(typeof javascript.base64 == "function") javascript.base64();
+	if(typeof browser.imagesoff == "function") browser.imagesoff();
+	if(typeof browser.oldie == "function") browser.oldie();
+	if(typeof browser.spdy == "function") browser.spdy();
+	if(typeof css1.css == "function") css1.css();
+	if(typeof dom.nodom == "function") dom.nodom();
+	if(typeof html5.canvas == "function") html5.canvas();
+	if(typeof plugins.java == "function") plugins.java();
+
+	//returned object
+
+	return {
+		ecma : ecma,
+		javascript : javascript,
+		accessibility : accessibility,
+		audio : audio,
+		browser : browser,
+		chtml : chtml,
+		configuration : configuration,
+		creators : creators,
+		css1 : css1,
+		css2 : css2,
+		css3 : css3,
+		device : device,
+		dom : dom,
+		events : events,
+		fonts : fonts,
+		html : html,
+		html4 : html4,
+		html5 : html5,
+		image : image,
+		input : input,
+		isp : isp,
+		link : link,
+		mathml : mathml,
+		network : network,
+		performance : performance,
+		plugins : plugins,
+		security : security,
+		server : server,
+		smil : smil,
+		svg : svg,
+		tests : tests,
+		video : video,
+		wml : wml,
+		xml : xml,
+		helper : helper,
+		detectorTypes : detectorTypes,
+		run : run
+		}; //end of returned object
+
+	};//end of primary run function
+
+
+	return run();
+
+		//debug detector type
+		 var detectorTypes = {
+			javascript : {
+				json : "JavaScript",
+				base64 : "JavaScript"
+			},
+			browser : {
+				highcontrast : "JavaScript",
+				imagesoff : "JavaScript",
+				oldie : "JavaScript",
+				spdy : "JavaScript",
+				useragent : "PHP",
+				vendorprefix : "JavaScript"
+			},
+			css1 : {
+				css : "JavaScript"
+			},
+			css3 : {
+				borderradius : "JavaScript"
+			},
+			device : {
+				ip : "PHP"
+			},
+			dom : {
+				dom1 : "JavaScript",
+				dom2 : "JavaScript",
+				dom2events : "JavaScript",
+				dom3 : "JavaScript",
+				dom3xpath : "JavaScript",
+				nodom : "JavaScript"
+			},
+			ecma : {
+				promise : "JavaScript"
+			},
+			events : {
+				domready : "JavaScript",
+				eventhelper : "JavaScript"
+			},
+			html5 : {
+				canvas : "JavaScript",
+				menu : "JavaScript"
+			},
+			mathml : {
+				mathml : "JavaScript"
+			},
+			plugins : {
+				java : "JavaScript"
+			},
+			security : {
+				donottrack : "JavaScript"
+			},
+			server : {
+				bits : "Python",
+				cpuload : "PHP",
+				cpunum : "Python",
+				domainname : "PHP",
+				hardware : "PHP",
+				memory : "PHP",
+				os : "PHP",
+				osversion : "PHP",
+				software : "PHP",
+				spdy : "PHP",
+				timestamp : "PHP",
+				useragent : "PHP"
+			}
+	};
+
+
+
+})(); //end of GBP
+
+</script>
+
+<script>
+var debug_db_properties = {"browser":{"releasedate":"\"2014-06-10\"","searchgroup":"\"common\"","version":"30.0","versionname":"\"Firefox 30.0\""}};
+
+var debug_server_properties ={"browser":{"useragent":"\"linux cl18 3.14.5mtv15 #1 smp tue jun 10 15:51:17 pdt 2014 x86_64\""},"device":{"ip":"\"71.93.115.201\""},"server":{"bits":"\"32bit\"","cpuload":"undefined","cpunum":"8","domainname":"\"acmkokecog.gs01.gridserver.com\"","hardware":"\"x86_64\"","memory":"undefined","os":"\"linux\"","osversion":"\"3.14.5mtv15\"","software":"\"Apache\/2.2.22\"","spdy":"\"\"","timestamp":"1405264538","useragent":"\"linux cl18 3.14.5mtv15 #1 smp tue jun 10 15:51:17 pdt 2014 x86_64\""}};
+
+</script>
+<style>
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.4;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** 
+ * FOUNDATION NORMALIZE 
+ */
+ 
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block; /* 1 */
+	vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+	display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+	background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+	font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+	border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+	margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+	overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 0.9rem;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit; /* 1 */
+	font: inherit; /* 2 */
+	margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button; /* 2 */
+	cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+	line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box; /* 2 */
+	box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+	border: 0; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+	font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+/* Clearfix
+ apply to parent element of floaters to fix floats
+   ========================================================================== */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+.clearfix { 
+	display: inline-block; 
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+	height: 1%; 
+}
+
+.clearfix { 
+	display: block; 
+}
+/* close commented backslash hack *//* Default header styles */
+h1, h2, h3, h4, h5, h6 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-style: normal;
+	color: #222222;
+	text-rendering: optimizeLegibility;
+}
+
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	font-size: 60%;
+	color: #6f6f6f;
+	line-height: 0; }
+
+h1 {
+	font-size: 2.125rem; 
+}
+
+h2 {
+	font-size: 1.6875rem; 
+}
+
+h3 {
+	font-size: 1.375rem; 
+}
+
+h4 {
+	font-size: 1.125rem; 
+}
+
+h5 {
+	font-size: 1.125rem; 
+}
+
+h6 {
+	font-size: 1rem; 
+}/* 
+
+styles for GBP dev page
+
+Color scheme
+#333; = charcoal grey background
+#eee; = most white-ish text
+#131; = very dark green
+#363  = somewhat brighter green
+#586; = brighter green
+#8c6; = bright green
+#be8; = brightest green
+
+
+ */
+
+html, body {
+	height: 100%;
+}
+
+
+/* make the footer "sticky */
+.main {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 0 -50px 0; /* the bottom margin is the negative value of the footer's height */
+	background-color:#333;
+	color:#eee;
+}
+
+.page-footer, .push {
+	height: 50px; /* .push must be the same height as .footer */
+}
+
+
+/* top-level page elements after .main */
+header, section, footer {
+	background-color:#333;
+	color:#eee;
+}
+
+
+header {
+	width:100%;
+	float:left;
+	background-color:#333;
+	padding-bottom:0;
+	border-bottom:0.25rem solid #586;
+
+}
+
+
+/* white text with light green underline */
+header h1 {
+	width:38%;
+	margin-right:2%;
+	line-height:1.259; /* needs to align at top with small <nav> and <ul> */
+	border-bottom:1rem solid #8c6;
+	color:#fff;
+
+}
+
+
+/* inside a wrapper #page-menu, floated right, 50% */
+
+header nav {
+	margin:0;
+	width:40%; /*allow 2% border or margin*/
+	padding-right:10%;
+}
+
+
+nav h2 {
+	color:#eee;
+}
+
+nav ul li {
+	color:#aaa; /* inactive link */
+}
+
+
+nav ul li a {
+	/*float:left;*/
+}
+
+nav ul li a:link {
+	color:#586;
+}
+
+
+nav ul li a:hover {
+	color:#CF0;
+}
+
+
+nav ul li a:visited {
+	color:#494;
+}
+
+
+section {
+	width:100%;
+	/* border-bottom:1px solid red; */
+}
+
+
+/* we float the h2 and make go completely across the screen 
+to push down other section content, namely <article> */
+section h2 {
+	width:50%;
+	float:right;
+	text-align:right;
+	padding-right:0.5rem;
+	padding-bottom:0.75rem;
+	color: #8c6;
+	border-right:0.5em solid #586;
+
+}
+
+
+/* since the articles come after the right-floated <h2>, we 
+always clear them */
+article {
+	background-color:#eee;
+	color:#333;
+	clear:both;
+}
+
+
+article h3 {
+	padding:0.5rem;
+}
+
+
+article pre {
+	padding:0.5rem;
+	color:#333;
+	border-bottom:0.1em solid #333;
+}
+
+
+footer {
+	border-top:0.25rem solid #586;	
+	padding-top:0.5rem;
+}
+
+
+/* 
+ * =======================================
+ * CLASS SELECTORS
+ * =======================================
+ */
+ 
+ 
+/* used on <section> header, also in <header> */
+.float-left {
+	float:left;
+}
+
+
+.float-right {
+	float:right;
+}
+
+
+.hide {
+	display:none;
+}
+
+
+/* a white, rounded box */
+.balloon {
+	/* in some cases, the element immediately above is floated */
+	clear:both;
+	width:98%;
+	margin: 1.5rem auto;
+	border-radius:0.2rem;
+	background-color:#eee;
+	color:#333;
+}
+
+
+/* a class for our dark background color */
+.dark-grey {
+	background-color:#333;
+}
+
+
+/* description box above main page content */
+.description {
+	width:38%;
+	float:left;
+	margin:0.5em;
+	padding:0.2em;
+	padding 0.2rem 0.2rem 0.2rem 0;
+	border-left:1rem solid #586;
+	color:#eee;
+}
+
+
+/* 
+ * applied to headers that stay visible when an accordion 
+ * panel is shown or hidden
+ */
+.accordion-header {
+	cursor:pointer;
+	font-size:1.25rem;
+	padding: 0.25rem;
+	color:#eee;
+	background-color: #111;
+	border-top:1px solid #586; /* darker green */
+	border-left:4px solid #586;
+}
+
+.accordion-header:hover {
+	background-color:#131;
+}
+
+
+/* 
+ * =======================================
+ * ID SELECTORS
+ * =======================================
+ */
+ 
+/* wrapper for left-floated titling of page */
+#page-heading {
+	width:55%;
+	background:linear-gradient(-30deg,#444 0 , #444 50%, #000 50%, #000 100%); /* titling &&&&&&&&&&&&&&&&&&&&&&&&&&& */
+}
+
+/* title elements inside a larger left-floated element */
+#page-title {
+	width:90%;
+}
+
+
+/* in <header>, contains two <nav> elements */
+#page-menu {
+	width:40%;
+	float:right;
+	background-color:#444;
+	padding-bottom:0.25rem;
+	padding-left:5%;
+}
+
+/* hyperlink should not affect appearance */
+#page-title a:link {
+	color:#eee;
+	text-decoration:none;
+}
+
+#page-title a:visited {
+	color:#eee;
+}
+
+/* sub-title under the title element, and its border-bottom */
+#page-sub-title {
+	width:90%;
+	text-align:right;
+	margin-right:0.5rem;
+	color:#eee;
+}
+
+
+#top-nav-highlight {
+	color:#be8;
+}
+
+
+/* 
+ * unit test panels
+ * the overall <section> holding individual <articles> 
+ * with tables to show and hide
+ */
+#accordion-unittests {
+}
+
+
+/* 
+ * GBP object readout panels
+ */
+#accordion-object {
+	
+}/* style information for HTML tables */
+
+table {
+	font-size:0.8rem;
+	width:100%;
+}
+
+table {
+	border-collapse:collapse;
+	text-align:left;
+}
+
+
+/* legend across top of table */
+
+table thead tr th:first-child {
+	border-left: 1px solid #808080;
+}
+
+table thead tr th
+{
+	font-size:1.25rem;
+	padding: 0.25rem;
+	color:#eee;
+	/* add gradient */
+	background-color: #808080;
+	background: -moz-linear-gradient(top, #777777 0%, #2c2c2c 15%, #000000 33%, #111111 65%, #1c1c1c 90%, #969696 100%); /* FF3.6+ */
+	background: linear-gradient(to bottom, #777777 0%,#2c2c2c 15%,#000000 33%,#111111 65%,#1c1c1c 90%,#969696 100%); /* W3C */
+
+}
+	
+	
+table th:first-child {
+	border-left:1px solid #ddd;
+}
+
+
+table tbody tr:nth-child(even) {
+	background-color: #efefef;
+}
+
+
+table tbody tr:nth-child(odd) {
+	background-color: #fafafa;
+	}
+
+
+
+table td {
+	color:#555;
+	vertical-align:middle;
+	padding: 0.5em;
+}
+
+
+/* component row (one column) */
+
+table  tfoot{
+	text-align:center;
+}
+
+
+.component {
+	background-color: #808080;
+	background: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#303030));
+	background: -moz-linear-gradient(top, #707070, #303030);
+	border-top:1px solid #aaa;
+	color:#fff;
+}
+
+
+/* legend row */
+
+.property-legend {
+	background-color: #808080;
+	background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#707070));
+	background: -moz-linear-gradient(top, #606060, #707070);
+	color: #dadada;
+
+}
+
+/* property name, on left side of property columns */
+.property-name {
+	background-color: #909090;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#ddd));
+	background: -moz-linear-gradient(top, #ccc, #ddd);
+	color: #111;
+	
+}
+	
+/* property cell */
+
+.property {
+
+}
+	
+.first-prop {
+}
+	
+.second-prop {
+}
+	
+.third-prop {
+		
+}
+
+/* d3 SVG styles */
+			
+#d3-tree-graph {
+	background-color:#fff;
+}
+
+/* default style for nodes */
+circle {
+	fill: #ccc;
+	stroke: #333;
+	stroke-width: 1.5px;
+}
+
+/* default graph style for text */
+text {
+	font: 10px sans-serif;
+	pointer-events: none;
+	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+		
+/* default style for arrow connecting nodes */		
+.link {
+	fill: none;
+ 	stroke: #666;
+	stroke-width: 1.5px;
+}
+
+/* node fill when the GBP property is NOT a function */
+#property {
+	fill: green;
+}
+
+/* link stroke when GBP property is not a function */
+.link.property {
+	stroke: green;
+}
+
+/* link arrow when GBP property is a function */
+.link.function {
+	stroke-dasharray: 0,2 1;
+}
+
+			
+</style>
+<script>
+/** 
+ * dev.js
+ * JS utilities for dev tools
+ */
+
+
+var GBPDev = (function () {
+
+	/**
+	 * add a replacement for 'typeof' to global space
+	 * http://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/
+	 * Object.toType(window); //"global" (all browsers)
+	 * Object.toType([1,2,3]); //"array" (all browsers)
+	 * Object.toType(/a-z/); //"regexp" (all browsers)
+	 * Object.toType(JSON); //"json" (all browsers)
+	 */
+	Object.toType = (function toType(global) {
+		return function(obj) {
+			if (obj === global) {
+				return "global";
+			}
+		return ({}).toString.call(obj).match(/\s([a-z|A-Z]+)/)[1].toLowerCase();
+  		}
+	})(this);
+
+
+	/**
+	 * @method getElement
+	 * get an element, allowing id string to be passed, or the element itself
+	 * simplifies DOM access.
+	 * NOTE: requires that Object.toType() be defined!
+	 * @param {id String|Object} elem the parameter to have its type tests
+	 * @returnm {Object|false} a DOMElement, or 'false' if not found
+	 */
+	function getElement(elem) {
+		
+		if (Object.toType(elem) === "string") {
+			return document.getElementById(elem);
+		}
+		else if(Object.toType(elem) === "number") {
+			console.log("ERROR: getElement() passed a number as an DOMElement"+elem);
+		}
+		else {
+			if(elem && 'nodeType' in elem) { //test if a DOM object
+				return elem;	
+			}
+			else {
+				console.log("ERROR: getElement() unknown element:"+elem);
+			}
+			
+		}
+		return false;
+	}
+	
+	
+	/**
+	 * @method getChildElements
+	 * determine if an element has another element as its child, cross-browser
+	 * http://stackoverflow.com/questions/2161634/how-to-check-if-element-has-any-children-in-javascript
+	 * @param {DOMElement} elem a DOMElement with potential children
+	 * @return {DOMElement Array}if there are non-text node children, return them in a JS array
+	 */
+	function getChildElements(elem) {
+		var parent = getElement(elem);
+		var child, childList = [];
+		for (child = parent.firstChild; child; child = child.nextSibling) {
+			if (child.nodeType == 1) { //nodeType 1 == Element
+				childList[j++] = child;
+			}
+		}
+		
+		return childList;
+	}
+
+	/**
+	 * add and remove class functions
+	 * http://www.avoid.org/javascript-addclassremoveclass-functions/
+	 */
+	function hasClass(el, name) {
+		return new RegExp('(\\s|^)'+name+'(\\s|$)').test(el.className);
+	}
+
+	function addClass(el, name) {
+		if (!hasClass(el, name)) { el.className += (el.className ? ' ' : '') +name; }
+	}
+
+	function removeClass(el, name) {
+		if (hasClass(el, name)) {
+			el.className = el.className.replace(new RegExp('(\\s|^)'+name+'(\\s|$)'),' ').replace(/^\s+|\s+$/g, '');
+		}
+	}
+	
+	/** 
+	 * @method initAccordion
+	 * @param {DOMElement} elem the element containing accordion elements, or its id in markup
+	 * @param {String} hideTagName the individual elements we want to open and close
+	 * Markup structure:
+	 *   <parent element>
+	 *     <!--this can be a descendants at different levels -->
+	 *     <visible header element (clicked on)>
+	 *     <show/hide hideTagName>
+	 *   </parent element>
+	 */
+	function initAccordion(elem, hideTagName) {
+		
+		//our local getElement accepts both DOMObjects and the tagName, returning DOMObject
+		
+		var accordionCompile = getElement(elem);
+		var p1 = Object.toType(elem);
+			if(p1 !== "string") {
+				p1 = "";
+			}
+			else {
+				p1 = " id=\"" + elem + "\"";
+			}
+		if(!accordionCompile) {
+			console.log("invalid param 1: element (" +  typeof elem + ") " + p1 + " passed to accordion");
+			return false;
+		}
+	
+		//sub-elements we want to hide
+	
+		var accordionItems  = accordionCompile.getElementsByTagName(hideTagName);
+		
+		//window.accordionItems = accordionItems;
+		
+		if(!accordionItems || accordionItems.length < 1) {
+			console.log("invalid param 2: no accordion items in accordion panel using tag \"" + hideTagName + "\"");
+			return false;
+		}
+		
+		//hide by default
+		
+		for (var i = 0; i < accordionItems.length; i++) {
+			accordionItems[i].className = 'accordion-item hide';
+		}
+	
+		/** 
+		 * event delegation. We listen on the parent element, and show or 
+		 * hide the child element
+		 */
+		accordionCompile.onclick = function (e) {
+				
+			var target = e ? e.target : window.event.srcElement;
+			
+			/** 
+			 * we will have clicked on something like this
+			 * <article>
+			 *   <h4>name of panel</h4> <!-- this is clickable -->
+			 *   <table class="accordion-item (show or hide)">...</table><!-- show or hide this -->
+			 * </article>
+			 */
+			
+			var parent = target.parentNode;
+			var panels = parent.getElementsByTagName(hideTagName); //from the parent, get the show/hide element(s)
+			
+			for(var i = 0; i < panels.length; i++) {
+				var targetPanel = panels[i];
+				//console.log("class:"+targetPanel.className);
+				if(targetPanel.className.indexOf('hide') != -1) {
+					removeClass(targetPanel, 'hide');
+					addClass(targetPanel, 'show');
+					//targetPanel.className = 'accordion-item show';
+				}
+				else if(targetPanel.className.indexOf('show') !== -1){
+					removeClass(targetPanel, 'show');
+					addClass(targetPanel, 'hide');
+					//targetPanel.className = 'accordion-item hide';
+				}
+				
+			}
+		
+		}
+		
+		//init was ok
+		
+		return true;
+	}
+	
+	
+	return {
+		initAccordion:initAccordion
+	}
+})();</script>
+
+
+
+</head>
+
+<body>
+
+	<div class="main">
+			
+		<header>
+			<div id="page-heading" class="float-left"><!--50 percent on left-->
+				<h1 id="page-title"><a href="index.php?gbp_option=about"><span style="color:#8c6;">G</span>reen Boilerplate</a></h1>
+				<h3 id="page-sub-title">Development Tests
+				::object</h3>
+			</div>
+			<div id="page-menu">
+			<nav class="float-right">
+				<h2><span style="color:#8c6;">T</span>est Menu</h2>
+				<ul>
+					<li><a href="index.php?gbp_option=analyze"  >Client Detector</a></li><!--user agent and header analysis-->
+					<li><a href="index.php?gbp_option=unittest" >Client Unit Tests</a></li><!--unit testing of user agent analysis-->
+					<li ><a href="index.php?gbp_option=import" >Import Client Test</a></li><!--Import client test results-->
+				</ul>
+			</nav>
+				
+			<nav class="float-right">
+				<h2><span style="color:#8c6;">G</span>BP Elements</h2>
+				<ul>
+					<li ><a href="index.php?gbp_option=about" >About</a></li>
+					<li><a href="index.php?gbp_option=object" id="top-nav-highlight">Object</a></li>
+					<li>Compiler</li>
+					<li><a href="index.php?gbp_option=bootstrap" >Bootstrap</a></li>
+					<li><a href="index.php?gbp_option=cookie" >Server-Side Cookie</a></li>
+					<li><a href="index.php?gbp_option=localstorage" >LocalStorage</a></li>
+
+				</ul>
+				
+			</nav>
+			</div>
+		</header>
+		
+		<!--the PHP code inserts a <section> with sub <article> divisions based on $_GET['gbp_option'] -->
+		
+				<section>
+			<h2>GBP Object Readout</h2>
+				<div class="description">
+					<strong>Local User Agent:</strong> 
+					<p>
+					<script>
+						document.write(navigator.userAgent);
+					</script>
+					</p>
+				</div>		
+			<article class="dark-grey">
+				
+				<h3 class="hide">Property Matrix - Client</h3>
+				
+
+				
+				<!--create an HTML table with the full spec, similar to Mozilla's -->
+				
+				<script>
+				
+				function countProperties(obj) {
+					var count = 0;
+				
+					for(var prop in obj) {
+						if(obj.hasOwnProperty(prop))
+							++count;
+					}
+					return count;
+				}
+				
+				
+				//styles
+				
+				var componentClassName = "component";
+				var propertyClassName = "property";
+				var legendClassName = "property-legend";
+				var nameClassName = "property-name";
+				var leftBorder = "left-border";
+				var rightBorder = "right-border";
+				
+				//table grid control
+				
+				var numEntries = 6; //match legendString and propString
+				var numCols = 2;
+				var totCols = numEntries * numCols;
+				
+				var tableString = "\t\t<table class=\"formatHTML5\"><thead><tr><th colspan=\"" + totCols + "\">Property List</th></tr></thead>\n<tfoot></tfoot>";
+				
+				var componentString = "";
+				var propString = "";
+				var legendString = 
+					"<td class=\"" + legendClassName + "\">Name</td>" + 
+					"<td class=\"" + legendClassName + "\">Detector</td>" + 
+					"<td class=\"" + legendClassName + "\">Db</td>" + 
+					"<td class=\"" + legendClassName + "\">Server</td>" +
+					"<td class=\"" + legendClassName + "\">Client</td>" +
+					"<td class=\"" + legendClassName + "\">Datatype</td>";
+				
+				var rowNum = 0;
+				var colNum = 0;
+				
+				//if debug arrays aren't present, warn
+				
+				if(!debug_db_properties) {
+					document.write("<p>Warning: user-agent client-version database properties not available.</p>");					
+				}
+				
+				if(!debug_server_properties) {
+					document.write("<p>Warning: properties detected on server prior to download not available.</p>");
+				}
+				
+				
+				for(var i in GBP) {
+					
+					//get all the components
+					
+					var component = GBP[i];
+					
+					//component name
+					
+					componentString = "\t\t<tr>\n\t\t\t<td class=\"" + componentClassName + "\" colspan=\"" + totCols + "\">" + i + "</td>\n\t\t</tr>\n";
+					
+					componentString += "<tr>\n";
+					
+					//(re) add the legend for the columns
+					
+					for(var k = 0; k < numCols; k++) {
+						componentString += legendString;	
+					}
+					
+					componentString += "</tr>\n";
+					
+					tableString += componentString;
+					componentString = "";
+					
+					colNum = 0;
+					
+					var numProps = countProperties(component);
+					
+					//console.log("Num props: " + numProps);
+					
+					for(var j in component) {
+						
+						prop = component[j];
+						
+						if(colNum == 0) {
+							propString = "\t\t<tr>\n";	
+						}
+						
+						//Property name 
+						
+						propString = "\t\t\t\t<td class=\"" + nameClassName + "\"><strong>" + j + "</strong></td>";
+						
+						//Property detector language type, passed in from GBP_COMPILE (only in DEBUG version)
+									
+						if(GBP.detectorTypes && GBP.detectorTypes[i] && GBP.detectorTypes[i][j]) {
+							//console.log("GBP detector language for " + j + " is:" + GBP.detectorTypes[i][j]);
+							propString += "<td class=\"" + propertyClassName + "\">" + GBP.detectorTypes[i][j] + "</td>";
+						}
+						else {
+							propString += "<td class=\"" + propertyClassName + "\">" + "_" + "</td>";
+						}
+						
+						//propString += "<td class=\"" + propertyClassName + "\">" + "_" + "</td>";
+						
+						//Property value in the DB for the user agent, passed in from gbp-bootstrap client database, if present
+						
+						if(debug_db_properties && debug_db_properties[i] && debug_db_properties[i][j]) {
+							propString += "<td class=\"" + propertyClassName + "\">" + debug_db_properties[i][j] + "</td>";
+						}
+						else {
+							propString += "<td class=\"" + propertyClassName + "\">" + "_" + "</td>";
+						}
+						
+						//add in the computed server-side value (server-side executing detectors)
+						
+						if(debug_server_properties && debug_server_properties[i] && debug_server_properties[i][j]) {
+							propString += "<td class=\"" + propertyClassName + "\">" + debug_server_properties[i][j] + "</td>";	
+						}
+						else {
+							propString += "<td class=\"" + propertyClassName + "\">" + "_" + "</td>";							
+						}
+						
+						//4. final client-side property value (if not a function)
+						
+						var type = Object.prototype.toString.call(prop).toLowerCase();
+						//console.log("prop:" +  j + " type:"+type);
+						
+						if(type.indexOf('function') > 0) {
+							propString += "\t\t\t\t<td class=\"" + propertyClassName + "\">" + "function" + "</td>\n";	
+						}
+						else {
+							propString += "\t\t\t\t<td class=\"" + propertyClassName + "\">" + prop + "</td>\n";
+						}
+						
+						//3. add in the property datatype
+						
+						propString += "<td class=\"" + propertyClassName + "\">" + typeof prop + "</td>";
+						colNum += numEntries;
+						
+						//all done with property, see if we need to start a new row
+						
+						if(colNum >= totCols) {
+							colNum = 0;
+							propString += "\t\t</tr>\n";	
+						}
+						
+						tableString += propString;
+						propString = "";
+						
+					} //end of prop loop
+					
+					colNum = 0;
+					
+					var emptyCells = (numProps * numEntries)%totCols;
+					emptyCells = totCols - emptyCells;
+					
+					if(emptyCells != totCols) {
+					//console.log("END of " + i);
+					//console.log("emptyCells:" + emptyCells);
+					
+					for(var k = 0; k < emptyCells; k++) {
+						propString += "<td>_</td>";	
+					}
+					propString += "</tr>\n";
+					}
+					
+					tableString += propString;
+					propString = "";
+					
+				} //end of component loop
+				
+				tableString += "\t\t</table>\n";
+				
+				document.write(tableString);
+				
+				</script>
+			
+			
+			</article>
+		
+		</section>
+		
+	
+		<aside>
+
+		</aside>
+
+		<div class="push"></div>  
+
+	</div><!--end of main-->
+	
+		<footer class="page-footer">
+	
+			<p>Green Boilerplate. &copy; 2014 Pete Markiewicz. Contact for details.</p>
+
+		</footer>
+
+
+	<script>
+		//since debug may be very long, wait
+		
+		if(GBPDev) {
+		
+			console.log("GBPDev loaded");
+		}
+		else {
+			console.log("GBPDev not loaded");
+		}
+	
+	</script>
+
+</body>
+</html>

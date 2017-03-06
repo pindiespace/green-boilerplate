@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"1997-03-04","version":"1.0","versionname":"HotJava 1.0"}},"200":{"browser":{"releasedate":"1998-04-04","version":"2.0","versionname":"HotJava 2.0"}},"300":{"browser":{"searchgroup":"15004","releasedate":"1999-05-03","version":"3.0","versionname":"HotJava 3.0"}}}

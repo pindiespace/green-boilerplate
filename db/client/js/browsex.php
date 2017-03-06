@@ -1,0 +1,1 @@
+{"200":{"browser":{"searchgroup":"15004","releasedate":"2003-01-30","version":"2.0","versionname":"BrowseX 2.0"}}}

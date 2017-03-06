@@ -1,0 +1,16 @@
+{
+	"browserName":"netscape",
+	"browserFork":"mozilla",
+	"browserVersion":"200",
+	"browserEngineName":"",
+	"browserEngineVersion":"2",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"cannot handle XHTML or CSS",
+	"ualist": [
+		"mozilla/2.02e (win95; u)"
+]}

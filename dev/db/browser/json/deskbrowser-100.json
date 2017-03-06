@@ -1,0 +1,15 @@
+{
+	"browserName":"deskbrowse",
+	"browserFork":"deskbrowse",
+	"browserVersion":"100",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"312",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (macintosh; u; ppc mac os x; pl-pl) applewebkit/312.8 (khtml, like gecko, safari) deskbrowse/1.0"
+	]}

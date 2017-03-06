@@ -1,0 +1,16 @@
+{
+	"browserName":"semc-browser",
+	"browserFork":"sonyericsson",
+	"browserVersion":"402",
+	"browserEngineName":"java",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"chtml - http://www.osnews.com/story/13446",
+	"ualist": [
+		"SonyEricssonK506c/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+]}

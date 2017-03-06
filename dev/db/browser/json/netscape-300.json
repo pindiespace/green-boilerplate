@@ -1,0 +1,21 @@
+{
+	"browserName":"netscape",
+	"browserFork":"mozilla",
+	"browserVersion":"300",
+	"browserEngineName":"mozilla",
+	"browserEngineVersion":"3",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"cannot handle XHTML or CSS",
+	"ualist": [
+		"mozilla/3.01gold (win95; i)",
+		"mozilla/3.0 (compatible; netpositive/2.2)",
+		"mozilla/3.0 (compatible; netpositive/2.1.1; beos)",
+		"mozilla/3.0 (win95; i)",
+		"mozilla/3.0 (x86 [cs] windows nt 5.1; sun)",
+		"mozilla/3.0 (compatible; netpositive/2.2.2; beos)"
+]}

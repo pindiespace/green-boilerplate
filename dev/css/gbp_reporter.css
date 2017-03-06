@@ -1,0 +1,396 @@
+/**
+ * styles for GBP Reporter
+ * 1. CSS reset
+ * 2. Base styles
+ * 3. Responsive styles
+ * ==================================
+ * basic CSS reset
+ * ==================================
+ */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, code,
+em, img, strong, sub, sup, b, u, i,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	-webkit-font-smoothing: antialiased !important;
+}
+
+body {
+        width:100%;
+	line-height: 1;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**
+ * ==================================
+ * base styles
+ * Our color pallete is:
+ * #004000      very dark green
+ * #828b6c      dark green
+ * #3d5748      dark blue-green
+ * #869971      intermediate green
+ * #b4cca8      light green
+ * #eaedc2      pastel yellow
+ * #ebf4e7      very light green
+ * #eec082      pastel orange-pink
+ * #FFE4BF      light pink
+ * #baa47f      light brown
+ * #35291b      dark brown
+ * ==================================
+ */
+
+body {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        background-color:#828b6c;
+        color: #039;
+        font-size:16px;
+        position:relative;
+        text-rendering: optimizespeed; /* webkit bug */
+}
+
+
+strong {
+        font-weight:bolder;
+}
+
+pre {
+	font-family:"courier";
+	color:black;
+	background-color:white;
+	-moz-border-radius:6px;
+        border-radius:6px;
+	padding:1em;
+	margin:20px 10px 0 10px;
+}
+
+.pre {
+        font-family:"courier";
+        color:black;
+}
+
+/* use to prevent column from shrinking too much in left-hand column of table row */
+.nobreak {
+        white-space: nowrap;
+}
+
+
+/* use to color detail in right-hand column of table row */
+.status {
+	font-size:85%;
+	color:red;
+	/*text-align:right;*/
+	padding-left:6.0em;
+}
+
+
+#header, #footer {
+        font-family: "Arial", Gadget, sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        padding:12px 6px 6px 6px;
+        width:100%;
+        margin-bottom:1.5em;
+        position:relative;
+}
+
+
+#header {
+        font-size:2em;
+        margin:0;
+	text-shadow: 1px 1px 8px rgba(0,0,0,0.004), 1px 1px 4px rgba(0,0,0,0.004);
+        color:#FFE4BF;
+        letter-spacing:0.2em;
+	
+        /*cross-platform gradient*/
+	
+        background: #224b3c; /* Old browsers */
+        background: -moz-linear-gradient(top, #b4cca8 0%, #333333 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4cca8), color-stop(100%,#333333)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #b4cca8 0%,#333333 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #b4cca8 0%,#333333 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #b4cca8 0%,#333333 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #b4cca8 0%,#333333 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4cca8', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+
+        /* shadow beneath header onto content */
+	
+        -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+        -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+        box-shadow: 0px 0px 10px #000 rgba(0,0,0,0.8);
+        border-bottom:2px solid #fff;
+
+}
+
+#header h1 {
+	margin-left:4px;
+	margin-bottom:4px;
+}
+
+
+#footer {
+	background-color:#b4cca8;
+        margin:0;
+        margin-top:1em;
+        font-size:100%;
+}
+
+
+/* horizontal menu for GBP functions */
+ul.gbp-menu {
+	width:100%;
+	margin-top:0;
+	margin-bottom:1em;
+	border-top:2px solid #b4cca8;
+	background-color:#eaedc2;
+	color:white;
+	padding:0.25em 0 0.35em 0.45em;
+}
+
+ul.gbp-menu li {
+	margin: 0 1.40em 0 0.85em;
+	display:inline;
+	padding:0.25em;
+	
+}
+
+ul.gbp-menu li a {
+	text-decoration:none;
+}
+
+ul.gbp-menu li a:link {
+	color:#039;
+}
+
+ul.gbp-menu li a:visited {
+	color:#039;
+}
+
+/* container for page content */
+
+.mask {
+        position:relative;      /* This fixes the IE7 overflow hidden bug */
+	clear:both;             /* clear any internal floats */
+        margin-left:auto;
+        margin-right:auto;
+	overflow:hidden;	/* This chops off any overhanging divs */
+}
+
+
+.col1, .col2, .col3 {
+        display:inline;  /* for old IE, add to floated element */
+        float:left;      /* columns float left inside .mask */
+        *zoom: 1;        /* ie 6 and 7 patch for clearning floats */
+}
+
+.col1, .col2 {
+        width:45%;
+        min-width:320px;           /* width of an iphone */
+        background-color: #eaedc2; /* yellow border */
+	padding:0 0.87em 0.35em 0; /* adjust width of yellow border around content in columns */
+        -moz-border-radius:6px;
+        border-radius:6px;
+        margin:8px 0 8px 8px;
+}
+
+.col1 {
+	margin-left:0.6em;
+}
+
+/* kludgy gutter column between col1 and col2 */
+.col3 {
+        margin:0;
+        width:0.1em;
+}
+
+/* panels */
+
+.panel {
+	padding:0;
+        font-size:80%;
+	margin:5px 5px 1px 5px;
+}
+
+* html .panel {
+	margin-right:-8px; /* fix double-margin bug for IE6 */
+}
+
+/* specific panels */
+/* left-hand side  inside col1*/
+/* defines <table>...</table> */
+
+#gbp-table, #gbp-stage {
+        width:100%;              /* this gives us a rounded, tab-like shape at the top of the table */
+        background:#fff;
+        border-radius:6px;
+        padding:2px 2px 0 2px;
+        overflow:hidden;
+}
+
+
+/* unit-test results for UAAnalyze */
+#gbp-fulltest, #gbp-fulltest-summary {
+	border-radius:6px;
+	margin:20px 10px 0px 10px;
+	padding:4px;
+}
+
+/* detailed results for unit-tests of UAAnalyze */
+#gbp-fulltest {
+	width:98%;
+	background-color:black;
+}
+
+/* summary table for unit-tests of UAAnalyze */
+#gbp-fulltest-summary {
+	width:30%;
+	border-radius:6px;
+	margin:20px 10px 10px 10px;
+}
+
+#gbp-fulltest th, #gbp-fulltest td {
+	text-align:left;
+}
+
+#gbp-fulltest thead th {
+	background-color:white;
+	border-bottom:1px solid #ddd;
+}
+
+#gbp-fulltest thead th:first-child {
+	border-radius:6px 0 0 0;
+}
+
+#gbp-fulltest thead th:last-child {
+	border-radius:0 6px 0 0;
+}
+
+#gbp-fulltest tfoot td:first-child {
+	border-top:1px solid #ccc;
+}
+
+.gbp-list {
+        text-align: left;
+	*border-collapse: collapse; /* IE7 and lower */
+	border-spacing: 1px;
+}
+
+.gbp-list td, .gbp-list th {
+        border-bottom:1px solid #fff;
+}
+
+.gbp-list th {
+	padding: 0.5em;
+}
+
+.gbp-list td {
+	padding: 0.5em 0.25em 0.25em 0.25em;
+        background-color:#ebf4e7;    
+}
+
+
+/* single column panel for unit test results */
+.test-panel {
+        background-color:white;
+        width:98%;
+		border-radius:6px;
+        padding:16px 8px 8px 8px;
+		margin:20px 10px 0 10px;     
+}
+
+/* controls setting parameters for unit tests */
+.test-panel-controls {
+        width:97.5%;
+        background-color: #eaedc2; /* yellow border */
+	padding:0 0.87em 0.35em 0; /* adjust width of yellow border around content in columns */
+        border-radius:6px;
+        padding:4px;
+        margin:8px;
+}
+
+/* table cells */
+
+thead th {
+	font-size:1.44em; /*we shrunk <table> data by 80%, so this brings it to 125% of base */
+}
+
+
+td.location {
+	background: #b4cca8;
+}
+
+
+/* special text formatting for property rows determined on server */
+
+td.server {
+	color:#82B195;
+}
+
+
+tfoot td:first-child {
+        border:0;
+        background-color:#fff;
+        border-radius:0 0 0 6px;
+}
+
+
+tfoot td:last-child {
+        border:0;
+        background-color:#fff;
+        border-radius:0 0 6px 0;
+}
+
+
+/**
+ * ==================================
+ * responsive styles
+ * ==================================
+ */
+
+@media screen and (max-width: 320px) {
+        .col1, .col2, .col3 {
+                margin:0;
+                border:0;
+                padding:0;
+        }
+        #gbp-table, #gbp-stage  {
+             margin:0;
+             border:0;
+             padding:0;
+        }
+	
+	#header h1 {
+		margin-left:2px;
+	}
+}

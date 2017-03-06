@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"2007-02-14","version":"1.0","versionname":"Uzardweb 1.0"}},"200":{"browser":{"versionname":"Uzardweb 2.0","searchgroup":"15001","releasedate":"2010-04-01","version":"2.0"}}}

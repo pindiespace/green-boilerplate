@@ -1,0 +1,19 @@
+{
+	"browserName":"lynx",
+	"browserFork":"lynx",
+	"browserVersion":"280",
+	"browserEngineName":"libwww",
+	"browserEngineVersion":"2.14",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"lynx/version 2.8.3rel.1 (23 apr 2000)",
+		"lynx 2.8.6 (solaris 10/ sunos 5.10)",
+		"lynx (compatible; msie 7.0; n; windows nt 6.1; en-us)",
+		"lynx/2.8.7dev.4 libwww-fm/2.14 ssl-mm/1.4.1 openssl/0.9.8d",
+		"lynx/2.8.5rel.1 libwww-fm/2.14 ssl-mm/1.4.1 gnutls/0.8.12",
+]}

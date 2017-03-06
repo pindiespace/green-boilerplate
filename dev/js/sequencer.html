@@ -1,0 +1,653 @@
+<html>
+<head>
+<title>Testing</title>
+</head>
+<body>
+<ul id="test-list">
+<li>Sequencer</li>
+</ul>
+
+<p id="test-paragraph">Progress</p>
+
+
+<script>
+
+/** 
+ *****************************************************************
+ * simple console object
+ *****************************************************************
+ */
+window.console = window.console || (function (str) {
+		
+		var log = function (str) {
+			if(!window.consolelist) {
+				window.consolelist = '';
+			}
+			window.consolelist += str + "\n";
+		}
+		
+		var logshow = function () { 
+			alert(window.consolelist);
+		}
+		
+		return {
+			log: log,
+			logshow: logshow
+		}
+	})();
+
+
+//License: MIT License(http://opensource.org/licenses/mit-license.php)
+
+
+var when = function(){
+    if( !(this instanceof when) ) return new when(arguments); //return new instance of itself
+
+
+    var self = this; //cached so the syntax of code within the function is more readable
+
+
+    self.pending = Array.prototype.slice.call(arguments[0]); //convert arguments passed in to array
+    self.pending_length = self.pending.length; //cache length of the arguments array
+    self.results = {length:0}; //container for results of async functions
+
+
+    (function(){ // define pass() within this context so that the outer scope of self(this) is available when pass() is executed within the user's async functions
+        self.pass = function(){
+
+
+            //self.results.push(arguments); //push async results to cache array
+            self.results[arguments[0]] = arguments[1];
+            self.results.length++;
+
+
+            if( self.results.length === self.pending_length ) //if all async functions have finished, pass the results to .then(), which has been redefined to the user's completion function
+                self.then.call(self, self.results); 
+        };
+    })();
+}
+when.prototype = {
+    then: function(){
+        
+        this.then = arguments[0]; //reassign .then() to the user-defined function that is executed on completion. Also ensures that this() can only be called once per usage of when()
+        
+        while(this.pending[0]){
+            this.pending.shift().call(this, this.pass); //execute all functions user passed into when()
+        }
+
+
+    }
+}
+
+
+
+
+;(function (exports) {
+	"use strict";
+
+	var GBP = (function GBP (context) {
+		
+		//singleton test
+		
+		if (!(this instanceof GBP)) {
+			return new GBP(context);
+		}
+	
+		var sleep = function (milliseconds) {
+			var start = new Date().getTime();
+			for (var i = 0; i < 1e7; i++) {
+				if ((new Date().getTime() - start) > milliseconds){
+					break;
+				}
+			}
+		};
+
+		var toType = function(val){
+			return Object.prototype.toString.call(val).replace(/^\[object (.+)\]$/,"$1").toLowerCase();
+		};
+		
+		var compareNames = function (oldName, newName) {
+
+			var changeCount = 0;
+			var testLength = 0;
+
+			if(oldName.length > newName.length) {
+				testLength=oldName.length;
+			}
+			else {
+				testLength=newName.length;
+			}
+			
+			for(var i=0;i<testLength;i++) {
+			
+				if(oldName[i]!=newName[i]) {
+					changeCount++;
+				}
+			}
+				
+			console.log("GBP string differential:"+changeCount);
+		}
+		
+	var test = {
+		
+		first : function first (callback) {
+			console.log("GBP in first");
+			sleep(600);
+			console.log("GBP leaving first");
+			test.first = 600;
+			if(callback) callback();
+			},
+	
+		second : function second (callback) {
+			console.log("GBP in second");
+			sleep(100);
+			console.log("GBP leaving second");
+			this.second = 200;
+			if(callback) callback();
+		},
+	
+		third : function third (callback) {
+			console.log("GBP in third");
+			sleep(50);
+			console.log("GBP leaving third");
+			this.third = 50;
+			if(callback) callback();
+		},
+		
+		//resets after non-blocking processing
+		fourth : function fourth (callback) {
+			var that = this;
+			console.log("GBP in fourth");
+			setTimeout(function() { 
+					that.fourth = 400; 
+					if(callback) callback();
+					}, 50);
+			console.log("GBP leaving fourth");
+			//this.fourth = 400;
+		},
+		
+		//resets after blocking processing
+		fifth : function fifth (callback) {
+			console.log("GBP in fifth");
+			sleep(1100);
+			console.log("GBP leaving fifth");
+			this.fifth = 1100;
+			if(callback) callback();
+		},
+		
+		sixth : function sixth (callback) {
+			console.log("GBP in sixth");
+			sleep(100);
+			console.log("GBP leaving sixth");
+			this.sixth = 600;
+			if(callback) callback();
+		},
+		
+		seventh : function seventh (callback) {
+			console.log("GBP in seventh");
+			sleep(100);
+			console.log("GBP leaving leaving seventh");
+			this.seventh = 700;
+			if(callback) callback();
+		},
+
+		eighth : function eighth (callback) {
+			console.log("GBP in eighth");
+			sleep(100);
+			console.log("GBP leaving eighth");
+			this.eighth = 800;
+			if(callback) callback();
+		},
+		
+		ninth : function ninth (callback) {
+			console.log("GBP in ninth");
+			sleep(100);
+			console.log("GBP leaving ninth");
+			this.ninth = 900;
+			if(callback) callback();
+		},
+		
+		tenth : function tenth (callback) {
+			console.log("GBP in tenth");
+			sleep(100);
+			console.log("GBP leaving tenth");
+			this.tenth = 1000;
+			if(callback) callback();
+		},
+		
+		eleventh : function eleventh (callback) {
+			console.log("GBP in eleventh");
+			console.log("GBP this.FIRST:" + this.first);
+			sleep(100);
+			this.eleventh = 1100;
+			console.log("GBP Leaving eleventh");
+			console.log("GBP this.ELEVENTH:"+this.eleventh);
+			console.log("GBP this:" + this);
+			if(callback) callback();
+		},
+		twelfth : function twelfth (callback) {
+			console.log("GBP in twelfth");
+			this.twelfth = 666;
+			if(callback) callback();
+		}
+	}
+	
+
+	var bobo = {
+		first : function () {
+			console.log("GBP in bobo.first");
+		}
+		
+		
+	};
+	
+
+	var events = {
+		
+		/* 
+		if(/Safari/i.test(navigator.userAgent)){ //Test for Safari
+  var _timer=setInterval(function(){
+  if(/loaded|complete/.test(document.readyState)){
+    clearInterval(_timer)
+    walkmydog() // call target function
+  }}, 10)
+}
+
+
+Nice domready
+https://gist.github.com/esfand/10058175
+http://javascript.nwbox.com/ContentLoaded/
+
+
+*/
+		
+		domready : function domready (callback) {
+			var that = this;
+			console.log("GBP entering domready");
+			var finish = function () {
+				console.log("GBP in domready finish");
+				if(document.body || document.documentElement) {
+					console.log("GBP exiting domready");
+
+					if(typeof callback == "function") {
+						callback();
+					}
+					that.domready = true;
+				}
+				
+			}
+			console.log("GBP setting timeout");
+			setTimeout(finish, 20);
+		}
+	};
+
+	var helper = {
+		events:events,
+		test:test
+	};
+	
+	var tester = {
+		function1:function () {
+			if(typeof events.domready != "function" && 
+				typeof test.first != "function")
+				{
+					console.log("GBP rewriting function 1");
+					this.function1 = function () { return true; }
+				}
+			else {
+				console.log("GBP function 1 NOT done:" + typeof events.domready + ", " + typeof test.first);
+				return false;
+			}
+				
+		},
+		
+		function2:function () {
+			if(typeof test.second != "function" && 
+				typeof test.third != "function")
+				{
+					console.log("GBP rewriting function 2");
+					this.function2 = function () {return true; }
+				}
+			else {
+				console.log("GBP function2 NOT done:" + typeof test.second + ", " + typeof test.third);
+				return false;
+			}
+		},
+		
+		function3:function () {
+			if(typeof test.fourth != "function" && 
+				typeof test.fifth != "function")
+				{
+					console.log("GBP rewriting function 3");
+					this.function3 = function () { return true; }
+				}
+			else {
+				console.log("GBP function3 NOT done:" + typeof test.fourth + ", " + typeof test.fifth);
+				return false;
+			}
+		},
+		
+		
+	}
+	
+	
+	//adaptation of window.setTimeout to keep context, and allow parameter-passing in old browsers
+	//https://developer.mozilla.org/en/docs/Web/API/window.setTimeout
+	
+	var __nativeST__ = window.setTimeout, __nativeSI__ = window.setInterval;
+ 
+	window.setTimeout = function (vCallback, nDelay /*, argumentToPass1, argumentToPass2, etc. */) {
+		var oThis = this, aArgs = Array.prototype.slice.call(arguments, 2);
+		return __nativeST__(vCallback instanceof Function ? function () {
+		vCallback.apply(oThis, aArgs);
+		} : vCallback, nDelay);
+	};
+	
+	
+	var loader = function (list) {
+		console.log("GBP in GBP loader");
+		
+	}
+	
+	
+	// Non-recursive levelorder traversal of DOM tree
+	function levelorderTraversal(root) {
+		// Initialize queue to contain root element
+		var q1 = [root];
+		
+		//While there are elements in the queue
+		
+		while(q1.length) {
+			
+			var q2 = [];
+		
+			//for each element in queue
+		
+			for(var i=0; i<q1.length; i++) {
+			
+			// Do something with node q[i]
+				q[i]();
+				
+			// Create new queue with childnodes of elements in queue
+			
+				for(var j=0; j< q1[i].childNodes.length; j++) {
+					
+					q2.push(q1[i].childNodes[j]);
+				}
+				
+			}
+			
+			q1 = q2;
+		}
+	}
+
+/*************************
+most .then() libraries short of a full Promise system don't handle
+async functions with callbacks, or require a specific callback pattern.
+The followint method works whether or not you have a callback, and handles
+functions with long lags. While clumsy, it is not too difficult to have GBP_COMPILE 
+write it out completely. Though things are nested, there is only one setTimeout() 
+funning at any one time.
+A nodetree might seem an alternative, but the nexted tree object would be almost as 
+big as GBP itself
+************************/
+	
+	var run = function () {
+		
+		var that = this; //the whole GBP object
+		
+		
+		function testLevels() {
+			var result;
+			if(typeof events.domready == "function") events.domready(that.domready);
+			if(typeof test.first == "function") test.first();
+			
+			result = tester.function1();
+			if(result) {
+				console.log("GBP in testLevels, function1 returned true");
+				if(typeof test.second == "function") test.second();
+				if(typeof test.third == "function") test.third();
+				
+				result = tester.function2();	
+				if(result) {
+					console.log("GBP in testLevels, function2 returned true");
+					if(typeof test.fourth == "function") test.fourth();
+					if(typeof test.fifth == "function") test.fifth();
+					
+					result = tester.function3();
+					if(result) {
+						//execute bottom functions in tree
+						if(that.ready) {
+							console.log("GBP at bottom level");
+							that.ready();
+						}
+					}
+					else {
+						//function 3 returned false
+						setTimeout(testLevels, 20);
+					}
+				} else {
+					//function 2 returned false
+					setTimeout(testLevels, 20);
+				}
+			} else {
+				//function 1 returned false
+				setTimeout(testLevels, 20);
+			}
+		}
+		testLevels();
+
+
+	} //end of run
+	
+	return {
+		test:test,
+		events:events,
+		helper:helper,
+		loader:loader,
+		run:run
+	}; 
+
+	})();//END OF CONSTRUCTOR
+	
+	//export GBP object
+	
+	exports.GBP = GBP;
+	
+
+}('undefined' !== typeof exports && exports || new Function('return this')()));
+
+
+
+//////////////////////////////////////////
+//set the polyfill loads
+
+GBP.loader( [
+	"plugindetect.js",
+	"base64.js"
+]
+);
+
+
+//domReady
+
+GBP.domready = function () {
+	console.log(">>>>>>>>>>>>>> GBP domReady, do DOM stuff");
+}
+
+GBP.pageready = function () {
+	//TODO: trap this without interfering with other
+	//TODO: window.onload events
+	console.log(">>>>>>>>>>>>>> GBP firing pageReady event");
+}
+
+//GBP is completely done processing
+
+GBP.ready = function () {
+	console.log(">>>>>>>>>>>>>> GBP firing GBP ready event, all done");
+}
+
+//trigger the run
+
+GBP.run();
+
+
+
+/*
+for(var i in GBP) {
+	
+	console.log("Run GBP " + i + " type:" + typeof GBP[i]);
+}
+*/
+
+
+//show log on non-Console browsers
+
+if(console.logshow) {
+	console.logshow();
+}
+
+
+var GGBP = (function () {
+	
+var events = {
+	domready: function domready(callback) { console.log("GGBP in domready"); callback(); this.domready = true; }
+};
+
+var browser = {
+	browserhighcontrast: function browserhighcontrast(callback) { console.log("GGBP in browserhighcontrast"); callback(); this.browserhighcontrast = true; },
+	vendorprefix: function vendorprefix(callback) {console.log("GGBP in vendorprefix"); callback(); return true; }
+
+};
+
+var dom = {
+	dom0:function dom0(callback) {console.log("GGBP in dom0"); callback(); this.dom0 = true; },
+	dom1:function dom1(callback) { 
+		console.log("GGBP in dom1"); 
+		if(typeof dom.dom0 == "function") console.log("GGBP DEPENDENCY ERROR: dom0 not done for dom1");
+		if(dom.dom0 !== true) dom.bobo = "OUCH";
+	 	callback(); this.dom1 = true; },
+	dom2:function dom2(callback) {console.log("GGBP in dom2");callback(); this.dom2 = true; },
+	dom3:function dom3 (callback) { console.log("GGBP in dom3");callback(); this.dom3 = true; },
+	dom2events:function dom2events (callback) { console.log("GGBP in dom2events");callback(); this.dom2events = true; },
+	dom3xpath:function dom3xpath (callback) { console.log("GGBP in dom3xpath");callback(); this.dom3xpath = true; }
+
+}
+
+var mathml = {
+	mathml:function mathml(callback) { console.log("GGBP in mathml.mathml"); callback(); this.mathml = true; }
+};
+
+var css1 = {
+	cssprophelper:function cssprophelper(callback) { console.log("GGBP in css1.cssprophelper");callback(); return true; }
+
+}
+
+var css3 = {
+	borderradius:function borderradius (callback) { console.log("GGBP in css3.borderradius");callback(); this.borderradius = true; }
+
+}
+
+var javascript = {
+	jsprophelper:function jsprophelper (callback) { console.log("GGBP in javascript.jsprophelper"); callback(); return true; }
+}
+
+var html5 = {
+	menu:function menu (callback) { console.log("GGBP in html5.menu"); callback(); this.menu = true; }
+
+}
+
+var security = {
+	donottrack:function donottrack (callback) { console.log("GGBP in security.donottrack");callback(); this.donottrack = true; }
+	
+}
+
+
+
+function run0 (callback) {
+	events.domready (callback0);
+	function callback0 () {
+		browser.browserhighcontrast (callback1);
+		function callback1 () {
+		};
+		mathml.mathml (callback2);
+		function callback2 () {
+		};
+	};
+};
+
+function run1 (callback) {
+	dom.dom0 (callback0);
+	function callback0 () {
+		console.log("GGBP in dom0 callback right now, dom0:" + typeof dom.dom0);
+		dom.dom1 (callback3);
+		function callback3 () {
+			javascript.jsprophelper (callback4);
+			function callback4 () {
+				html5.menu (callback5);
+				function callback5 () {
+				};
+			};
+			browser.vendorprefix (callback7);
+			function callback7 () {
+				css1.cssprophelper (callback10);
+				function callback10 () {
+					css3.borderradius (callback11);
+					function callback11 () {
+					};
+				};
+				security.donottrack (callback12);
+				function callback12 () {
+				};
+			};
+			dom.dom2 (callback13);
+			function callback13 () {
+				dom.dom3 (callback14);
+				function callback14 () {
+				};
+			};
+			dom.dom2events (callback15);
+			function callback15 () {
+			};
+			dom.dom3xpath (callback16);
+			function callback16 () {
+			};
+		};
+	};
+};
+
+//fire the roots
+
+
+function run2 () {
+	console.log("GGBP starting run2");
+	console.log("GGBP NOW dom.dom0:" + typeof dom.dom0);
+	return {
+		dom:dom,
+		html5:html5,
+		security:security,
+		mathml:mathml,
+		css1:css1,
+		css3:css3,
+		events:events,
+		javascript:javascript,
+		browser:browser
+	};
+}
+
+function run() {
+	run0();
+	run1();
+	return run2();
+}
+
+return run();
+
+
+
+})();
+
+
+</script>
+</body>
+</html>

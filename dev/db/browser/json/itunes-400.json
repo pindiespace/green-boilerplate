@@ -1,0 +1,27 @@
+{
+	"browserName":"itunes",
+	"browserFork":"itunes",
+	"browserVersion":"400",
+	"browserEngineName":"carbon",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"itunes/4.2 (macintosh; u; ppc mac os x 10.2)",
+		"itunes/4.2 (macintosh; u; ppc mac os x 10.2",
+		"itunes/4.2 (macintosh; u; ppc mac os x 10.2)",
+		"itunes/4.7",
+		"itunes/4.7 (macintosh; n; ppc)",
+		"itunes/4.7 (macintosh; u; ppc mac os x 10.2)",
+		"itunes/4.7(macintosh;n;ppc)",
+		"itunes/4.8",
+		"itunes/4.2 (macintosh; u; ppc mac os x 10.2",
+		"itunes/4.2 (macintosh; u; ppc mac os x 10.2)",
+		"itunes/4.7 (macintosh; n; ppc)",
+		"itunes/4.7 (macintosh; u; ppc mac os x 10.2)",
+		"itunes/4.7(macintosh;n;ppc)"
+]}

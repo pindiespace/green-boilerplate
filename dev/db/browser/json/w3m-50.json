@@ -1,0 +1,20 @@
+{
+	"browserName":"w3m",
+	"browserFork":"w3m",
+	"browserVersion":"50",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"text only",
+	"ualist": [
+		"w3m/0.5.1 cvs-1.938",
+		"w3m/0.5.1",
+		"w3m/0.5.1 cvs-1.968",
+		"w3m/0.5.1 cvs-1.969",
+		"w3m/0.5.2"
+]}

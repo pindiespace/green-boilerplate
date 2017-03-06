@@ -1,0 +1,21 @@
+{
+	"browserName":"dolfin",
+	"browserFork":"dolfin",
+	"browserVersion":"300",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"534",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"http://dolphin-.com/",
+	"deviceIsMobile":"true",
+	"ualist": [
+		"mozilla/5.0 (samsung; samsung-gt-s8600/s8600xxkjc; u; bada/2.0; tr-tr) applewebkit/534.20 (khtml, like gecko) dolfin/3.0 mobile wvga smm-mms/1.2.0 opn-b",
+		"mozilla/5.0 (samsung; samsung-gt-s8600/s8600ddkk4; u; bada/2.0; en-us) applewebkit/534.20 (khtml, like gecko) dolfin/3.0 mobile wvga smm-mms/1.2.0 opn-b",
+		"mozilla/5.0 (samsung; samsung-gt-s8600/1.0; u; bada/2.0; ms-my) applewebkit/534.20 (khtml, like gecko) dolfin/3.0 mobile wvga smm-mms/1.2.0 opn-b",
+		"mozilla/5.0 (samsung; samsung-gt-s8600-orange/s8600bvkj8; u; bada/2.0; fr-fr) applewebkit/534.20 (khtml, like gecko) dolfin/3.0 mobile wvga smm-mms/1.2.0 nexplayer/3.0 profile/midp-2.1",
+		"mozilla/5.0 (samsung; samsung-gt-s8530/s8530xxla1; u; bada/2.0; pl-pl) applewebkit/534.20 (khtml, like gecko) dolfin/3.0 mobile wvga smm-mms/1.2.0 opn-b"
+	]}

@@ -1,0 +1,25 @@
+{
+	"browserName":"ibrowse",
+	"browserFork":"ibrowse",
+	"browserVersion":"200",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"html4, javascript, frames amiga-based - http://www.ibrowse-dev.net/ last verion in 2007",
+	"ualist": [
+		"ibrowse/2.4 (morphos 1.5; ppc; amigaos 68k build)",
+		"ibrowse/2.4demo (amigaos 3.9; 68k)",
+		"ibrowse/2.4oem (amigaos 4.0; ppc; 68k build)",
+		"ibrowse/2.3 (amigaos 3.1)",
+		"ibrowse/2.3 (amigaos 3.9)",
+		"ibrowse/2.3 (amigaos v51)",
+		"ibrowse/2.4 (amigaos 3.5)",
+		"ibrowse/2.4 (amigaos 3.9; 68k)",
+		"ibrowse/2.2 (amigaos 3.5)",
+		"ibrowse/2.2 (amigaos)"
+]}

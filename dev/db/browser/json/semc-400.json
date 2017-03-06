@@ -1,0 +1,21 @@
+{
+	"browserName":"semc-browser",
+	"browserFork":"sonyericsson",
+	"browserVersion":"400",
+	"browserEngineName":"java",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"chtml - http://www.osnews.com/story/13446",
+	"ualist": [
+		"sonyericssonk506c/r2aa semc-browser/4.0.2 profile/midp-2.0 configuration/cldc-1.1",
+		"sonyericssonj300c/r2ba semc-browser/4.0.3 profile/midp-2.0 configuration/cldc-1.1",
+		"sonyericssonk300c/r2ba semc-browser/4.0.3 profile/midp-2.0 configuration/cldc-1.1",
+		"sonyericssonk500c/r2at semc-browser/4.0.3 profile/midp-2.0 configuration/cldc-1.1",
+		"sonyericssonk700c/r2ae semc-browser/4.0.3 profile/midp-2.0 configuration/cldc-1.1",
+		"sonyericssonk700c/r2ca semc-browser/4.0.3 profile/midp-2.0 configuration/cldc-1.1"
+]}

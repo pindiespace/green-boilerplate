@@ -1,0 +1,1 @@
+{"100":{"browser":{"searchgroup":"common","releasedate":"2002-08-04","version":"1.0","versionname":"DocZilla 1.0"}},"200":{"browser":{"searchgroup":"common","releasedate":"2005-07-07","version":"2.0","versionname":"DocZilla 2.0"}}}

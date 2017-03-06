@@ -1,0 +1,1 @@
+{"100":{"browser":{"version":"1.0","versionname":"Bolt 1.0","releasedate":"2009-10-07"}},"160":{"browser":{"releasedate":"2009-12-07","version":"1.6","versionname":"Bolt 1.6"}},"170":{"browser":{"releasedate":"2010-02-15","version":"1.7","versionname":"Bolt 1.7"}},"200":{"browser":{"searchgroup":"15004","releasedate":"2010-10-16","version":"2.0","versionname":"Bolt 2.0"}}}

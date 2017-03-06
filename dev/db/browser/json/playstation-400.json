@@ -1,0 +1,16 @@
+{
+	"browserName":"playstation 4",
+	"browserFork":"playstation",
+	"browserVersion":"400",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (playstation 4; 1.00)",
+		"mozilla/5.0 (playstation 4; 2.01)"
+]}

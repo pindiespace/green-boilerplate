@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"2002-11-01","version":"1.0","versionname":"Nokia s60 WAP 1.0"}},"200":{"browser":{"releasedate":"2003-10-10","version":"2.0","versionname":"Nokia s60 WAP 2.0"}},"300":{"browser":{"versionname":"Nokia s60 WAP 3.0","searchgroup":"15004","releasedate":"2004-11-01","version":"3.0"}}}

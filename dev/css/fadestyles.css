@@ -1,0 +1,294 @@
+/* default styles (for proportional font in output */
+        body, div {
+                padding:0;
+                margin:0;
+                font-family:courier;
+                font-size:12px;
+                line-height:1.5;
+                background-color:#E1F0FF;
+        }
+                
+        h1, h2, h3, label {
+                font-family:Georgia, "Times New Roman", Times, serif;
+        }
+        
+        label {
+                font-family:Verdana, Geneva, sans-serif;
+                margin-right:0;
+        }
+        
+        label#options {
+                color:white;
+                font-size:1.5em;
+                color:#FFE4BF;
+        }
+                
+        li {
+                margin:1em;
+        }
+        
+        h2 {
+                font-size:1.25em;               
+                color:#888;
+        }
+        
+        h3 {
+                font-size:1.2em;
+        }
+     
+/* divider for output content */   
+        hr {
+                margin-top:0.1em;
+                margin-bottom:1em;
+                border: 0;
+				border-bottom: 2px dashed #ccc;
+				background: #7089b3;
+        }
+        
+/* adjust input field */
+        input, select {
+                margin-top:1em;
+                margin-left:0;
+                font-size:1.2em;
+                padding:0.15em;
+                border:1px solid #7089b3;
+                border-radius: 4px;
+        }
+           
+/* itunes style css buttons */     
+        .blue-pill {
+                background-color: #a5b8da;
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5b8da), color-stop(100%, #7089b3));
+                background-image: -webkit-linear-gradient(top, #a5b8da, #7089b3);
+                background-image: -moz-linear-gradient(top, #a5b8da, #7089b3);
+                background-image: -ms-linear-gradient(top, #a5b8da, #7089b3);
+                background-image: -o-linear-gradient(top, #a5b8da, #7089b3);
+                background-image: linear-gradient(top, #a5b8da, #7089b3);
+                border-top: 1px solid #758fba;
+                border-right: 1px solid #6c84ab;
+                border-bottom: 1px solid #5c6f91;
+                border-left: 1px solid #6c84ab;
+                border-radius: 18px;
+                -webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+                box-shadow: inset 0 1px 0 0 #aec3e5;
+                color: #fff;
+                font: bold 13px/1 Verdana, Geneva, sans-serif;
+                padding: 0.65em 1em;
+                text-align: center;
+                text-shadow: 0 -1px 1px #64799e;
+                text-transform: uppercase;
+                
+                }
+  
+        .blue-pill:hover {
+                background-color: #9badcc;
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9badcc), color-stop(100%, #687fa6));
+                background-image: -webkit-linear-gradient(top, #9badcc, #687fa6);
+                background-image: -moz-linear-gradient(top, #9badcc, #687fa6);
+                background-image: -ms-linear-gradient(top, #9badcc, #687fa6);
+                background-image: -o-linear-gradient(top, #9badcc, #687fa6);
+                background-image: linear-gradient(top, #9badcc, #687fa6);
+                border-top: 1px solid #6d86ad;
+                border-right: 1px solid #647a9e;
+                border-bottom: 1px solid #546685;
+                border-left: 1px solid #647a9e;
+                -webkit-box-shadow: inset 0 1px 0 0 #a5b9d9;
+                box-shadow: inset 0 1px 0 0 #a5b9d9;
+                cursor: pointer; 
+                }
+        
+        .blue-pill:active {
+                border: 1px solid #546685;
+                -webkit-box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eeeeee;
+                box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eeeeee; 
+                }
+        
+/* page styling */
+		#wrapper {
+		}
+
+        #header {
+                padding-top:1em;
+                padding-left:1em;
+                padding-right:0.5em;
+                margin-bottom:1.5em;
+                position:relative;
+				
+                /*cross-platform gradient*/
+                background: #333; /* Old browsers */
+                background: -moz-linear-gradient(top, #B5DCF1 0%, #333333 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B5DCF1), color-stop(100%,#333333)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, #B5DCF1 0%,#333333 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, #B5DCF1 0%,#333333 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top, #B5DCF1 0%,#333333 100%); /* IE10+ */
+                background: linear-gradient(to bottom, #B5DCF1 0%,#333333 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5DCF1', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+				
+                /* shadow beneath header onto content */
+                -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                border-bottom:6px solid #FFE4BF;
+        }
+        
+/* move main logo text to left, adjust letter-spacing and position */
+        #header h1 {
+        		float:left;
+				font-size:2.5em;
+        		text-shadow:#000 0px 0px 8px, #fff 0px 0px 4px;
+        		color:#FFE4BF;
+        		padding:0;
+        		letter-spacing:0.2em;
+        		margin-top:-0.25em;
+        		margin-bottom:0px;
+        }
+        
+/* move tagline to right */
+        #header p {
+                font-family:Verdana, Geneva, sans-serif;
+                float:right;
+                color:#fff;
+                padding-right:1em;
+        }
+        
+/* overall form box styling */
+        #form-options {
+        		background-color:#7089b3;  
+        		width:90%;  
+        		padding:1em;  
+        		margin: 1em auto;  
+        		border: 6px solid #8FB5C1;  
+      			-moz-border-radius:15px;  
+        		-webkit-border-radius:15px;  
+        		border-radius:15px;  
+        		position:relative;      
+        }
+        
+        
+/* main pulldown menu */
+        fieldset#program-options {
+                border:0;
+                padding-top:0;
+        }
+        
+/* individual options */
+        fieldset.bootstrap-options {
+                border:3px solid #ddd;
+                padding-bottom:1.5em;
+                margin-bottom:1.5em;
+                padding-top:0;
+				
+                /* gradient from Colorzilla - http://www.colorzilla.com/gradient-editor */
+                background: #ffffff; /* Old browsers */
+                background: -moz-linear-gradient(top, #ffffff 0%, #dbdbdb 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dbdbdb)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, #ffffff 0%,#dbdbdb 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, #ffffff 0%,#dbdbdb 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top, #ffffff 0%,#dbdbdb 100%); /* IE10+ */
+                background: linear-gradient(to bottom, #ffffff 0%,#dbdbdb 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 didn't like 'ddd' */
+                
+                /* rounded edges */
+        		-moz-border-radius:7px;  
+        		-webkit-border-radius:7px;  
+        		border-radius:7px;      
+        }
+        
+        
+/*top pulldown menu*/
+        #select_option {
+                margin-bottom:0.25em;
+        }
+        
+/*adjust form fields*/
+        input:focus,  
+        select:focus {  
+       			border: 1px solid #AFCDD8;  
+                background-color: #EBF2F4;  
+        }
+        
+/* for the fade-in of individual fieldsets when selected */
+        .bootstrap-options {
+                -webkit-animation: fadeIn 1s;
+        		-moz-animation: fadeIn 1s;
+        		-ms-animation: fadeIn 1s;
+                visibility:hidden; /*just hides them*/
+                display:none; /*removes them from display list, enclosing parent collapses*/
+        }
+        
+
+/* use CSS3 animations instead of transitions */
+		@-webkit-keyframes fadeIn {
+				from { opacity: 0; }
+    			  to { opacity: 1; }
+		}
+
+		@-moz-keyframes fadeIn {
+			    from { opacity: 0; }
+			      to { opacity: 1; }
+		}
+
+		@-ms-keyframes fadeIn {
+		    from { opacity: 0; }
+		      to { opacity: 1; }
+		}
+
+/* test describing the current option */
+		#description {
+		       width:90%;
+ 		       margin:auto; /*center*/
+ 		       position:relative;
+		}
+
+/* use a '>' as a leading symbol to text */
+		#description:before {
+		        font-size:4em;
+		        content:">";
+		}
+
+		#description-text {
+        		position:absolute;
+        		top:1em;
+       			left:4em;
+		}
+		
+/* output styling */
+		#output {
+			
+		}
+		
+		#output span {
+			margin-left: 1em;
+		}
+
+/* debug and error message styling */     
+        .debug {
+                color:purple;
+        }
+        
+        .error {
+                color:red;
+        }
+		
+		#feature-list, #error-list {
+			margin:1em;
+			padding:1em;
+			border:1px solid black;
+			background-color:white;	
+		}
+
+/* clearfix */
+		.group:before,
+		.group:after {
+				content: "";
+			    display: table;
+		} 
+		
+		.group:after {
+    		clear: both;
+		}
+		
+		.group {
+    		zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+		}
+

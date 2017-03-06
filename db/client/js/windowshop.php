@@ -1,0 +1,1 @@
+{"100":{"browser":{"version":"1.0","versionname":"Amazon WindowShop 1.0","searchgroup":"15001","releasedate":"2010-10-01"}}}

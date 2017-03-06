@@ -1,0 +1,27 @@
+{
+	"browserName":"semc-browser",
+	"browserFork":"sonyericsson",
+	"browserVersion":"000",
+	"browserEngineName":"java",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"sonyericssonz550i/r6ca java/semc-java/2.0 profile/midp-2.0 configuration/cldc-1.1 untrusted/1.0",
+		"sonyericssonz558i/r4fa java/semc-java/2.0 profile/midp-2.0 configuration/cldc-1.1 untrusted/1.0",
+		"sonyericssonw910i/r1fa profile/midp-2.1 configuration/cldc-1.1 untrusted/1.0",
+		"sonyericssonw150i/r2ba006 profile/midp-2.0 configuration/cldc-1.1 untrusted/1.0",
+		"sonyericssonj105i/r1ha profile/midp-2.1 configuration/cldc-1.1 untrusted/1.0 sonyericssonj105i",
+		"sonyericssonk770i/r8bc profile/midp-2.0 configuration/cldc-1.1 untrusted/1.0 sonyericssonk770i",
+		"sonyericssont650i/r8bc profile/midp-2.0 configuration/cldc-1.1",
+		"sonyericssonk770i/r8bc profile/midp-2.0 configuration/cldc-1.1 untrusted/1.0",
+		"sonyericssonk850i/r1ca profile/midp-2.1 configuration/cldc-1.1 untrusted/1.0",
+		"sonyericssonk850i/r1ca profile/midp-2.1 configuration/cldc-1.1 untrusted/1.0 sonyericssonk850i",
+		"sonyericssonw760i/r3da profile/midp-2.1 configuration/cldc-1.1 untrusted/1.0",
+		"sonyericssonj10i2/r7ca profile/midp-2.1 configuration/cldc-1.1 sonyericssonj10i2"
+]}
+// JavaScript Document

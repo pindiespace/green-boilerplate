@@ -1,0 +1,1 @@
+{"100":{"browser":{"searchgroup":"15001","releasedate":"2012-04-30","version":"1.0","versionname":"Tizen 1.0"}},"200":{"browser":{"releasedate":"2013-02-18","version":"2.0","versionname":"Tizen 2.0"}}}

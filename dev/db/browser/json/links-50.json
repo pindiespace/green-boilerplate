@@ -1,0 +1,17 @@
+{
+	"browserName":"links",
+	"browserFork":"links",
+	"browserVersion":"90",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"text only",
+	"ualist": [
+		"links/0.9.1 (linux 2.4.24; i386;)",
+		"links (0.98; win32; 80x25)"
+]}

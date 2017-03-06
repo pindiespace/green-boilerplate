@@ -1,0 +1,17 @@
+{
+	"browserName":"reconq",
+	"browserFork":"safari",
+	"browserVersion":"100",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"533",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (x11; u; linux x86_64; cs-cz) applewebkit/533.3 (khtml, like gecko) rekonq safari/533.3",
+		"mozilla/5.0 (x11; u; linux i686; pl-pl) applewebkit/533.3 (khtml, like gecko) rekonq safari/533.3",
+		"mozilla/5.0 (x11; u; linux i686; en-gb) applewebkit/533.3 (khtml, like gecko) rekonq safari/533.3"
+	]}

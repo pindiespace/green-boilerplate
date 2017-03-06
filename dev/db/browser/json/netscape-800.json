@@ -1,0 +1,26 @@
+{
+	"browserName":"netscape",
+	"browserFork":"mozilla",
+	"browserVersion":"800",
+	"browserEngineName":"gecko",
+	"browserEngineVersion":"1.7",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+	"mozilla/5.0 (x11; u; linux i686; en-us; rv:1.7.5) gecko/20060127 netscape/8.1",
+	"mozilla/5.0 (windows; u; windows nt 5.1; it-it; rv:1.7.5) gecko/20060127 netscape/8.1",
+	"mozilla/5.0 (windows; u; windows nt 5.1; es-es; rv:1.7.5) gecko/20060127 netscape/8.1",
+	"mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.7.5) gecko/20060127 netscape/8.1",
+	"mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.7.5) gecko/20060111 netscape/8.1",
+	"mozilla/5.0 (windows; u; windows nt 5.1; de-de; rv:1.7.5) gecko/20060127 netscape/8.1",
+	"mozilla/5.0 (windows; u; windows nt 5.0; en-us; rv:1.7.5) gecko/20060127 netscape/8.1",
+	"mozilla/5.0 (windows; u; win98; en-us; rv:1.7.5) gecko/20060127 netscape/8.1",
+	"mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.7.5) gecko/20060127 netscape/8.1",
+	"mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.7.5) gecko/20050519 netscape/8.0.1 firephp/0.3",
+	"mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.7.5) gecko/20050519 netscape/8.0.1",
+	"mozilla/5.0 (windows; u; windows nt 5.0; en-us; rv:1.7.5) gecko/20050519 netscape/8.0.1"
+]}

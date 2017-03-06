@@ -1,0 +1,231 @@
+<html>
+<head>
+<title>Pingpong</title>
+</head>
+<body>
+<script>
+
+	//adaptation of window.setTimeout to keep context, and allow parameter-passing in old browsers
+	//https://developer.mozilla.org/en/docs/Web/API/window.setTimeout
+	
+	var __nativeST__ = window.setTimeout, __nativeSI__ = window.setInterval;
+ 
+	window.setTimeout = function (vCallback, nDelay /*, argumentToPass1, argumentToPass2, etc. */) {
+		var oThis = this, aArgs = Array.prototype.slice.call(arguments, 2);
+		return __nativeST__(vCallback instanceof Function ? function () {
+		vCallback.apply(oThis, aArgs);
+		} : vCallback, nDelay);
+	};
+
+
+var GBP = (function () {
+	
+	var increment = 5;
+	var that = this;
+	/** 
+	 *  for functions inside the array when we are inside the function, 'this' is the ARRAY
+	 */
+	
+	var a = function a (that) {
+		if(increment < 10) {
+			increment++;
+			//'this' is currently the ARRAY they are in
+			console.log("in a, that is:" + that); //doesn't work, to pass in 'that', it is undefined
+			//console.log("in a, this is:" + this + " and increment is " + increment); //this is the array they are in, even when we use fn.call(that)!
+			if(typeof a === "function") {
+				//console.log("when a is function, value of this.a is " + this.a);  //undefined
+				//console.log("when a is function, no 'this' value of a is " + a);
+			}
+			else {
+				console.log("when a NOT a function, value of this.a is " + this.a);
+				console.log("when a NOT a function, no 'this' value of a is " + a);
+			}
+			setTimeout(a, 50);
+			return "fn a";
+		}
+		else {
+			console.log("setting a to true");
+			this.a = true;
+		}
+	}
+	
+	var b = function b (that) {
+		if(increment < 10) {
+			increment++;
+			//console.log("in b, this is:" + this + " and increment is " + increment);
+			if(typeof b === "function") {
+				//console.log("value of b is " + this.b);
+				//console.log("no this value of b is " + b);
+			}
+			else {
+				console.log("value of a is " + this.a);
+				console.log("no this value of a is " + a);
+			}
+			setTimeout(b, 50);
+			return "fn b";
+		}
+		else {
+			console.log("setting b to true");
+			this.b = true;
+		}
+	}
+	
+	var arr = [a, b];
+	
+	var wait = function wait() {
+		if(increment > 10) {
+			this.overrun();
+		}
+		else {
+			console.log("in wait, increment:" + increment);
+			console.log("in wait, arr:" + typeof arr);
+			for(var i in arr) {
+				if(typeof arr[i] === "function") {
+					console.log("in wait inside array loop, this is:" + this); //in array, this is window
+					console.log("setting timeout in wait");
+					setTimeout(wait, 20);
+				}
+				else {
+					console.log("wait calls finish");
+					this.finish();
+				}
+			}
+		}
+	}
+	
+	
+	var start = function start () {
+		that = this;
+		console.log("in start before array loop, that is:" + that);
+		for (var i in arr) {
+			//arr[i]();
+			arr[i].call(that);
+		}
+		console.log("about to run wait");
+		wait(arr);
+	}
+	
+	var finish = function finish () {
+		console.log("in finish");
+		console.log(" a is: " + typeof a + " and b is:" + typeof b);
+		console.log("all done");
+	}
+	
+	var overrun = function overrun () {
+		console.log("OVERRUN, increment went to:" + increment);	
+	}
+	
+	//start();
+	
+	return {
+		start:start
+		
+	};
+	
+})();
+
+console.log("GBP is a:" + typeof GBP);
+
+GBP.start();
+
+
+//////////////////////////////////////////////////////
+//
+//////////////////////////////////////////////////////
+
+
+/*jshint -W054 */
+/*
+;(function (exports) {
+  "use strict";
+
+	function Sequence(defaultContext) {
+		var me = this;
+
+		if (!(this instanceof Sequence)) {
+			return new Sequence(defaultContext);
+		}
+
+		me._waiting = true;
+		me._data = null;
+		me._stack = [];
+		me._defaultContext = defaultContext || null;
+
+		me._nextBound = function () {
+			var args = Array.prototype.slice.call(arguments),
+			seq = me._stack.shift(); // BUG this will eventually leak
+			me._data = arguments;
+
+		if (!seq) {
+			// the chain has ended (for now)
+			me._waiting = true;
+			return;
+		}
+
+		args.unshift(me._nextBound);
+		seq.callback.apply(seq._context, args);
+		};
+	}
+
+	//set the constructor
+	Sequence.create = Sequence;
+
+	//SET "THEN" with the "NEXT" call back
+	Sequence.prototype.then = function (callback, context) {
+		var me = this;
+		
+		if ('function' !== typeof callback) {
+			throw new Error("`Sequence().then(callback [context])` requires that `callback` be a function and that `context` be `null`, an object, or a function");
+		}
+		me._stack.push(
+			{
+				callback: callback,
+				context: (null === context ? null : context || me._defaultContext),
+				index: me._stack.length
+			}
+		);
+		
+		// if the chain has stopped, start it back up
+		if (me._waiting) {
+		me._waiting = false;
+		me._nextBound.apply(null, me._data);
+		}
+
+		return me;
+	};
+
+	exports.Sequence = Sequence;
+
+//trigger execution, giving it a context (window or something else in headless browsers)
+
+}('undefined' !== typeof exports && exports || new Function('return this')()));
+
+
+////////////////////////////////////
+//create with default context
+var sequence = Sequence.create(), 
+		err;
+
+//load with sequential function	
+sequence
+	.then(function (next) { //next will be the next in the chain
+		setTimeout(function () {
+			next(err, "Hi", "World!"); //give the timeout the callback
+		}, 120);
+	})
+	.then(function (next, err, a, b) {
+		setTimeout(function () {
+			next(err, "Hello", b);
+		}, 270);
+	})
+	.then(function (next, err, a, b) {
+		setTimeout(function () {
+			console.log(a, b);
+			next();
+		}, 50);
+	});
+*/
+
+</script>
+</body>
+</html>

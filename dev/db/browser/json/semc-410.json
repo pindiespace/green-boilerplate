@@ -1,0 +1,16 @@
+{
+	"browserName":"semc-browser",
+	"browserFork":"sonyericsson",
+	"browserVersion":"410",
+	"browserEngineName":"java",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"chtml - http://www.osnews.com/story/13446",
+	"ualist": [
+			"sonyericssonz800/r1y browser/semc-browser/4.1 profile/midp-2.0 configuration/cldc-1.1 up.link/6.3.0.0.0",
+]}

@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+
+var GBP = (function () {
+	
+	//adaptation of window.setTimeout to keep context, and allow parameter-passing in old browsers
+	//https://developer.mozilla.org/en/docs/Web/API/window.setTimeout
+	
+	var that;
+	
+	var __nativeST__ = window.setTimeout, __nativeSI__ = window.setInterval;
+ 
+	window.setTimeout = function (vCallback, nDelay /*, argumentToPass1, argumentToPass2, etc. */) {
+		var oThis = this, aArgs = Array.prototype.slice.call(arguments, 2);
+		return __nativeST__(vCallback instanceof Function ? function () {
+		vCallback.apply(oThis, aArgs);
+		} : vCallback, nDelay);
+	};
+	
+	var dom = {
+		dom0: function () {
+			console.log("in dom0");
+			this.dom0 = !!(window && document && document.forms && document.images && window.history && document.location && window.setTimeout);
+		},
+		
+		dom1: function () {
+			console.log("in dom1");
+			if(typeof this.dom0 == "function") {
+				console.log("dom0 is a function");
+			}
+			else if(this.dom0 === true) {
+				console.log("computing dom1");
+				this.dom1 = !!(document.implementation && document.implementation.hasFeature("HTML", "1.0") &&
+				document.childNodes && (document.documentElement || document.body) && 
+				document.getElementById && document.createElement  && document.getElementsByTagName && document.getElementsByName && 
+				document.createTextNode && document.insertBefore && document.replaceChild && document.removeChild && document.appendChild);
+			}
+			else {
+				console.log("in dom1, this.dom0 is :" + this.dom0);
+			}
+		},
+		
+		dom2: function () {
+			console.log("in dom2");
+			if(typeof this.dom1 == "function") {
+				console.log("dom1 is a function");
+			}
+			else if(this.dom1 === true) {
+				console.log("computing dom2");
+				this.dom2 = !!(document.implementation && 
+				document.implementation.hasFeature("Core", "2.0") && 
+				document.implementation.hasFeature("HTML", "2.0") && document.createElementNS && 
+				document.implementation.createHTMLDocument && document.createDocumentFragment && 
+				(window.addEventListener || window.attachEvent)); //NOTE: WRONG IN DB, FIX!!!!!!!!!
+			}
+			else {
+				console.log("in dom2, this.dom1 is:" + this.dom1);
+			}
+		},
+		
+		dom3: function () {
+			console.log("in dom3");
+			if(typeof this.dom2 == "function") {
+				console.log("dom2 is a function");
+			}
+			else if(this.dom2 === true) {
+				console.log("computing dom3");
+				this.dom3 = !!(document.implementation.hasFeature("Core", "3.0") && 
+				document.implementation.hasFeature("HTML", 3.0) && document.evaluate);
+			}
+			else {
+				console.log("in dom3, this.dom2 is:" + this.dom2);
+			}
+		},
+		
+		/** 
+		 * NOTE: we call settimeout, we MUST use the "that" of the returned GBP object
+		 * "this" will be incorrect
+		 */
+		domready : function domready () {
+			console.log("GBP entering domready, this is:" + this);
+			if(document && (document.body || document.documentElement)) {
+				console.log("GBP exiting domready, DOM is defined");
+				helper.domready = true;
+				if(typeof that.domready == "function") {
+					console.log("ready defined");
+					that.domready(); //provided by user
+				}
+				else {
+					console.log("ready not defined");
+				}
+				this.domready = true;
+			}
+			else {	
+				console.log("GBP setting timeout");
+				setTimeout(domready, 20);
+			}
+		}
+	};
+	
+	
+	var browser = {
+		highcontrast : function highcontrast() {
+			if(helper.dom1 === true && helper.domready === true) {
+				var e,c;
+				console.log("in browserhighcontrast, at this point, document is:"+document);
+				e=document.createElement("div");
+				e.style.color="rgb(31,41,59)";
+				document.body.appendChild(e);
+				c=document.defaultView?document.defaultView.getComputedStyle(e,null).color:e.currentStyle.color;
+				document.body.removeChild(e);
+				c=c.replace(/ /g,"");
+				
+				if (c!="rgb(31,41,59)"){
+					this.highcontrast = true;
+				}
+				else {
+					this.highcontrast = false;
+				}
+			}
+			else {
+				this.highcontrast = false;
+			}
+		}
+	};
+	
+	
+	var javascript = {
+		trycatch: function () {
+			console.log("in trycatch");
+			this.trycatch = true;
+		}
+		
+	};
+	
+	var helper = {
+		domready: dom.domready,
+		dom0: dom.dom0,
+		dom1: dom.dom1,
+		dom2: dom.dom2
+	}
+	
+
+	var increment = 0;
+	var maxIncrement = 20;
+	
+	function test(propArr) {
+		increment++;
+		console.log("in test, increment:" + increment);
+		for(var i = 0; i < propArr.length; i++) {
+			if(propArr[i] == "function") {
+				wait(propArr);
+			}
+		}
+		return true;
+	}
+	
+	function wait(propArr) {
+		increment++;
+		console.log("in wait, increment:" + increment);
+		setTimeout(test, 50);
+	}
+	
+	var run = function () {
+		//set after the object is created
+		that = this;
+		
+		var propArr = [that.dom.domready, that.javascript.trycatch, that.dom.dom0, that.dom.dom1, that.dom.dom2, that.dom.dom3];
+		for(var i = 0; i < propArr.length; i++) {
+			propArr[i]();
+		}
+		
+		test(propArr);
+		console.log("after test");
+		
+	}
+	
+	var finish = function () {
+		
+	}
+	
+	
+	return {
+		run: run, 
+		dom:dom,
+		javascript:javascript,
+		browser:browser,
+		helper:helper
+	}
+	
+	
+})();
+
+
+GBP.domready = function () {
+	console.log("DOM IS READY");
+}
+
+GBP.objready = function () {
+	console.log("OBJECT IS READY");
+}
+
+GBP.run();
+
+</script>
+
+
+</body>
+</html>

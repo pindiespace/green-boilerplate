@@ -1,0 +1,1 @@
+{"340":{"browser":{"releasedate":"2000-12-01","version":"3.4","versionname":"Amiga AWeb 3.4","searchgroup":"15004"}}}

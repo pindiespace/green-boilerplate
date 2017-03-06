@@ -1,0 +1,20 @@
+{
+	"browserName":"obligo",
+	"browserFork":"obligo",
+	"browserVersion":"500",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"newer versions support html5 older versions are acid2 compliant",
+	"ualist": [
+		"mot-w418g/06.2e.18[tf012482002665921000000016012012641] obigo/q03c mmp/2.0",
+		"mot-w418g/06.2e.18[tf012482001354527000000018702538314] obigo/q03c mmp/2.0",
+		"alcatel-ot-s520/1.0 obigointernet/q03c",
+		"alcatel-ot-305/1.0 obigointernet/q03c",
+		"alcatel-ot-c700/1.0 profile/midp-2.0 configuration/cldc-1.1 obigointernet/q03c"
+]}

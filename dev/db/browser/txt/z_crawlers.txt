@@ -1,0 +1,60 @@
+
+
+[start]
+version=1.0
+[ualist]
+Googlebot/1.0 (googlebot@googlebot.com
+Googlebot/1.0 (googlebot@googlebot.com http://googlebot.com/)
+[end]
+
+[start]
+client=gogglebot
+version=2.1
+[ualist]
+googlebot/2.1
+Googlebot 2.1
+Googlebot/2.1
+googlebot/2.1 (compatible; MSIE; Windows)
+Googlebot 2.1 (compatible; MSIE; Windows)
+Googlebot/2.1 (Googlebot/2.1; Googlebot/2.1; Windows; .NET CLR 1.1.4322)
+Googlebot/2.1 (+http://buymovie.produkte-24.ch/Liane_die_weisse_Sklavin.html)
+Googlebot/2.1 (+http://www.buymovie.ch/shop_movie/detail.php)
+googlebot/2.1 (+http://www.googlebot.com/bot.html)
+"Googlebot/2.1 (+http://www.googlebot.com/bot.html)"
+Googlebot/2.1 ( http://www.googlebot.com/bot.html)
+Googlebot/2.1 (+http://www.googlebot.com/bot.html;  ;  )
+Googlebot/2.1 (+http://www.googlebot.com/bot.html)"
+Googlebot/2.1 (+http://www.googlebot.com/bot.html)( ;  ; )
+Googlebot/2.1 (+http://www.googlebot.com/bot.html;  ;  ; AtHome033; SV1; .NET CLR 1.1.4322)
+Googlebot/2.1 (+http://www.googlebot.com/bot.html) (compatible; MSIE 6.0; Windows NT 5.1)
+Googlebot/2.1 (+http://www.googlebot.com/bot.html) (compatible; MSIE; Windows; .NET CLR 1.1.4322)
+Googlebot/2.1 (+  http://www.googlebot.com/bot.html  ; MSIE 6.0; Windows NT 5.0; (R1 1.3))
+Googlebot/2.1 (+http://www.googlebot.com/bot.html; MSIE 6.0; Windows NT 5.1)
+Googlebot/2.1 (+http://www.googlebot.com/bot.html; MSIE; Windows)
+Googlebot/2.1 (+http://www.googlebot.com/bot.html;  ;  ; .NET CLR 1.1.4322)
+Googlebot/2.1 (+http://www.googlebot.com/bot.html) (POEP; ALL YOUR BROWSERS BELONG TO US; DaRKANGLe)
+googlebot/2.1 (+http://www.google.com/bot.html)
+Googlebot/2.1; +http://www.google.com/bot.html
+Googlebot/2.1+ (+http://www.google.com/bot.html;  ; Windows NT 5.1)
+Googlebot/2.1 (+http://www.to.ma)
+Googlebot/2.X
+Googlebot/2.X (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; compatible; MSIE 6.0; Windows NT 5.1; SV2;)
+Googlebot/2.X (+http://www.googlebot.com/bot.html)
+Googlebot/2.X (http://www.googlebot.com/bot.html)
+[end]
+
+
+ * flipboard crawler
+ 
+[start]
+client=flipboardbot
+version=1
+[ualist]
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (FlipboardProxy/1.1; +http://flipboard.com/browserproxy)
+(FlipboardProxy/1.1; +http://flipboard.com/browserproxy)
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (FlipboardProxy/0.0.5; +http://flipboard.com/browserproxy)
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (FlipboardProxy/1.1; +http://flipboard.com/browserproxy)
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (flipboardBrowserProxy/1.1; +http://flipboard.com/browserproxy)
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (+http://flipboard.com/crawler)
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (FlipboardProxy/0.0.5; +http://flipboard.com/browserproxy)
+[end]

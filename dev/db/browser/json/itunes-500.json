@@ -1,0 +1,16 @@
+{
+	"browserName":"itunes",
+	"browserFork":"itunes",
+	"browserVersion":"500",
+	"browserEngineName":"carbon",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"itunes/5.0 (macintosh; u; intel mac os x 10_6_1; de-de)",
+		"itunes/5.0 (macintosh; u; intel mac os x 10_6_1; ru-ru)"
+]}

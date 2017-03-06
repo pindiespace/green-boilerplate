@@ -1,0 +1,18 @@
+{
+	"browserName":"polaris",
+	"browserFork":"polaris",
+	"browserVersion":"500",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"wap browser",
+	"ualist": [
+		"samsung-sphm320 infraware-polaris/5.01 mmp/2.0",
+		"samsung-sphm320 polaris/5.0 mmp/2.0",
+		"lg-lx260 polaris-lx260/2.0 mmp/2.0 profile/midp-2.0 configuration/cldc-1.1"
+]}

@@ -1,0 +1,1312 @@
+* =====================================================================================
+ *
+ * game consoles and media players
+ *
+ * Good reference and pics at
+ * http://alistapart.com/article/testing-websites-in-game-console-browsers
+ *
+ * =====================================================================================
+ 
+ * -------------------------------------------------------------------------------------
+ * original Playstation
+ *
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation Vita, Webkit version of Netfront, NOT the Silk browser
+ * distinct from other playstations in use of touch vs game controls
+ * Sites can only be viewed in landscape at 960x544 at 220ppi, 
+ * uses touchscreen
+ * http://nz.playstation.com/psvitasystem/
+ * HTML5 Test: 84/500
+ * CSS3 Test: 32% 55%
+ * Acid3 Test: 100%
+ * Screen 960 x 544, browser 1024 x 585
+ * -------------------------------------------------------------------------------------
+
+
+ * -------------------------------------------------------------------------------------
+ * Playstation Vita 3.0
+ * November 4, 2013
+ * Versions at:
+ * http://nz.playstation.com/psvita/support/system-software/?page=1
+ * http://blog.us.playstation.com/2013/11/04/ps-vita-3-00-system-update-coming-soon/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstationvita
+version=3
+[ualist]
+Mozilla/5.0 (PlayStation Vita 3.00) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 3.01) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 3.01) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2 VTE/2.50
+Mozilla/5.0 (PlayStation Vita 3.00) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2 
+Mozilla/5.0 (PlayStation Vita 3.01) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation Vita 2.0
+ * November 21, 2012
+ * http://gadgets.ndtv.com/games/news/playstation-vita-20-update-brings-playstation-plus-cloud-saving-and-more-295112
+ * http://kotaku.com/5962066/ps-vita-gets-its-big-20-system-update
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstationvita
+version=2.0
+[ualist]
+Mozilla/5.0 (Playstation Vita 2.02) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.02) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.05) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.06) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.10) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.12) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.60) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.61) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.01) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2 
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation Vita 1.6
+ * February 6, 2012
+ * http://www.electronista.com/articles/12/02/06/sony.preps.ps.vita.update.for.february.8/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstationvita
+version=1.6
+[ualist]
+Mozilla/5.0 (PlayStation Vita 1.67) AppleWebKit/531.22.8 (KHTML, like Gecko) Silk/3.2 
+Mozilla/5.0 (PlayStation Vita 1.69) AppleWebKit/531.22.8 (KHTML, like Gecko) Silk/3.2 
+Mozilla/5.0 (PlayStation Vita 1.61) AppleWebKit/531.22.8 (KHTML, like Gecko) Silk/3.2
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation Vita 1.0 and less
+ * June 22, 2011
+ * at this time the only UAs are coming from emulators and developer consoles
+ * http://forums.qj.net/nds-hacks-modding-media/180987-ds-nes-emulator-nesds-0-53a-released.html
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstationvita
+version=1
+[ualist]
+Mozilla/5.0 (PlayStation Vita 0.53) AppleWebKit/531.22.8 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 1.81) AppleWebKit/531.22.8 (KHTML, like Gecko) Silk/3.2 
+[end]
+
+
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, PSP-3000
+ * replaced by Playstation Vita
+ * runs ancient Netfront browser
+ * basic JavaScript, low memory (2mb) for browser
+ * Complete firmware release
+ * http://en.wikipedia.org/wiki/PlayStation_Portable_system_software
+ * HTML5 and CSS3 tests won't run
+ * Web Design principles:
+ * http://www.brothercake.com/site/resources/reference/psp/
+ * Screen  480×272 (16:9)
+ * Screen 480 x 272, browser 480 x 272
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * PSP 6.0 firmware
+ * September 10, 2009
+ * http://www.ign.com/articles/2009/09/10/psp-updates-to-600
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=psp
+version=6
+[ualist]
+Mozilla/4.0 (PSP (PlayStation Portable); 6.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.10)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.20)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.30)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.38)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.39)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.60)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 5.0
+ * October 15, 2008
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=psp
+version=5
+[ualist]
+Mozilla/4.0 (PSP (PlayStation Portable); 5.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 5.01)
+Mozilla/4.0 (PSP (PlayStation Portable); 5.03)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 4.0
+ * June 18, 2008
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=psp
+version=4
+[ualist]
+Mozilla/4.0 (PSP (PlayStation Portable); 4.05)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 3.0
+ * November 21, 2006
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=psp
+version=3
+[ualist]
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 2.7
+ * Flash content
+ * April 25, 2006
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=psp
+version=2.7
+[ualist]
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 3000 2.0
+ * First version of Browser
+ * http://www.ign.com/articles/2005/07/28/hands-on-psp-web-browser
+ * September 1, 2005
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=psp
+version=2
+[ualist]
+Mozilla/4.0 (PSP PlayStation Portable); 2.00)
+Mozilla/4.0 (PSP(PlayStation Portable); 2.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 2.00)
+Mozilla/4.0 (PlayStation Portable); 2.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 2.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 2.00
+Mozilla/4.0 (PSP (PlayStation Portable); 2.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 2.20)
+[end]
+ 
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 3000 1.0
+ * No web browser
+ * December 12, 2004
+ * -------------------------------------------------------------------------------------
+
+
+
+ * -------------------------------------------------------------------------------------
+ * Sony playstation4 console, Netfront Webkit engine Safari-like
+ * http://console.maban.co.uk/device/ps3
+ * HTML5 Test: 336/555
+ * CSS3 Test: 51%
+ * Acid3 Test: 100%
+ * screen 1920 x 1080, browser 1540 x 754
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 4
+ * Web browser requires login for use
+ * http://mashable.com/2013/11/15/playstation-4-review-part-2/
+ * November 15, 2013 (1.5 just a week later)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstation4
+version=1
+[ualist]
+Mozilla/5.0 (PlayStation 4 1.51) AppleWebKit/536.26 (KHTML, like Gecko)
+Mozilla/5.0 (PlayStation 4 1.000) AppleWebKit/536.26 (KHTML, like Gecko)
+Mozilla/5.0 (PlayStation 4 1.52) AppleWebKit/536.26 (KHTML, like Gecko)
+Mozilla/5.0 (PlayStation 4 1.000) AppleWebKit/536.26 (KHTML, like Gecko) 
+Mozilla/5.0 (PlayStation 4 1.52) AppleWebKit/536.26 (KHTML, like Gecko)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * sony playstation3 console, Netfront engine
+ * http://console.maban.co.uk/device/ps3
+ * May 16, 2005
+ * HTML5 Test: 68/500
+ * CSS3 Test: 38%
+ * Acid3 Test: 100%
+ * Browser Size reported as 1094 x 928. Screen Resolution reported as 1920 x 1080
+ * Firmware released at:
+ * http://nz.playstation.com/ps3/support/system-software/?page=1
+ * http://en.wikipedia.org/wiki/PlayStation_3
+ * may have to break up firmware patches
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 4.0
+ * November 30, 2011
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstation3
+version=4.0
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3 4.21) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3 4.50) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3 4.53) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3; 4.31) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3 4.11) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3 4.30) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3 4.10) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.11) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.20) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.21) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.25) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.30) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.31) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.31) AppleWebKit/531.22.8 (KHTML, like Gecko),gzip(gfe) 
+Mozilla/5.0 (PLAYSTATION 3 4.40) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.41) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.45) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.46) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.50) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.53) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.55) AppleWebKit/531.22.8 (KHTML, like Gecko)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 3.0
+ * September 1, 2009
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=playstation3
+version=3.0
+[ualist]
+Mozilla/4.0 (PS3 (PlayStation 3); 1.00)
+Mozilla/5.0 (PLAYSTATION 3; 3.55)
+Browser Mozilla/5.0 (PLAYSTATION 3; 3.15) 
+Mozilla/5.0 (PLAYSTATION 3; 3.30) 
+Mozilla/5.0 (PLAYSTATION 3; 3.50) 
+Mozilla/5.0 (PLAYSTATION 3; 3.55) 
+Mozilla/5.0 (PLAYSTATION 3; 3.6) 
+Mozilla/5.0 (PLAYSTATION 3; 4.00) 
+Mozilla/5.0 (PLAYSTATION 3; 4.31) 
+Mozilla/5.0 (PLAYSTATION 3;2.00) 
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 2.0
+ * November 8, 2007
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=playstation3
+version=2.0
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3; 2.00)
+Mozilla/5.0 (PLAYSTATION 3; 2.30) 
+ Mozilla/5.0 (PLAYSTATION 3; 2.40) 
+Mozilla/5.0 (PLAYSTATION 3; 2.53) 
+Mozilla/5.0 (PLAYSTATION 3; 2.60) 
+Mozilla/5.0 (PLAYSTATION 3; 2.80)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 1.9
+ * July 23, 2007
+ * http://nz.playstation.com/ps3/support/system-software/detail/item72485/Update-features-(ver-1-90)/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstation3
+version=1.90
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3; 1.90)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 1.7
+ * April 18, 2007
+ * http://gizmodo.com/253541/ps3-17-firmware-available-enables-more-backwardness
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstation3
+version=1.70
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3; 1.70)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 1.7
+ * November 11, 2006
+ * http://en.wikipedia.org/wiki/PlayStation_3
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstation3
+version=1.0
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3; 1.5)
+Mozilla/5.0 (PLAYSTATION 3; 1.10)
+Mozilla/5.0 (PLAYSTATION 3; 1.00)
+Mozilla/5.0 (PLAYSTATION 3; 1.0)
+Mozilla/5.0 (PLAYSTATION 3; 1.00)
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * Experia Play
+ * http://console.maban.co.uk/device/xperiaplay
+ * http://en.wikipedia.org/wiki/Xperia_Play
+ * Can't be recognized apart from stock Android browser
+ * HTML5 Test: 212/500
+ * CSS3 Test: 42%
+ * April 1, 2011
+ * -------------------------------------------------------------------------------------
+ 
+ * -------------------------------------------------------------------------------------
+ * Xbox Internet Explorer (IE)
+ * No plugins on IE 7, 8 original Xbox
+ * -------------------------------------------------------------------------------------
+
+
+ * -------------------------------------------------------------------------------------
+ * Microsoft Xbox IE 7 plugins don't run
+ * October 18, 2006 (earliest possible date)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=iexbox
+version=7.0
+[ualist]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/3.1; Xbox
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Microsoft Xbox IE 8
+ * http://www.techcular.com/internet-explorer-8-xbox-360/
+ * March 19, 2009 (earliest possible date)
+ * January 5, 2011 (real date)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=iexbox
+version=8.0
+[ualist]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/3.1; Xbox
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Microsoft Xbox 360
+ * Runs IE9, mobile mode listed when using an SD TV (low-resolution, approx 640x480)
+ * May 12, 2005
+ * But no browser until
+ * May 20, 2012
+ * The "Internet Explorer App" must be manually installed
+ * http://support.xbox.com/en-US/xbox-360/apps/internet-explorer-info
+ * IE 9 added about May 10, 2012, unlikely to see older versions
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=iexbox
+version=9.0
+[ualist]
+Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Xbox)
+Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Xbox)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Microsoft Xbox One (really IE 10)
+ * HTML5 Test: 316/555
+ * CSS3 Test: 51%
+ * Acid3 Test: 100%
+ * browser 1236 x 701, screen 1324 x 745
+ * November 18, 2013
+ * the "iemobile" is present when xbox one is in mobile mode, using an SD TV (low-resolution, approx 640x480)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=iexbox
+version=10.0
+[ualist]
+Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; Xbox; Xbox One)
+Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; Xbox; Xbox One)
+Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/10.0; Xbox; Xbox One)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo DS
+ * Nintendo DS, DS Lite
+ * Nintendo DSI, larger display, camera
+ * Nintendo DSU XL, 
+ * -------------------------------------------------------------------------------------
+
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo dsi, runs Opera browser (no Flash)
+ * http://en.wikipedia.org/wiki/Nintendo_DS_Browser
+ * http://console.maban.co.uk/device/dsi
+ * http://maban.co.uk/73
+ * HTML5 Test: 89/500
+ * CSS3 Test: Failed to run
+ * Acid3 Test: 60%
+ * Screen 768 x 528, browser 768 x 528
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo DS - opera, but no user-agent found
+ * July 23, 2006
+ * discontinued in August 2007
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo dsi Opera browser update 507
+ * July 29, 2009
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=dsi
+version=507
+[ualist]
+Opera/9.50 (Nintendo DSi; Opera/507; U; de) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; de) (via babelfish.yahoo.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; de),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; en-GB) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; en-US) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; en-US); 
+Opera/9.50 (Nintendo DSi; Opera/507; U; es-ES) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; es-ES),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; es-LA) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; es-LA),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; fr) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; fr),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; fr-CA) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; fr-CA),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; it) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; ja) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; ja),gzip(gfe) (via translate.google.com) 
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo dsi Opera browser 483
+ * April 2009 (estimate)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=dsi
+version=483
+[ualist]
+Opera/9.50 (Nintendo DSi; Opera/483; U; de) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; de),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; en-GB) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; en-US) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; es-ES) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; es-LA) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; fr) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; fr),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; fr-CA) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; xx-xx)
+[end]
+
+* --------------------------------------------------------------------------------------
+* Nintendo dsi Opera browser 446
+* November 1, 2008
+* --------------------------------------------------------------------------------------
+
+[start]
+client=dsi
+version=446
+[ualist]
+Opera/9.50 (Nintendo DSi; Opera/446; U; ja) 
+Opera/9.50 (Nintendo DSi; Opera/446; U; ja),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/466; U; en-US) 
+[end]
+
+
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo 3DS
+ * The 3D Internet Browser is Netfront Browser NX v1.0 based on WebKit engine.
+ * http://console.maban.co.uk/device/3ds
+ * DETAILED SPECS
+ * http://www.nintendo.com/3ds/internetbrowser/specs/
+ * DETAILED VERSION SPECS
+ * http://3dbrew.org/wiki/Internet_Browser
+ * http://en.wikipedia.org/wiki/Internet_Browser_(Nintendo_3DS)
+ * http://en.wikipedia.org/wiki/History_of_Nintendo#Nintendo_DS_and_Wii
+ * Version of Opera browser
+ *
+ * HTML5 test: 98/500
+ * CSS3 test: 42%
+ *
+ * WebKit Netfront
+ * HTML5 Test: 109/500
+ * CSS3 Test: 64%
+ * Screen 320 x 240, Browser 320 x 369
+ * 1st version - Dec 2009?
+ * -------------------------------------------------------------------------------------
+ * Nintendo 3DS XL
+ * Webkit version of NetFront.
+ * http://console.maban.co.uk/device/3dsxl
+ * HTML5 Test: 109/500
+ * CSS3 Test: 42% 43%
+ * Acid3 Test: 92%
+ * Screen 320 x 240, browser 554 x 640
+ * June 6, 2011
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=3ds
+version=1.7
+[ualist]
+Mozilla/5.0 (Nintendo 3DS; U; ; en) Version/1.7498.EU
+Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7455.EU
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo Wii (original)
+ * Modified version of Opera browser
+ * Wii Shop Channel
+ * http://www.wiibrew.org/wiki/Accessing_Wii_Shop_Channel_From_PC
+ * November 19, 2006
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=wii
+version=1
+[ualist]
+opera/9.30 (nintendo wii; u; ; 2047-7; en)
+Opera/9.30 (Nintendo Wii; U; ; 2071; Wii Shop Channel/1.0; en)
+Opera/9.30 (Nintendo Wii; U; ; 2047-7;pt-br)
+Opera/9.30 (Nintendo Wii; U; ; 2047-7;es)
+Opera/9.30 (Nintendo Wii; U; ; 2047-7;en)
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; fr)
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; de)
+Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2) Gecko/20100115 Mozilla/5.0(PLAYSTATION 3; 2.00) and Opera/9.23 (Nintendo Wii; U;; 1038-58; Wii Internet Chanel/1.0;en
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; en)
+Opera/9.10 (Nintendo Wii; U; ; 1621; en)
+Opera/9.00 (Nintendo Wii; U; ; 1309-9; en)
+Opera/9.30 (Nintendo Wii; U; ; 3642; en) 
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; en),gzip(gfe),gzip(gfe) 
+Opera/9.30 (Nintendo Wii; U; ; 3642; nl),gzip(gfe),gzip(gfe) 
+Opera/9.30 (Nintendo Wii; U; ; 3642; fr),gzip(gfe),gzip(gfe) 
+Opera/9.30 (Nintendo Wii; U; ; 3642; nl),gzip(gfe),gzip(gfe) 
+Opera/9.30 (Nintendo Wii; U; ; 3642; en),gzip(gfe),gzip(gfe) 
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; en) 
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; en) 
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; fr) 
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; en) 
+Opera/9.10 (Nintendo Wii; U; ; 1621; en)
+opera/9.30 (nintendo wii; u; ; 2071; wii shop channel/1.0; en)
+opera/9.30 (nintendo wii; u; ; 2047-7;pt-br)
+opera/9.30 (nintendo wii; u; ; 2047-7;es)
+opera/9.30 (nintendo wii; u; ; 2047-7;en)
+opera/9.30 (nintendo wii; u; ; 2047-7; fr)
+opera/9.30 (nintendo wii; u; ; 2047-7; de)
+opera/9.30 (nintendo wii; j; ; 2071; wii shop channel/1.0; jp)
+opera/9.30 (nintendo wii; u; ; 2047-7; de)
+opera/9.30 (nintendo wii; u; ; 2047-7; de),gzip(gfe) (via translate.google.com)
+opera/9.30 (nintendo wii; u; ; 2047-7; en)
+opera/9.30 (nintendo wii; u; ; 2047-7; es-es)
+opera/9.30 (nintendo wii; u; ; 2047-7; fr)
+opera/9.30 (nintendo wii; u; ; 2047-7; fr),gzip(gfe) (via translate.google.com)
+opera/9.30 (nintendo wii; u; ; 2047-7; it)
+opera/9.30 (nintendo wii; u; ; 2047-7; ja)
+opera/9.30 (nintendo wii; u; ; 2047-7; nl
+opera/9.30 (nintendo wii; u; ; 2047-7; nl)
+opera/9.30 (nintendo wii; u; ; 2047-7; wii shop channel/1.1; en
+opera/9.30 (nintendo wii; u; ; 2047-7; wii shop channel/1.1; en)
+opera/9.30 (nintendo wii; u; ; 2047-7;en)
+opera/9.30 (nintendo wii; u; ; 2047-7;es)
+opera/9.30 (nintendo wii; u; ; 2071; wii shop channel/1.0; en)
+opera/9.30 (nintendo wii; u; ; 2071; wii shop channel/13.0(a); en)
+opera/9.30 (nintendo wii; u; ; 2071; wii shop channel/20.0(a); de)
+opera/9.30 (nintendo wii; u; ; 2077-4; wii shop channel/18.0(a); en)
+opera/9.30 (nintendo wii; u; ; 3642; de)
+opera/9.30 (nintendo wii; u; ; 3642; de),gzip(gfe) (via translate.google.com)
+opera/9.30 (nintendo wii; u; ; 3642; nl),gzip(gfe) (via translate.google.com)
+opera/9.30 (nintendo wii; u; ; 3642; wii shop channel/1.0; de)
+opera/9.30 (nintendo wii; u; ; 3642; wii shop channel/1.0; en)
+opera/9.30(nintendo wii; u; : 2047-7.ja)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0; en)
+Opera/9.23 (Nintendo Wii; U; ; 1038-58; Wii Internet Channel/1.0; en)
+opera/9.23 (nintendo wii; u; ; 1038-58; wii internet channel/1.0; en)
+opera/9.23 (nintendo wii; u; ; 1038-58; wii internet channel/1.0; de)
+opera/9.23 (nintendo wii; u; ; 1038-58; wii internet channel/1.0; en)
+opera/9.23 (nintendo wii; u; ; 1038-58; wii shop channel/1.0; en)
+opera/9.10 (nintendo wii; u; ; 1621; en-us)
+opera/9.10 (nintendo wii; u; ; 1621; es-es)
+opera/9.10 (nintendo wii; u; ; 1621; ja)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii internet channel/1.0; en)
+opera/9.00 (nintendo wii
+opera/9.00 (nintendo wii; u; ; 1038-58; internet channel/1.0; en)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii internet channel/1.0; en)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/; en)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0,gzip(gfe) (via translate.google.com)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0;
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0; en
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0; en)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.1; en)
+opera/9.00 (nintendo wii; u; ; 103858; wii shop channel/1.0; en)
+opera/9.00 (nintendo wii; u; ; 1309-9; en)
+opera/9.00 (nintendo wii;u; ; 1038-58; wii shop channel/1.0;en)
+opera/9.00(nintendo wii; u; ; 1038-58; wii shop channel/1.0; en
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo Wii U
+ * webkit version of Netfront
+ * http://www.nintendo.com/wiiu/built-in-software/browser-specs/extended-functionality/
+ * http://en.wikipedia.org/wiki/History_of_Nintendo#Nintendo_DS_and_Wii
+ * http://wiiubrew.org/wiki/Internet_Browser
+ * http://console.maban.co.uk/device/wiiu
+ * HTML5 Test: 258/500
+ * CSS3 Test: 48%
+ * Acid3 Test: 100%
+ * Browser 980x514, screen 854 x 480
+ * Also the "Wii Internet Channel"
+ * Netfront NX 3.0
+ * Complete specs:
+ * http://www.nintendo.co.uk/Wii-U/System-Software/Internet-Browser/Internet-Browser-Specifications/Internet-Browser-Specifications-721578.html
+ * Emulator at:
+ * Emulator (mac and windows) at:
+ * https://dolphin-emu.org/download/
+ * -------------------------------------------------------------------------------------
+
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo Wii U 2.0
+ * Netfront NX 3.0
+ * October 1, 2013
+ * http://www.neogaf.com/forum/showthread.php?t=688353&page=31
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=wiiu
+version=2.0
+[ualist]
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.28 (KHTML, like Gecko) NX/3.0.3.12.6 NintendoBrowser/2.0.0.9362.EU
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.28 (KHTML, like Gecko) NX/3.0.3.12.6 NintendoBrowser/2.0.0.9362.US
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo Wii U Browser 1.x
+ * Netfront NX 2.0
+ * November 6, 2012
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=wiiu
+version=1.5
+[ualist]
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.10.9 NintendoBrowser/1.5.0.8047.EU
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.10.9 NintendoBrowser/1.5.0.8047.US
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.23 NintendoBrowser/1.1.0.7579.EU
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.21 NintendoBrowser/1.0.0.7494.US
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.23 NintendoBrowser/1.1.0.7579.EU
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.23 NintendoBrowser/1.1.0.7579.JP
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.23 NintendoBrowser/1.1.0.7579.US
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * bunjalloo - nintendo ds - http://code.google.com/p/quirkysoft/wiki/bunjalloo
+ * No JavaScript or Flash, ever
+ * Versions exist back to 0.1 but no user agent or files to download
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Bunjalloo 0.8
+ * December 2009
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=bunjalloo
+version=0.8
+[ualist]
+Bunjalloo/0.8(Nintendo DS;U;es)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Bunjalloo 0.7
+ * January 2009 (estimate)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=bunjalloo
+version=0.7
+[ualist]
+bunjalloo/0.7.6(nintendo ds;u;en)
+bunjalloo/0.7.4(nintendo ds;u;en)
+[end]
+
+
+ * =====================================================================================
+ * MEDIA PLAYERS
+ * =====================================================================================
+
+ * -------------------------------------------------------------------------------------
+ * iTunes
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=itunes
+version=11.0
+[ualist]
+iTunes/11.1.3 (Macintosh; Intel Mac OS X 10.7) AppleWebKit/534.20.8
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * iTunes 10
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=itunes
+version=10.0
+[ualist]
+iTunes/10.0.1
+iTunes/10.0.1 (Macintosh; N; PPC)
+iTunes/10.1 (Macintosh; N; PPC) AppleWebKit/533.17.8 (KHTML, like Gecko)
+iTunes/10.1 (Macintosh; U; PPC Mac OS X 10.6.1)
+iTunes/10.2.1 (Macintosh; Intel Mac OS X 10.7) AppleWebKit/534.20.8
+iTunes/10.2.1 (Windows; Microsoft Windows 7 Enterprise Edition Service Pack 1 (Build 7601)) AppleWebKit/533.20.25
+iTunes/10.7 Downcast/2.8.1.1034
+iTunes/10.7 Downcast/2.8.3.2097
+iTunes/10.7 Downcast/2.8.5.1010
+iTunes/10.7 Downcast/2.8.7.1016
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * iTunes 9
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=itunes
+version=9.0
+[ualist]
+iTunes/9.0 (Macintosh; U; PPC Mac OS X 10.2)
+iTunes/9.0.2 (Windows; Microsoft Windows XP Professional Service Pack 3 (Build 2600)) AppleWebKit/531.21.8
+iTunes/9.0.2 (Windows; N)
+iTunes/9.0.3 (Macintosh; U; Intel Mac OS X 10_6_2; en-ca)
+itunes/9.0.3 (Windows; Microsoft Windows 7 Ultimate Edition (Build 7600))
+iTunes/9.1 (Macintosh ; U; Intel Mac OS X 10.5.6
+iTunes/9.1.1
+iTunes/9.1.1 (Macintosh; Intel Mac OS X 10.5.8) AppleWebKit/531.9
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * iTunes 8
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=itunes
+version=8.0
+[ualist]
+iTunes/8.0 (Macintosh; U; PPC Mac OS X 10.2)
+iTunes/8.0.2
+iTunes/8.0.2 (Macintosh; U; Intel Mac OS X 10.5.6)
+iTunes/8.0.2 (Macintosh; U; Intel Mac OS X 10_5_6)
+iTunes/8.0.2 (Windows; U; Microsoft Windows Vista Professional Service Pack 1 (Build 6001)) DPI/96
+iTunes/8.1 (Macintosh; U; PPC Mac OS X 10.2)
+iTunes/8.1.1 (Windows; N)
+iTunes/8.2.1 (Macintosh; N; PPC)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * iTunes 7
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=itunes
+version=7.0
+[ualist]
+iTunes 7.1.1
+iTunes-iPad/7.0.3 (7; 16GB) AppleWebKit/534.20.8
+iTunes/7.0.2.16 (Macintosh; N; PPC)
+iTunes/7.1.1 (Macintosh; N; PPC)
+iTunes/7.2
+iTunes/7.4.1
+iTunes/7.4.1 (Macintosh; U; PPC Mac OS X 10.2)
+iTunes/7.7.0
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * iTunes 6
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=itunes
+version=6.0
+[ualist]
+iTunes/6
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * iTunes 5
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=itunes
+version=5.0
+[ualist]
+iTunes/5.0
+iTunes/5.0 (Macintosh; U; Intel Mac OS X 10_6_1; de-DE)
+iTunes/5.0 (Macintosh; U; Intel Mac OS X 10_6_1; ru-ru)
+iTunes-iPhone/5.0.1 (6; 16GB)
+iTunes-iPhone/5.0.1 (6; 32GB)
+iTunes-iPhone/5.1.1 (6; 16GB; dt:73)
+iTunes-iPhone/5.1.1 (6; 32GB; dt:73)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * iTunes 4
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=itunes
+version=4.0
+[ualist]
+iTunes/4.2 (Macintosh; U; PPC Mac OS X 10.2
+iTunes/4.2 (Macintosh; U; PPC Mac OS X 10.2)
+iTunes/4.7
+iTunes/4.7 (Macintosh; N; PPC)
+iTunes/4.7 (Macintosh; U; PPC Mac OS X 10.2)
+iTunes/4.7(Macintosh;N;PPC)
+iTunes/4.8
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * quicktime
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=quicktimeplayer
+version=7
+[ualist]
+QuickTime/7.6.2 (qtver=7.6.2;os=Windows NT 5.1Service Pack 3)
+QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)
+QuickTime (qtver=7.0.2a26;os=Windows NT 6.0)
+QuickTime.7.6 (qtver=7.6;os=Windows NT 6.0Service Pack 2)
+QuickTime/7.6.2 (verqt=7.6.2;cpu=IA32;so=Mac 10.5.8)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * windows media player/netshow
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=winmediaplayer
+version=11
+[ualist
+Windows-Media-Player/11.0.5721.5145
+Windows-Media-Player/11.0.6001.7000
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * windows media player 10
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=winmediaplayer
+version=10
+[ualist]
+Windows-Media-Player/10.00.00.xxxx
+Windows-Media-Player/10.00.00.4036
+Windows-Media-Player 10.00.00.3646
+Windows-Media-Player/10.00.00.3646
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * windows media player 9
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=winmediaplayer
+version=9
+[ualist]
+Windows-Media-Player/9.00.00.4503
+Windows-Media-Player 9.00.00.3250
+Windows-Media-Player/9.00.00.3250
+Windows-Media-Player/9.00.00.3086
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Zune/Media Center PC
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=zune
+version=1
+[ualist]
+Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; Zune 4.7; .NET4.0E; .NET4.0C; AskTbORJ/5.15.23.36191; rv:11.0) like Gecko
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * RealPlayer
+ * Trident-based media player not detectable
+ * WebKit version appears to be real
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=realplayer
+version=12
+[ualist]
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-us) AppleWebKit/533.19.4 (KHTML, like Gecko) RealPlayer/12.0.0.1569 
+[end]
+
+[start]
+client=realplayer
+version=11
+[ualist]
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_2; en-us) AppleWebKit/531.9 (KHTML, like Gecko) RealPlayer/11.0.1.949
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6; zh-cn) AppleWebKit/531.9 (KHTML, like Gecko) RealPlayer/11.0.1.949 
+Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; en) AppleWebKit/530.19.2 (KHTML, like Gecko) RealPlayer/11.0.0.884 
+Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/312.8 (KHTML, like Gecko) RealPlayer/10.1.0.412 
+Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/312.9 (KHTML, like Gecko) RealPlayer/10.0.0.352
+[end]
+
+
+[start]
+client=realplayer
+version=10
+[ualist]
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/419.3 (KHTML, like Gecko) RealPlayer/10.1.0.490 
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * banshee - http://banshee.fm/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=bansheeplayer
+version=1
+[ualist]
+Banshee/1.6.1 (http://banshee-project.org/) 
+Banshee 1.5.1 (http://banshee-project.org/)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * boxee - http://www.boxee.tv/
+ * LEGACY, became part of Samsung
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=boxeeplayer
+version=0.9
+[ualist]
+boxee (alpha/Darwin 8.7.1 i386 - 0.9.11.5591)
+boxee (alpha/Darwin 9.5.2 i386 - 0.9.11.5591)
+boxee (alpha/Windows build 7077 - 0.9.7.4825)
+boxee (alpha/Linux 2.6.28-11-generic #40-Ubuntu SMP Fri Apr 3 17:39:41 UTC 2009 x86_64 - 0.9.7.4826M)
+boxee (alpha/Windows XP Professional Service Pack 3, v.5755 build 2600 - 0.9.9.5324)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * coreplayer, for all Symbian OS versions
+ * http://www.corecodec.com/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=coreplayer
+version=2
+[ualist]
+CorePlayer/1.0 (Windows 5.01; x86 Intel; hu) CorePlayer/2.0.0_6873
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * coreplayer 1
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=coreplayer
+version=1
+[ualist]
+CorePlayer/1.0 (Palm OS 5.4.9; ARM Intel PXA27x; en) CorePlayer/1.3.2_6909
+CorePlayer/1.0 (PocketPC 5.02; ARM 1136J; en) CorePlayer/1.3.2_6909
+CorePlayer/1.0 (Series 60 3rd ; ARM; de) CorePlayer/1.3.2_6909
+CorePlayer/1.0 (Windows 5.01; x86 Intel; hu) CorePlayer/2.0.0_6873
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * flycast social player
+ * http://www.flycast.fm/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=flycastplayer
+version=1
+[ualist]
+FlyCast/1.32 (BlackBerry; 8330/4.3.0.124 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/-1)
+FlyCast/1.34 (BlackBerry; 8330/4.5.0.131 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/-1)
+FlyCast/1.35 (BlackBerry; 9530/4.7.0.99 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/-1)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * foobar2000 freeware audio player for windows
+ * http://www.foobar2000.org/
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=foobar2000
+version=0.9
+[ualist]
+foobar2000/0.9.5.2
+foobar2000/0.9.6.5_beta_2
+foobar2000/0.9.6.8
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * GOM Media player
+ * http://www.gomlab.com/eng/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=gomplayer
+version=1
+[ualist]
+GomPlayer 2, 1, 17, 4710 (ENG)
+GomPlayer 2, 1, 9, 3753 (ENG)
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * miro Media player
+ * http://www.getmiro.com/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=miroplayer
+version=3
+[ualist]
+Miro/3.0.1 (http://www.getmiro.com/; Darwin 8.11.1 i386)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * miroplayer 2
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=miroplayer
+version=2
+[ualist]
+Miro/2.0 (http://www.getmiro.com/; Darwin 9.4.0 Power Macintosh)
+Miro/2.0.3 (http://www.getmiro.com/; Linux 2.6.24-1-686 i686)
+Miro/2.0.4 (http://www.getmiro.com/; Windows XP )
+Miro/2.1-svn (http://www.getmiro.com/; Windows 2000 )
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * miroplayer 1
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=miroplayer
+version=1
+[ualist]
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9) Gecko Miro/2.0.4 (http://www.getmiro.com/)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * mplayer
+ * http://www.mplayerhq.hu/design7/news.html
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=mplayer
+version=4
+MPlayer/SVN-r29189-snapshot-4.3.2
+MPlayer/29040-4.3.3
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * plex player - tv media player
+ * https://www.plex.tv/
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=plexplayer
+version=2
+[ualist]
+Plex/2.0.3.3 Android/3.2 Sony/sony/NSZGT1/Internet TV Box
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * public radio player
+ * http://apps.prx.org/
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=publicradioplayer
+version=2
+[ualist]
+PublicRadioPlayer/2.1 CFNetwork/459 Darwin/9.8.0
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * public radio player 1
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=publicradioplayer
+version=1
+[ualist]
+PublicRadioApp/1.3 CFNetwork/459 Darwin/10.0.0d3
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * rss radio player  - podcast app for windows
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=rssradioplayer
+version=1
+[ualist]
+RSS_Radio 1.493
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * VLC media player
+ * http://www.videolan.org/vlc/
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=vlcmediaplayer
+version=2
+[ualist]
+VLC/2.0.4 LibVLC/2.0.4
+VLC/2.0.6 LibVLC/2.0.6
+VLC/2.1.1 LibVLC/2.1.1
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * VLC media player 1
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=vlcmediaplayer
+version=1
+[ualist]
+VLC media player - version 1.1.0-git Yellow Bastard - (c) 1996-2009 the VideoLAN team
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * VLC media player 0.9
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=vlcmediaplayer
+version=0.9
+[ualist]
+VLC media player - version 0.9.9 Grishenko - (c) 1996-2009 the VideoLAN team
+VLC media player - version 0.9.8a Grishenko - (c) 1996-2008 the VideoLAN team
+VLC media player - version 0.9.8 Grishenko - (c) 1996-2009 the VideoLAN team
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * VLC media player 0.8
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=vlcmediaplayer
+version=0.8
+[ualist]
+VLC media player - version 0.8.6g Janus - (c) 1996-2008 the VideoLAN team
+VLC media player - version 0.8.5 Janus - (c) 1996-2006 the VideoLAN team
+[end]
+
+
+
+ * -------------------------------------------------------------------------------------
+ * winamp player for android
+ * http://www.winamp.com/android
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=winampforandroidplayer
+version=1
+[ualist]
+WAFA/1.2.10 (Linux; Android 2.2-update1; Winamp) Replicant/1.0
+WAFA/1.2.1 (Linux; Android 2.1; Winamp) Replicant/1.0
+WAFA/1.2.10 (Linux; Android 4.1; Winamp) Replicant/1.0
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * xbmc player
+ * http://xbmc.org/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=xbmcplayer
+version=9
+[ualist]
+XBMC/9.04-beta1 r19616 (Linux; Ubuntu 9.04; Linux 2.6.28-11-generic; http://www.xbmc.org)
+XBMC/9.04-beta1 r19639 (Windows; Windows XP Professional Service Pack 2 build 2600; http://www.xbmc.org)
+XBMC/9.04 r19840 (Mac OS X; Darwin 9.6.0; http://www.xbmc.org)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * xmplayer
+ * http://support.xmplay.com/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=xmplayer
+version=1
+[ualist]
+XMPlay/3.5
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * songbird
+ * http://en.wikipedia.org/wiki/Songbird_%28software%29
+ * Extinct 2013
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=songbirdplayer
+version=1
+[ualist]
+Mozilla/5.0 (Windows; U; Windows NT 5.1; cs; rv:1.9.0.5) Gecko/2009021916 Songbird/1.1.2 (20090331142126)
+Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.9.0.5) Gecko/2009021916 Songbird/1.1.2 (20090331141709)
+Mozilla/5.0 (Windows; U; Windows NT 6.1; cs; rv:1.9.2.3) Gecko/20101201 Songbird/1.11.0 (20120305180920)
+Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.10) Gecko/2009043012 Songbird/1.2.0 (20090616030052)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * songbird 0.7
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=songbirdplayer
+version=0.7
+[ualist]
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008072921 Songbird/0.7.0 (20080819112708)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * songbird 0.2
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=songbirdplayer
+version=0.2
+[ualist]
+Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1b2) Gecko/20060925 Songbird/0.2.5.1 (20070301190953)
+Mozilla/5.0 (Windows; U; Windows NT 5.0; en-NZ; rv:1.8.1b2) Gecko/20060925 Songbird/0.2
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8) Gecko/20060206 Songbird/0.1
+[end]

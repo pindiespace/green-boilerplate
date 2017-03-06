@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"2010-12-10","version":"1.0","versionname":"Flipboard 1.0"}},"200":{"browser":{"releasedate":"2013-03-22","version":"2.0","versionname":"Flipboard 2.0","searchgroup":"15001"}}}

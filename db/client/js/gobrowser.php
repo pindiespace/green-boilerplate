@@ -1,0 +1,1 @@
+{"100":{"browser":{"searchgroup":"15001","releasedate":"2012-08-12","version":"1.0","versionname":"Go Browser 1.0"}},"160":{"browser":{"version":"1.6","versionname":"Go Browser 1.6","releasedate":"2013-01-01"}},"200":{"browser":{"releasedate":"2013-11-20","version":"2.0","versionname":"Go Browser 2.0"}}}

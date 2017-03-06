@@ -1,0 +1,19 @@
+{
+	"browserName":"classica",
+	"browserFork":"classica",
+	"browserVersion":"300",
+	"browserEngineName":"clecko",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"true",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"support Mac OS9 systems with an old mozilla-style browser http://www.floodgap.com/software/classilla/",
+	"ualist": [
+		"mozilla/5.0 (macintosh; u; ppc; en-us; rv:9.2.2) clecko/20110329 classilla/cfm",
+		"mozilla/5.0 (macintosh; u; ppc; en-us; rv:9.2.1) clecko/20100816 classilla/cfm",
+		"mozilla/5.0 (macintosh; u; ppc; en-us; rv:9.2) clecko/20100603 classilla/cfm",
+		"mozilla/5.0 (macintosh; u; ppc; en-us; mimic; rv:9.3.0) gecko/20120117 firefox/3.6.25 classilla/cfm"
+]}

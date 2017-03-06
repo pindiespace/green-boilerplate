@@ -1,0 +1,16 @@
+{
+	"browserName":"abrowse",
+	"browserFork":"abrowse",
+	"browserVersion":"1000",
+	"browserEngineName":"gecko",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (x11; ubuntu; linux i686; rv:10.0.2) gecko/20120227 abrowser/10.0.2",
+		"mozilla/5.0 (x11; ubuntu; linux x86_64; rv:10.0) gecko/20120204 abrowser/10.0"
+	]}

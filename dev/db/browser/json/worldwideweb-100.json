@@ -1,0 +1,16 @@
+{
+	"browserName":"worldwideweb",
+	"browserFork":"worldwideweb",
+	"browserVersion":"100",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"true",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"cannot handle XHTML or CSS",
+	"ualist": [
+		"worldwideweb (next)"
+]}

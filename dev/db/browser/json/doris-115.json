@@ -1,0 +1,16 @@
+{
+	"browserName":"doris",
+	"browserFork":"doris",
+	"browserVersion":"115",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"http://www.anygraaf.fi/browser/indexe.htm",
+	"ualist": [
+		"doris/1.15 [en] (symbian)"
+]}

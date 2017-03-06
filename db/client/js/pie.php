@@ -1,0 +1,1 @@
+{"100":{"browser":{"versionname":"PIE 1.0","releasedate":"1996-11-01","version":"1.0"}},"200":{"browser":{"releasedate":"1997-09-01","version":"2.0","versionname":"PIE 2.0"}},"300":{"browser":{"releasedate":"1998-11-01","version":"3.0","versionname":"PIE 3.0"}},"400":{"browser":{"versionname":"PIE 4.0","searchgroup":"15004","releasedate":"1999-02-01","version":"4.0"}}}

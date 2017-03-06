@@ -1,0 +1,17 @@
+{
+	"browserName":"obigo",
+	"browserFork":"obigo",
+	"browserVersion":"1000",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"530",
+	"browserReleaseDate":"jan 25, 2010",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"html5 support via webkit",
+	"ualist": [
+		"htc-f5151/2.18.502.0 "mozilla/5.0 (bmp; u; en) applewebkit/530.8 (khtml like gecko) obigo/w10 safari/530.8",
+		"htc-f5151/1.0 "mozilla/5.0 (bmp; u; en) applewebkit/530.8 (khtml like gecko) obigo/w10 safari/530.8"
+]}

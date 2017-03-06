@@ -1,0 +1,16 @@
+{
+	"browserName":"polaris",
+	"browserFork":"polaris",
+	"browserVersion":"700",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"525",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"polaris wap (7.0 version supports html5)",
+	"ualist": [
+		"mozilla/5.0 (brew; u; brew 3.1.5; en) applewebkit/525.26 (khtml, like gecko) polaris/7.0 safari/525.26 480x800 lge vx11000"
+]}

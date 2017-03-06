@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"2012-01-01","version":"1.0","versionname":"MiniBrowser Mobile 1.0"}},"200":{"browser":{"version":"2.0","versionname":"MiniBrowser Mobile 2.0","searchgroup":"15001","releasedate":"2013-01-01"}}}

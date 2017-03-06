@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"1993-03-01","version":"1.0","versionname":"NCSA Mosaic 1.0"}},"200":{"browser":{"releasedate":"1995-10-01","version":"2.0","versionname":"NCSA Mosaic 2.0"}},"300":{"browser":{"searchgroup":"15004","releasedate":"1997-01-01","version":"3.0","versionname":"NCSA Mosaic 3.0"}}}

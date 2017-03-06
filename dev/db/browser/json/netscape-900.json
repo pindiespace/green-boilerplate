@@ -1,0 +1,24 @@
+{
+	"browserName":"netscape",
+	"browserFork":"mozilla",
+	"browserVersion":"900",
+	"browserEngineName":"gecko",
+	"browserEngineVersion":"2.0",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (windows; u; win 9x 4.90; sg; rv:1.9.2.4) gecko/20101104 netscape/9.1.0285",
+		"mozilla/5.0 (x11; u; linux i686; en-us; rv:1.8.1.12) gecko/20080219 firefox/2.0.0.12 navigator/9.0.0.6",
+		"mozilla/5.0 (windows; u; windows nt 6.0; en-us; rv:1.8.1.12) gecko/20080219 firefox/2.0.0.12 navigator/9.0.0.6",
+		"mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.8.1.12) gecko/20080219 firefox/2.0.0.12 navigator/9.0.0.6",
+		"mozilla/5.0 (macintosh; u; ppc mac os x mach-o; en-us; rv:1.8.1.12) gecko/20080219 firefox/2.0.0.12 navigator/9.0.0.6",
+		"mozilla/5.0 (x11; u; linux i686; en-us; rv:1.8.1.8pre) gecko/20071015 firefox/2.0.0.7 navigator/9.0",
+		"mozilla/5.0 (x11; u; linux i686; en-us; rv:1.7.5) gecko/20070321 netscape/9.0",
+		"mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.8.1.8pre) gecko/20071015 firefox/2.0.0.7 navigator/9.0",
+		"mozilla/5.0 (windows; u; win 9x 4.90; en-us; rv:1.8.1.8pre) gecko/20071015 firefox/2.0.0.7 navigator/9.0",
+		"mozilla/5.0 (macintosh; u; ppc mac os x mach-o; en-us; rv:1.8.1.8pre) gecko/20071015 firefox/2.0.0.7 navigator/9.0"
+]}

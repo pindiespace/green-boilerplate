@@ -1,0 +1,1 @@
+{"200":{"browser":{"releasedate":"2012-01-01","version":"2.0","versionname":"QQ Browser mini 2.0"}},"300":{"browser":{"releasedate":"2012-08-27","version":"3.0","versionname":"QQ Browser mini 3.0"}},"400":{"browser":{"searchgroup":"15001","releasedate":"2013-05-27","version":"4.0","versionname":"QQ Browser mini 4.0"}}}

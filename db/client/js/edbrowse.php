@@ -1,0 +1,1 @@
+{"100":{"browser":{"searchgroup":"15004","releasedate":"2005-06-01","version":"1.0","versionname":"EdBrowse 1.0"}},"200":{"browser":{"releasedate":"2009-07-01","version":"2.0","versionname":"EdBrowse 2.0"}},"300":{"browser":{"versionname":"EdBrowse 3.0","searchgroup":"15003","releasedate":"2010-03-01","version":"3.0"}}}

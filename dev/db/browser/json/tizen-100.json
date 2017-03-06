@@ -1,0 +1,18 @@
+{
+	"browserName":"tizen",
+	"browserFork":"deskbrowze",
+	"browserVersion":"100",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"mobile webkit browser",
+	"ualist": [
+		"mozilla/5.0 (linux; u; tizen/1.0 like android; en-us; applewebkit/534.46 (khtml, like gecko) tizen /1.0 mobile",
+		"mozilla/5.0 (samsung; samsung-gt-i9500/1.0; u; tizen/1.0 like android; en-us) applewebkit/534.46 (khtml, like gecko) slp browser/1.0 mobile",
+		"mozilla/5.0 (linux; u; tizen/1.0 like android; en-us; applewebkit/534.46 (khtml, like gecko) tizen browser/1.0 mobile"
+]}

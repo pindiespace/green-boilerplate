@@ -1,0 +1,15 @@
+{
+	"browserName":"ibrowse",
+	"browserFork":"ibrowse",
+	"browserVersion":"300",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (compatible; ibrowse 3.0; amigaos4.0)"
+]}

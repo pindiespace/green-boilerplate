@@ -1,0 +1,22 @@
+{
+	"browserName":"dillo",
+	"browserFork":"dillo",
+	"browserVersion":"80",
+	"browserEngineName":"fltk",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"dillo/0.8.3",
+		"dillo 0.8.3",
+		"dillo/0.8.5",
+		"dillo 0.8.5",
+		"dillo/0.8.5-i18n-misc",
+		"dillo 0.8.5-i18n-misc",
+		"dillo/0.8.6-i18n-misc",
+		"dillo 0.8.6-i18n-misc"
+]}

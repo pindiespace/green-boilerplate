@@ -1,0 +1,18 @@
+{
+	"browserName":"amiga-aweb",
+	"browserFork":"amiga-aweb",
+	"browserVersion":"300",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"html 3.2, limited CSS1, javascript, frames, SSL http://www.amitrix.com/aweb.html",
+  "ualist":[
+   		"amiga-aweb/3.4.167se",
+		"amiga-aweb/3.5.09"
+  ]
+}

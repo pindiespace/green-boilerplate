@@ -1,0 +1,18 @@
+{
+	"browserName":"oregano",
+	"browserFork":"oregano",
+	"browserVersion":"100",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"risc os - http://www.oreganouk.net/oregano2.html",
+	"ualist": [
+		"mozilla/4.72 [en] (compatible; risc os 4.43; oregano 1.10)",
+		"mozilla/4.72 [en] (compatible; risc os 4.03; oregano 1.10)",
+		"mozilla/1.10 [en] (compatible; risc os 3.70; oregano 1.10)"
+]}

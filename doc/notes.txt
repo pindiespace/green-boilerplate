@@ -1,0 +1,80 @@
+GREEN BOILERPLATE
+
+TODO: apply YAML?
+http://www.yaml.org/start.html
+
+PRINCIPLES:
+ * Implements practical, versus Platonic ideal
+ * http://www.joelonsoftware.com/items/2008/03/17.html
+ 
+NESTED CALLBACKS IN SERIES-PARALLEL
+http://www.gameclosure.com/blog/2013/03/unravelling-nested-callbacks-with-ff
+
+
+TESTING:
+https://github.com/wimg/PHPCompatibility
+
+http://kangax.github.io/
+
+Chrome release summaries
+http://thenextweb.com/google/2014/05/20/chrome-35-launches-developer-control-touch-input-new-apis-javascript-features/
+
+EVENTS:
+https://developer.mozilla.org/en-US/docs/Web/Reference/Events
+http://docs.webplatform.org/wiki/dom
+http://www.w3.org/TR/DOM-Level-3-Events/
+http://www.w3.org/TR/DOM-Level-3-Events/#legacy-event-types
+http://en.wikipedia.org/wiki/DOM_events
+
+http://www.quirksmode.org/dom/events/
+
+
+GENERAL WEB PLATFORM:
+http://docs.webplatform.org/wiki/dom
+
+MathML:
+
+Acid Tests
+https://github.com/fred-wang/AcidTestsMathML
+
+
+NOTES:
+
+---------------
+STRUCTURE OF DETECTOR FUNCTIONS
+
+%jsproperty% is the name of the detector, which is 
+the same as the property name
+
+%helper% indicates that the detector is calling a helper JS function 
+elsewhere in the GBP JS object. server-side detectors do not have 
+helpers.
+
+%callback% indicates that the detector may take some time to 
+execute, so dependent properties have to wait. The GBP compiler 
+sorts this out, instead of the JS object using promises.
+
+All JS functions (except special helpers) over-write themselves
+with the returned value.
+
+If a detector function fails, it must return returned $UNDEFINED = 'undefined';
+
+
+PHP calling Python
+
+		/** 
+		 * write python called by PHP to a single file
+		 * http://stackoverflow.com/questions/19735250/running-a-python-script-from-php
+		 * ob_start();
+		 * passthru('/usr/bin/python2.7 /srv/http/assets/py/switch.py arg1 arg2');
+		 * $output = ob_get_clean(); 
+		 * or use proc_open
+		 * http://stackoverflow.com/questions/4619996/how-to-run-ruby-python-scripts-from-inside-php-passing-and-receiving-parameters
+		 * TODO: Catch python error messages
+		 */
+
+
+
+			self::$stats_arr['prop_fn_arr'] = $prop_fn_arr, "PROP FN ARRAY (ALL PROPERTIES WITH DETECTOR FUNCTIONS)");
+			self::print_array($prop_fn_name_arr, "PROP FN NAME ARRAY (DETECTORS REQUIRING HELPERS)");
+			self::print_array($pairwise_dependencies_arr, "PAIRWISE DEPENDENCIES RAW");

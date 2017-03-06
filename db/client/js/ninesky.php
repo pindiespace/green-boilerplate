@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"2010-01-01","version":"1.0","versionname":"Ninesky 1.0"}},"200":{"browser":{"searchgroup":"15001","releasedate":"2013-01-01","version":"2.0","versionname":"Ninesky 2.0"}}}

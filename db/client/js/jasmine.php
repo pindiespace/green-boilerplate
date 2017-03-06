@@ -1,0 +1,1 @@
+{"80":{"browser":{"releasedate":"2009-02-01","version":"0.8","versionname":"Jasmine 0.8"}},"100":{"browser":{"searchgroup":"15001","releasedate":"2009-08-06","version":"1.0","versionname":"Jasmine 1.0"}}}

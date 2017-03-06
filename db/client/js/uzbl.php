@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"2009-08-01","version":"1.0","versionname":"Uzbl 1.x"}},"200":{"browser":{"releasedate":"2013-05-01","version":"2.0","versionname":"Uxbl 2.x","searchgroup":"15003"}}}

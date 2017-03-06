@@ -1,0 +1,1 @@
+{"200":{"browser":{"releasedate":"2002-11-01","version":"2.0","versionname":"Palm WebPro 2.0"}},"300":{"browser":{"releasedate":"2003-10-01","version":"3.0","versionname":"Palm WebPro 3.0"}},"350":{"browser":{"releasedate":"2004-09-01","version":"3.5","versionname":"Palm WebPro 3.5","searchgroup":"15004"}}}

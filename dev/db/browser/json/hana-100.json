@@ -1,0 +1,17 @@
+{
+	"browserName":"hana",
+	"browserFork":"hana",
+	"browserVersion":"300",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"418",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (macintosh; u; ppc mac os x; en) applewebkit/418.9 (khtml, like gecko) hana/1.1",
+		"mozilla/5.0 (macintosh; u; ppc mac os x; en) applewebkit/417.9 (khtml, like gecko) hana/1.0",
+		"mozilla/5.0 (macintosh; u; i386 mac os x; en) applewebkit/417.9 (khtml, like gecko) hana/1.0"
+	]}

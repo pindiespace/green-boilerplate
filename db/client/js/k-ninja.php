@@ -1,0 +1,1 @@
+{"200":{"browser":{"searchgroup":"15004","releasedate":"2006-06-03","version":"2.0","versionname":"K-Ninja 2.0"}}}

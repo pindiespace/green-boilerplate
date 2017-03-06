@@ -1,0 +1,1 @@
+{"100":{"browser":{"versionname":"IBM WebExplorer 1.0","searchgroup":"15004","releasedate":"1995-11-27","version":"1.0"}}}

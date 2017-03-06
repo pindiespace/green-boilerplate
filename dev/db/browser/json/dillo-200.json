@@ -1,0 +1,17 @@
+{
+	"browserName":"dillo",
+	"browserFork":"dillo",
+	"browserVersion":"200",
+	"browserEngineName":"fltk",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"dillo/2.0",
+		"dillo/2.2",
+		"dillo/2.1.1"
+]}

@@ -1,0 +1,1 @@
+{"310":{"browser":{"releasedate":"2005-11-02","version":"3.1","versionname":"Nokia Browser s60v1"}},"320":{"browser":{"releasedate":"2007-10-01","versionname":"Nokia Browser s60v2","version":"3.2","searchgroup":"15001"}}}

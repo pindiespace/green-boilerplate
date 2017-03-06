@@ -1,0 +1,1 @@
+{"1":{"browser":{"releasedate":"2004-12-13","version":"0.01","versionname":"Minimo 0.01"}},"2":{"browser":{"searchgroup":"15004","releasedate":"2006-01-01","version":"0.02","versionname":"Minimo 0.02"}}}

@@ -1,0 +1,21 @@
+{
+	"browserName":"galeon",
+	"browserFork":"mozilla",
+	"browserVersion":"100",
+	"browserEngineName":"gecko",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"true",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"firefox clone http://projects.gnome.org/epiphany/",
+	"ualist": [
+		"mozilla/5.0 (x11; u; linux i686; en-us; rv:1.6) gecko/20040115 galeon/1.3.12",
+		"mozilla/5.0 (x11; u; linux i686; en-us; rv:1.7.3) gecko/20041007 galeon/1.3.18 (debian package 1.3.18-1.1)",		
+		"mozilla/5.0 (x11; u; linux i686; en-us; rv:1.7.12) gecko/20050929 galeon/1.3.21",
+		"mozilla/5.0 galeon/1.2.0 (x11; linux i686; u;) gecko/20020326",
+		"mozilla/5.0 (x11; u; freebsd i386; en-us; rv:1.6) gecko/20040406 galeon/1.3.15",
+		"mozilla/5.0 (x11; u; linux; i686; en-us; rv:1.6) gecko galeon/1.3.14"
+]}

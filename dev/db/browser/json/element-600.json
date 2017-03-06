@@ -1,0 +1,16 @@
+{
+	"browserName":"element",
+	"browserFork":"element",
+	"browserVersion":"600",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"533",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (windows; u; windows nt 6.1; cs-cz) applewebkit/533+ (khtml, like gecko) element 6.0",
+		"mozilla/5.0 (windows; u; windows nt 5.1; ja-jp) applewebkit/533+ (khtml, like gecko) element browser 6.0"
+	]}

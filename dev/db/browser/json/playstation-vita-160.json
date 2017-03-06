@@ -1,0 +1,18 @@
+{
+	"browserName":"playstation vita",
+	"browserFork":"playstation",
+	"browserVersion":"160",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"531",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"true",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"http://us.playstation.com/psvita/features/",
+	"ualist": [
+		"mozilla/5.0 (playstation vita 1.61) applewebkit/531.22.8 (khtml, like gecko) silk/3.2",
+		"mozilla/5.0 (playstation vita 1.67) applewebkit/531.22.8 (khtml, like gecko) silk/3.2",
+		"mozilla/5.0 (playstation vita 1.69) applewebkit/531.22.8 (khtml, like gecko) silk/3.2",
+]}

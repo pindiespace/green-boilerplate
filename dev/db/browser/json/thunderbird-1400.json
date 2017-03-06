@@ -1,0 +1,15 @@
+{
+	"browserName":"thunderbird",
+	"browserFork":"thunderbird",
+	"browserVersion":"1400",
+	"browserEngineName":"gecko",
+	"browserEngineVersion":"14.0",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+"mozilla/5.0 (x11; linux i686; rv:14.0) gecko/20120714 thunderbird/14.0"
+]}

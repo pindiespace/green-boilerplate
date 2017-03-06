@@ -1,0 +1,1206 @@
+ * =====================================================================================
+ *
+ * The "immobile" or "unmoveable" web
+ * Search Group keyword: "unmoveable"
+ * Digital TVs
+ * Set-top boxes (e.g. roku, apple tv)
+ * Interactive signs and billboards
+ * Game consoles
+ * 
+ * Smart TV detector - tv|smarttv|googletv|appletv|hbbtv|pov_tv|netcast.tv
+ * 
+ * isSmartTV: function () {
+        return navigator.userAgent.search(/TV/i) >= 0;
+    },
+
+  detectOrientation: function () {
+        return (window.innerHeight > window.innerWidth) ? "portrait" : "landscape";
+    },
+ * 
+ * HTML5 Tests
+ * http://html5test.com/results/other.html#television
+ * 
+ * EXTREMELY INTERESTING CATEGORY DETECTION
+ * https://github.com/bjankord/Categorizr/blob/master/categorizr.php
+ * 
+ * Console browsers, the ultimate torture test
+ * https://speakerdeck.com/anna/console-browsers-the-ultimate-torture-test
+ * 
+ * Some device user agents
+ * http://decadecity.net/devices/
+ * 
+ * 
+ * HTML5 Test Results
+ * http://html5test.com/results/other.html#television
+ *
+ * =====================================================================================
+ 
+ * =====================================================================================
+ *
+ * game consoles and media players
+ *
+ * Good reference and pics at
+ * http://alistapart.com/article/testing-websites-in-game-console-browsers
+ *
+ * =====================================================================================
+ 
+ * -------------------------------------------------------------------------------------
+ * OUYA
+ * Android-based micro gaming console, uses TV
+ * http://html5test.com/compare/browser/ouya.html
+ * Browser video
+ * http://www.digitalspy.com/gaming/news/a447826/ouya-user-interface-web-browser-revealed-in-developer-video.html
+ * http://www.pcr-online.biz/news/read/video-ouya-user-interface-and-web-browser-revealed/029895
+ * -------------------------------------------------------------------------------------
+ 
+ * -------------------------------------------------------------------------------------
+ * OUYA 4
+ * June, 2013 (estimate)
+ * -------------------------------------------------------------------------------------
+ 
+ [start]
+ client=ouya
+ version=4
+ [ualist]
+ Mozilla/5.0 (Linux; U; Android OUYA 4.1.2; en-us; OUYA Build/JZO54L-OUYA) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+ [end]
+ 
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation Vita, Webkit version of Netfront, NOT the Silk browser
+ * distinct from other playstations in use of touch vs game controls
+ * Sites can only be viewed in landscape at 960x544 at 220ppi, 
+ * uses touchscreen
+ * http://nz.playstation.com/psvitasystem/
+ * HTML5 Test: 84/500
+ * CSS3 Test: 32% 55%
+ * Acid3 Test: 100%
+ * Screen 960 x 544, browser 1024 x 585
+ * -------------------------------------------------------------------------------------
+
+
+ * -------------------------------------------------------------------------------------
+ * Playstation Vita 3.0
+ * November 4, 2013
+ * Versions at:
+ * http://nz.playstation.com/psvita/support/system-software/?page=1
+ * http://blog.us.playstation.com/2013/11/04/ps-vita-3-00-system-update-coming-soon/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstationvita
+version=3
+[ualist]
+Mozilla/5.0 (PlayStation Vita 3.00) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 3.01) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 3.01) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2 VTE/2.50
+Mozilla/5.0 (PlayStation Vita 3.00) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2 
+Mozilla/5.0 (PlayStation Vita 3.01) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation Vita 2.0
+ * November 21, 2012
+ * http://gadgets.ndtv.com/games/news/playstation-vita-20-update-brings-playstation-plus-cloud-saving-and-more-295112
+ * http://kotaku.com/5962066/ps-vita-gets-its-big-20-system-update
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstationvita
+version=2.0
+[ualist]
+Mozilla/5.0 (Playstation Vita 2.02) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.02) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.05) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.06) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.10) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.12) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.60) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.61) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 2.01) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2 
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation Vita 1.6
+ * February 6, 2012
+ * http://www.electronista.com/articles/12/02/06/sony.preps.ps.vita.update.for.february.8/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstationvita
+version=1.6
+[ualist]
+Mozilla/5.0 (PlayStation Vita 1.67) AppleWebKit/531.22.8 (KHTML, like Gecko) Silk/3.2 
+Mozilla/5.0 (PlayStation Vita 1.69) AppleWebKit/531.22.8 (KHTML, like Gecko) Silk/3.2 
+Mozilla/5.0 (PlayStation Vita 1.61) AppleWebKit/531.22.8 (KHTML, like Gecko) Silk/3.2
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation Vita 1.0 and less
+ * June 22, 2011
+ * at this time the only UAs are coming from emulators and developer consoles
+ * http://forums.qj.net/nds-hacks-modding-media/180987-ds-nes-emulator-nesds-0-53a-released.html
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstationvita
+version=1
+[ualist]
+Mozilla/5.0 (PlayStation Vita 0.53) AppleWebKit/531.22.8 (KHTML, like Gecko) Silk/3.2
+Mozilla/5.0 (PlayStation Vita 1.81) AppleWebKit/531.22.8 (KHTML, like Gecko) Silk/3.2 
+[end]
+
+
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, PSP-3000
+ * replaced by Playstation Vita
+ * runs ancient Netfront browser
+ * basic JavaScript, low memory (2mb) for browser
+ * Complete firmware release
+ * http://en.wikipedia.org/wiki/PlayStation_Portable_system_software
+ * HTML5 and CSS3 tests won't run
+ * Web Design principles:
+ * http://www.brothercake.com/site/resources/reference/psp/
+ * Screen  480×272 (16:9)
+ * Screen 480 x 272, browser 480 x 272
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * PSP 6.0 firmware
+ * September 10, 2009
+ * http://www.ign.com/articles/2009/09/10/psp-updates-to-600
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=psp
+version=6
+[ualist]
+Mozilla/4.0 (PSP (PlayStation Portable); 6.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.10)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.20)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.30)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.38)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.39)
+Mozilla/4.0 (PSP (PlayStation Portable); 6.60)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 5.0
+ * October 15, 2008
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=psp
+version=5
+[ualist]
+Mozilla/4.0 (PSP (PlayStation Portable); 5.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 5.01)
+Mozilla/4.0 (PSP (PlayStation Portable); 5.03)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 4.0
+ * June 18, 2008
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=psp
+version=4
+[ualist]
+Mozilla/4.0 (PSP (PlayStation Portable); 4.05)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 3.0
+ * November 21, 2006
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=psp
+version=3
+[ualist]
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 2.7
+ * Flash content
+ * April 25, 2006
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=psp
+version=2.7
+[ualist]
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 3000 2.0
+ * First version of Browser
+ * http://www.ign.com/articles/2005/07/28/hands-on-psp-web-browser
+ * September 1, 2005
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=psp
+version=2
+[ualist]
+Mozilla/4.0 (PSP PlayStation Portable); 2.00)
+Mozilla/4.0 (PSP(PlayStation Portable); 2.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 2.00)
+Mozilla/4.0 (PlayStation Portable); 2.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 2.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 2.00
+Mozilla/4.0 (PSP (PlayStation Portable); 2.00)
+Mozilla/4.0 (PSP (PlayStation Portable); 2.20)
+[end]
+ 
+ * -------------------------------------------------------------------------------------
+ * Sony Playstation PSP-1000, 3000 1.0
+ * No web browser
+ * December 12, 2004
+ * -------------------------------------------------------------------------------------
+
+
+
+ * -------------------------------------------------------------------------------------
+ * Sony playstation4 console, Netfront Webkit engine Safari-like
+ * http://console.maban.co.uk/device/ps3
+ * HTML5 Test: 336/555
+ * CSS3 Test: 51%
+ * Acid3 Test: 100%
+ * screen 1920 x 1080, browser 1540 x 754
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 4
+ * Web browser requires login for use
+ * http://mashable.com/2013/11/15/playstation-4-review-part-2/
+ * November 15, 2013 (1.5 just a week later)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstation4
+version=1
+[ualist]
+Mozilla/5.0 (PlayStation 4 1.51) AppleWebKit/536.26 (KHTML, like Gecko)
+Mozilla/5.0 (PlayStation 4 1.000) AppleWebKit/536.26 (KHTML, like Gecko)
+Mozilla/5.0 (PlayStation 4 1.52) AppleWebKit/536.26 (KHTML, like Gecko)
+Mozilla/5.0 (PlayStation 4 1.000) AppleWebKit/536.26 (KHTML, like Gecko) 
+Mozilla/5.0 (PlayStation 4 1.52) AppleWebKit/536.26 (KHTML, like Gecko)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * sony playstation3 console, Netfront engine
+ * http://console.maban.co.uk/device/ps3
+ * May 16, 2005
+ * HTML5 Test: 68/500
+ * CSS3 Test: 38%
+ * Acid3 Test: 100%
+ * Browser Size reported as 1094 x 928. Screen Resolution reported as 1920 x 1080
+ * Firmware released at:
+ * http://nz.playstation.com/ps3/support/system-software/?page=1
+ * http://en.wikipedia.org/wiki/PlayStation_3
+ * may have to break up firmware patches
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 4.0
+ * November 30, 2011
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstation3
+version=4.0
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3 4.21) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3 4.50) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3 4.53) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3; 4.31) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3 4.11) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3 4.30) AppleWebKit/531.22.8 (KHTML, like Gecko)
+Mozilla/5.0 (PLAYSTATION 3 4.10) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.11) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.20) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.21) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.25) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.30) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.31) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.31) AppleWebKit/531.22.8 (KHTML, like Gecko),gzip(gfe) 
+Mozilla/5.0 (PLAYSTATION 3 4.40) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.41) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.45) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.46) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.50) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.53) AppleWebKit/531.22.8 (KHTML, like Gecko) 
+Mozilla/5.0 (PLAYSTATION 3 4.55) AppleWebKit/531.22.8 (KHTML, like Gecko)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 3.0
+ * September 1, 2009
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=playstation3
+version=3.0
+[ualist]
+Mozilla/4.0 (PS3 (PlayStation 3); 1.00)
+Mozilla/5.0 (PLAYSTATION 3; 3.55)
+Browser Mozilla/5.0 (PLAYSTATION 3; 3.15) 
+Mozilla/5.0 (PLAYSTATION 3; 3.30) 
+Mozilla/5.0 (PLAYSTATION 3; 3.50) 
+Mozilla/5.0 (PLAYSTATION 3; 3.55) 
+Mozilla/5.0 (PLAYSTATION 3; 3.6) 
+Mozilla/5.0 (PLAYSTATION 3; 4.00) 
+Mozilla/5.0 (PLAYSTATION 3; 4.31) 
+Mozilla/5.0 (PLAYSTATION 3;2.00) 
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 2.0
+ * November 8, 2007
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=playstation3
+version=2.0
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3; 2.00)
+Mozilla/5.0 (PLAYSTATION 3; 2.30) 
+ Mozilla/5.0 (PLAYSTATION 3; 2.40) 
+Mozilla/5.0 (PLAYSTATION 3; 2.53) 
+Mozilla/5.0 (PLAYSTATION 3; 2.60) 
+Mozilla/5.0 (PLAYSTATION 3; 2.80)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 1.9
+ * July 23, 2007
+ * http://nz.playstation.com/ps3/support/system-software/detail/item72485/Update-features-(ver-1-90)/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstation3
+version=1.90
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3; 1.90)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 1.7
+ * April 18, 2007
+ * http://gizmodo.com/253541/ps3-17-firmware-available-enables-more-backwardness
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstation3
+version=1.70
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3; 1.70)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Playstation 3, firmware 1.7
+ * November 11, 2006
+ * http://en.wikipedia.org/wiki/PlayStation_3
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=playstation3
+version=1.0
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3; 1.5)
+Mozilla/5.0 (PLAYSTATION 3; 1.10)
+Mozilla/5.0 (PLAYSTATION 3; 1.00)
+Mozilla/5.0 (PLAYSTATION 3; 1.0)
+Mozilla/5.0 (PLAYSTATION 3; 1.00)
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * Experia Play
+ * http://console.maban.co.uk/device/xperiaplay
+ * http://en.wikipedia.org/wiki/Xperia_Play
+ * Can't be recognized apart from stock Android browser
+ * HTML5 Test: 212/500
+ * CSS3 Test: 42%
+ * April 1, 2011
+ * -------------------------------------------------------------------------------------
+ 
+ * -------------------------------------------------------------------------------------
+ * Xbox Internet Explorer (IE)
+ * No plugins on IE 7, 8 original Xbox
+ * -------------------------------------------------------------------------------------
+
+
+ * -------------------------------------------------------------------------------------
+ * Microsoft Xbox IE 7 plugins don't run
+ * October 18, 2006 (earliest possible date)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=iexbox
+version=7.0
+[ualist]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/3.1; Xbox
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Microsoft Xbox IE 8
+ * http://www.techcular.com/internet-explorer-8-xbox-360/
+ * March 19, 2009 (earliest possible date)
+ * January 5, 2011 (real date)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=iexbox
+version=8.0
+[ualist]
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/3.1; Xbox
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Microsoft Xbox 360
+ * Runs IE9, mobile mode listed when using an SD TV (low-resolution, approx 640x480)
+ * May 12, 2005
+ * But no browser until
+ * May 20, 2012
+ * The "Internet Explorer App" must be manually installed
+ * http://support.xbox.com/en-US/xbox-360/apps/internet-explorer-info
+ * IE 9 added about May 10, 2012, unlikely to see older versions
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=iexbox
+version=9.0
+[ualist]
+Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Xbox)
+Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Xbox)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Microsoft Xbox One (really IE 10)
+ * HTML5 Test: 316/555
+ * CSS3 Test: 51%
+ * Acid3 Test: 100%
+ * browser 1236 x 701, screen 1324 x 745
+ * November 18, 2013
+ * the "iemobile" is present when xbox one is in mobile mode, using an SD TV (low-resolution, approx 640x480)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=iexbox
+version=10.0
+[ualist]
+Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; Xbox; Xbox One)
+Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; Xbox; Xbox One)
+Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/10.0; Xbox; Xbox One)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo DS
+ * Nintendo DS, DS Lite
+ * Nintendo DSI, larger display, camera
+ * Nintendo DSU XL, 
+ * -------------------------------------------------------------------------------------
+
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo dsi, runs Opera browser (no Flash)
+ * http://en.wikipedia.org/wiki/Nintendo_DS_Browser
+ * http://console.maban.co.uk/device/dsi
+ * http://maban.co.uk/73
+ * HTML5 Test: 89/500
+ * CSS3 Test: Failed to run
+ * Acid3 Test: 60%
+ * Screen 768 x 528, browser 768 x 528
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo DS - opera, but no user-agent found
+ * July 23, 2006
+ * discontinued in August 2007
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo dsi Opera browser update 507
+ * July 29, 2009
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=dsi
+version=507
+[ualist]
+Opera/9.50 (Nintendo DSi; Opera/507; U; de) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; de) (via babelfish.yahoo.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; de),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; en-GB) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; en-US) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; en-US); 
+Opera/9.50 (Nintendo DSi; Opera/507; U; es-ES) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; es-ES),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; es-LA) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; es-LA),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; fr) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; fr),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; fr-CA) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; fr-CA),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; it) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; ja) 
+Opera/9.50 (Nintendo DSi; Opera/507; U; ja),gzip(gfe) (via translate.google.com) 
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo dsi Opera browser 483
+ * April 2009 (estimate)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=dsi
+version=483
+[ualist]
+Opera/9.50 (Nintendo DSi; Opera/483; U; de) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; de),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; en-GB) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; en-US) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; es-ES) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; es-LA) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; fr) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; fr),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; fr-CA) 
+Opera/9.50 (Nintendo DSi; Opera/483; U; xx-xx)
+[end]
+
+* --------------------------------------------------------------------------------------
+* Nintendo dsi Opera browser 446
+* November 1, 2008
+* --------------------------------------------------------------------------------------
+
+[start]
+client=dsi
+version=446
+[ualist]
+Opera/9.50 (Nintendo DSi; Opera/446; U; ja) 
+Opera/9.50 (Nintendo DSi; Opera/446; U; ja),gzip(gfe) (via translate.google.com) 
+Opera/9.50 (Nintendo DSi; Opera/466; U; en-US) 
+[end]
+
+
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo 3DS
+ * The 3D Internet Browser is Netfront Browser NX v1.0 based on WebKit engine.
+ * http://console.maban.co.uk/device/3ds
+ * DETAILED SPECS
+ * http://www.nintendo.com/3ds/internetbrowser/specs/
+ * DETAILED VERSION SPECS
+ * http://3dbrew.org/wiki/Internet_Browser
+ * http://en.wikipedia.org/wiki/Internet_Browser_(Nintendo_3DS)
+ * http://en.wikipedia.org/wiki/History_of_Nintendo#Nintendo_DS_and_Wii
+ * Version of Opera browser
+ *
+ * HTML5 test: 98/500
+ * CSS3 test: 42%
+ *
+ * WebKit Netfront
+ * HTML5 Test: 109/500
+ * CSS3 Test: 64%
+ * Screen 320 x 240, Browser 320 x 369
+ * 1st version - Dec 2009?
+ * -------------------------------------------------------------------------------------
+ * Nintendo 3DS XL
+ * Webkit version of NetFront.
+ * http://console.maban.co.uk/device/3dsxl
+ * HTML5 Test: 109/500
+ * CSS3 Test: 42% 43%
+ * Acid3 Test: 92%
+ * Screen 320 x 240, browser 554 x 640
+ * June 6, 2011
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=3ds
+version=1.7
+[ualist]
+Mozilla/5.0 (Nintendo 3DS; U; ; en) Version/1.7498.EU
+Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7455.EU
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo Wii (original)
+ * Modified version of Opera browser
+ * Wii Shop Channel
+ * http://www.wiibrew.org/wiki/Accessing_Wii_Shop_Channel_From_PC
+ * November 19, 2006
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=wii
+version=1
+[ualist]
+opera/9.30 (nintendo wii; u; ; 2047-7; en)
+Opera/9.30 (Nintendo Wii; U; ; 2071; Wii Shop Channel/1.0; en)
+Opera/9.30 (Nintendo Wii; U; ; 2047-7;pt-br)
+Opera/9.30 (Nintendo Wii; U; ; 2047-7;es)
+Opera/9.30 (Nintendo Wii; U; ; 2047-7;en)
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; fr)
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; de)
+Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2) Gecko/20100115 Mozilla/5.0(PLAYSTATION 3; 2.00) and Opera/9.23 (Nintendo Wii; U;; 1038-58; Wii Internet Chanel/1.0;en
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; en)
+Opera/9.10 (Nintendo Wii; U; ; 1621; en)
+Opera/9.00 (Nintendo Wii; U; ; 1309-9; en)
+Opera/9.30 (Nintendo Wii; U; ; 3642; en) 
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; en),gzip(gfe),gzip(gfe) 
+Opera/9.30 (Nintendo Wii; U; ; 3642; nl),gzip(gfe),gzip(gfe) 
+Opera/9.30 (Nintendo Wii; U; ; 3642; fr),gzip(gfe),gzip(gfe) 
+Opera/9.30 (Nintendo Wii; U; ; 3642; nl),gzip(gfe),gzip(gfe) 
+Opera/9.30 (Nintendo Wii; U; ; 3642; en),gzip(gfe),gzip(gfe) 
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; en) 
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; en) 
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; fr) 
+Opera/9.30 (Nintendo Wii; U; ; 2047-7; en) 
+Opera/9.10 (Nintendo Wii; U; ; 1621; en)
+opera/9.30 (nintendo wii; u; ; 2071; wii shop channel/1.0; en)
+opera/9.30 (nintendo wii; u; ; 2047-7;pt-br)
+opera/9.30 (nintendo wii; u; ; 2047-7;es)
+opera/9.30 (nintendo wii; u; ; 2047-7;en)
+opera/9.30 (nintendo wii; u; ; 2047-7; fr)
+opera/9.30 (nintendo wii; u; ; 2047-7; de)
+opera/9.30 (nintendo wii; j; ; 2071; wii shop channel/1.0; jp)
+opera/9.30 (nintendo wii; u; ; 2047-7; de)
+opera/9.30 (nintendo wii; u; ; 2047-7; de),gzip(gfe) (via translate.google.com)
+opera/9.30 (nintendo wii; u; ; 2047-7; en)
+opera/9.30 (nintendo wii; u; ; 2047-7; es-es)
+opera/9.30 (nintendo wii; u; ; 2047-7; fr)
+opera/9.30 (nintendo wii; u; ; 2047-7; fr),gzip(gfe) (via translate.google.com)
+opera/9.30 (nintendo wii; u; ; 2047-7; it)
+opera/9.30 (nintendo wii; u; ; 2047-7; ja)
+opera/9.30 (nintendo wii; u; ; 2047-7; nl
+opera/9.30 (nintendo wii; u; ; 2047-7; nl)
+opera/9.30 (nintendo wii; u; ; 2047-7; wii shop channel/1.1; en
+opera/9.30 (nintendo wii; u; ; 2047-7; wii shop channel/1.1; en)
+opera/9.30 (nintendo wii; u; ; 2047-7;en)
+opera/9.30 (nintendo wii; u; ; 2047-7;es)
+opera/9.30 (nintendo wii; u; ; 2071; wii shop channel/1.0; en)
+opera/9.30 (nintendo wii; u; ; 2071; wii shop channel/13.0(a); en)
+opera/9.30 (nintendo wii; u; ; 2071; wii shop channel/20.0(a); de)
+opera/9.30 (nintendo wii; u; ; 2077-4; wii shop channel/18.0(a); en)
+opera/9.30 (nintendo wii; u; ; 3642; de)
+opera/9.30 (nintendo wii; u; ; 3642; de),gzip(gfe) (via translate.google.com)
+opera/9.30 (nintendo wii; u; ; 3642; nl),gzip(gfe) (via translate.google.com)
+opera/9.30 (nintendo wii; u; ; 3642; wii shop channel/1.0; de)
+opera/9.30 (nintendo wii; u; ; 3642; wii shop channel/1.0; en)
+opera/9.30(nintendo wii; u; : 2047-7.ja)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0; en)
+Opera/9.23 (Nintendo Wii; U; ; 1038-58; Wii Internet Channel/1.0; en)
+opera/9.23 (nintendo wii; u; ; 1038-58; wii internet channel/1.0; en)
+opera/9.23 (nintendo wii; u; ; 1038-58; wii internet channel/1.0; de)
+opera/9.23 (nintendo wii; u; ; 1038-58; wii internet channel/1.0; en)
+opera/9.23 (nintendo wii; u; ; 1038-58; wii shop channel/1.0; en)
+opera/9.10 (nintendo wii; u; ; 1621; en-us)
+opera/9.10 (nintendo wii; u; ; 1621; es-es)
+opera/9.10 (nintendo wii; u; ; 1621; ja)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii internet channel/1.0; en)
+opera/9.00 (nintendo wii
+opera/9.00 (nintendo wii; u; ; 1038-58; internet channel/1.0; en)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii internet channel/1.0; en)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/; en)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0,gzip(gfe) (via translate.google.com)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0;
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0; en
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.0; en)
+opera/9.00 (nintendo wii; u; ; 1038-58; wii shop channel/1.1; en)
+opera/9.00 (nintendo wii; u; ; 103858; wii shop channel/1.0; en)
+opera/9.00 (nintendo wii; u; ; 1309-9; en)
+opera/9.00 (nintendo wii;u; ; 1038-58; wii shop channel/1.0;en)
+opera/9.00(nintendo wii; u; ; 1038-58; wii shop channel/1.0; en
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo Wii U
+ * webkit version of Netfront
+ * http://www.nintendo.com/wiiu/built-in-software/browser-specs/extended-functionality/
+ * http://en.wikipedia.org/wiki/History_of_Nintendo#Nintendo_DS_and_Wii
+ * http://wiiubrew.org/wiki/Internet_Browser
+ * http://console.maban.co.uk/device/wiiu
+ * HTML5 Test: 258/500
+ * CSS3 Test: 48%
+ * Acid3 Test: 100%
+ * Browser 980x514, screen 854 x 480
+ * Also the "Wii Internet Channel"
+ * Netfront NX 3.0
+ * Complete specs:
+ * http://www.nintendo.co.uk/Wii-U/System-Software/Internet-Browser/Internet-Browser-Specifications/Internet-Browser-Specifications-721578.html
+ * Emulator at:
+ * Emulator (mac and windows) at:
+ * https://dolphin-emu.org/download/
+ * -------------------------------------------------------------------------------------
+
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo Wii U 2.0
+ * Netfront NX 3.0
+ * October 1, 2013
+ * http://www.neogaf.com/forum/showthread.php?t=688353&page=31
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=wiiu
+version=2.0
+[ualist]
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.28 (KHTML, like Gecko) NX/3.0.3.12.6 NintendoBrowser/2.0.0.9362.EU
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.28 (KHTML, like Gecko) NX/3.0.3.12.6 NintendoBrowser/2.0.0.9362.US
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Nintendo Wii U Browser 1.x
+ * Netfront NX 2.0
+ * November 6, 2012
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=wiiu
+version=1.5
+[ualist]
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.10.9 NintendoBrowser/1.5.0.8047.EU
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.10.9 NintendoBrowser/1.5.0.8047.US
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.23 NintendoBrowser/1.1.0.7579.EU
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.21 NintendoBrowser/1.0.0.7494.US
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.23 NintendoBrowser/1.1.0.7579.EU
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.23 NintendoBrowser/1.1.0.7579.JP
+Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.23 NintendoBrowser/1.1.0.7579.US
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * bunjalloo - nintendo ds - http://code.google.com/p/quirkysoft/wiki/bunjalloo
+ * No JavaScript or Flash, ever
+ * Versions exist back to 0.1 but no user agent or files to download
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Bunjalloo 0.8
+ * December 2009
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=bunjalloo
+version=0.8
+[ualist]
+Bunjalloo/0.8(Nintendo DS;U;es)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Bunjalloo 0.7
+ * January 2009 (estimate)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=bunjalloo
+version=0.7
+[ualist]
+bunjalloo/0.7.6(nintendo ds;u;en)
+bunjalloo/0.7.4(nintendo ds;u;en)
+[end]
+
+
+ 
+ * -------------------------------------------------------------------------------------
+ * DIGITAL TV AND SET-TOP BOX SECTION
+ * -------------------------------------------------------------------------------------
+ 
+ * -------------------------------------------------------------------------------------
+ * HBB TV
+ * https://www.hbbtv.org/
+ * 
+ * http://en.wikipedia.org/wiki/Hybrid_Broadcast_Broadband_TV
+ *
+ * Services delivered through HbbTV include enhanced teletext, catch-up services, video-on-demand, EPG, 
+ * interactive advertising, personalisation, voting, games, social networking, and other multimedia applications.
+ *
+ * Specifies browsing, and a standard for "app" development for the immobile web
+ * http://hybrid-tv-world.blogspot.com/p/link-gallery.html
+ * 
+ * Specification
+ * https://www.hbbtv.org/pages/about_hbbtv/specification.php
+ *
+ * CEA-2014 (CE-HTML) for HbbTV are:
+ * Definition of the application language (XHTML, CSS and JavaScript including AJAX)
+ * Definition of how to embed non-linear A/V Content in an application
+ * Definition of DOM event handling (eg key events)
+ * Specification of still image formats
+ *
+ * Test suite
+ * https://www.hbbtv.org/pages/about_hbbtv/hbbtv_test_suite.php
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=hbbtv
+version=1
+[ualist]
+HbbTV/1.1.1 (;Samsung;SmartTV2013;T-FXPDEUC-1102.2;;) WebKit
+Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 (+PVR;Mstar;OWB;;;)
+Opera/9.80 (Linux sh4; U; ; en; CreNova Build) AppleWebKit/533.1 (KHTML like Gecko) Version/4.0 Mobile Safari/533.1 HbbTV/1.1 (;CreNova;CNV001;1.0;1.0; FXM-U2FsdGVkX19AfSGBrU5pNwqodai+lZp2xktKFNHDE46SbYGa7Wp+eG5Z56WMDCQu-END; en) Presto/2.9 Version
+Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.4 (KHTML, like Gecko) MWB/1.0 Safari/537.4 HbbTV/1.2.1 (; Mstar; MWB;;;)
+Opera/9.80 (Linux mips; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.2.0 PHILIPSTV/1.1.1 Firmware/171.56.0 (PhilipsTV, 1.1.1,) en) Presto/2.12.362 Version/12.11
+[end]
+
+ * =====================================================================================
+ * HDMI Dongle
+ * =====================================================================================
+
+[start]
+client=hdmidongle
+version=1
+[ualist]
+Mozilla/5.0 (Linux; U; Android 4.1.1; en-gb; POV_TV-HDMI-KB-01 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+[end]
+
+ * =====================================================================================
+ * LG TV (netcast)
+ * =====================================================================================
+
+[start]
+client=lgnetcasttv
+version=1
+[ualist]
+Mozilla/5.0 (DirectFB; U; Linux 35230; en) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ LG Browser/4.1.4(+3D+SCREEN+TUNER; LGE; 42LW5700-SA; 04.02.28; 0x00000001;); LG NetCast.TV-2011
+Mozilla/5.0 (DirectFB; U; Linux mips; en) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ LG Browser/4.0.10(+SCREEN+TUNER; LGE; 42LE5500-SA; 04.02.02; 0x00000001;); LG NetCast.TV-2010
+Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+mouse+3D+SCREEN+TUNER; LGE; GLOBAL-PLAT5; 03.07.01; 0x00000001;); LG NetCast.TV-2013/03.17.01 (LG, GLOBAL-PLAT4, wired)
+Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ HbbTV/1.1.1 ( ;LGE ;NetCast 3.0 ;1.0 ;1.0M ;)
+[end]
+
+ * =====================================================================================
+ * Philips TV slovak
+ * https://en.nettvplus.com/index.html
+ * set-top box giving access to international channels
+ * CE-HTML - standard for access to internet on devices that don't have the 
+ * quality of a high-res computer monitor (essentially XHTML 1)
+ * http://en.wikipedia.org/wiki/CE-HTML
+ * =====================================================================================
+
+[start]
+client=nettv
+version=1
+[ualist]
+Opera/9.70 (Linux armv6l ; U; CE-HTML/1.0 NETTV/2.0.2; en) Presto/2.2.1
+Opera/9.80 (Linux armv6l ; U; CE-HTML/1.0 NETTV/3.0.1;; en) Presto/2.6.33 Version/10.60
+[end]
+
+ * =====================================================================================
+ * Roku oversight web browser
+ * http://roku.com
+ * Loading browser at:
+ * http://akufu.com/nowtv-channels-you-can-side-load/
+ * As of Jan 2014 did not have a true web browser on the system
+ * =====================================================================================
+
+[start]
+client=roku
+version=1
+[ualist]
+Roku/DVP-5.2 (025.02E03197A)
+Roku/DVP-5.0 (025.00E08043A)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Samsung TV maple browser for electronic devices
+ * http://freethetv.challengepost.com/details/faq
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=maplebrowser
+version=1.0
+[ualist]
+Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV) AppleWebKit/531.2+ (KHTML, like Gecko) WebBrowser/1.0 SmartTV Safari/531.2+
+Mozilla/5.0 (SMART-TV; X11; Linux i686) AppleWebKit/535.20+ (KHTML, like Gecko) Version/5.0 Safari/535.20+
+Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV) AppleWebKit/531.2+ (KHTML, like Gecko) WebBrowser/1.0 SmartTV Safari/531.2+
+Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV; Maple2012)
+Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV; Maple2012) 
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * technisat
+ * -------------------------------------------------------------------------------------
+ 
+Technisat
+[start]
+client=techisattv
+version=1
+[ualist]
+Opera/9.80 (Linux sh4; U; HbbTV/1.1.1 (;;;;;); CE-HTML; TechniSat Digit ISIO S; de) Presto/2.9.167 Version/11.50
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Google TV /Vizio Costar
+ * REALLY Google TV
+ * GREAT feature list at:
+ * http://console.maban.co.uk/device/vizio-costar
+ * The Vizio Co-Star box. Second generation Google TV. Runs Android and apps can be downloaded from Google Play
+ *
+ * User agent for developers
+ * https://developers.google.com/tv/faq#useragentstring
+ *
+ * Google Chrome 11 Browser
+ * HTML5 Test: 338/500
+ * CSS3 Test: 48%
+ * screen 1844 x 1034, Browser 1024 x 574
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=googletv
+version=2.0
+[ualist]
+Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.77 Large Screen Safari/534.24 GoogleTV/000000
+Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.127 Large Screen Safari/533.4 GoogleTV/162671
+Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.127 Large Screen Safari/533.4 GoogleTV/ 162671
+Mozilla/5.0 (X11; U: Linux i686; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.127 Large Screen Safari/533.4 GoogleTV/b39389
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Apple TV
+ * No browser as of early 2014 from apple
+ * iTunes runs through AppleTV
+ * Airweb
+ * https://itunes.apple.com/us/app/airweb-web-browser-for-apple/id770893993?mt=8
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=appletv
+version=1
+[ualist
+iTunes-AppleTV/4.1
+AppleTV/2.4
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * espial set-top browser AQUOS digital TV
+ * Also ANT Galio (ancient)
+ * IPTV Set-top box from Espial Group
+ * http://www.espial.com/tag/tv-browser/
+ * New versions support Flash
+ * History:
+ * http://www.espial.com/1999/
+ * webkit gets 409 out of 555 in HTML5 test
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Espial 6.1
+ * HBB TV support - https://www.hbbtv.org/pages/about_hbbtv/introduction.php
+ * August 4, 2013
+ * hybrid browsing
+ * 6.1.11 got 409 out of 555 points in HTML5Test 
+ * http://html5test.com/s/1418231cd904957c.html
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=espial
+version=6.1
+[ualist]
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.5 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.13 AQUOSBrowser/2.0 (JP12DTV;B;0001;0001) InettvBrowser/2.2 (08001F;DTV12VSFC3;0001;0001)
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.12 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.11 AQUOSBrowser/2.0 (JP12DTV;B;0001;0001) InettvBrowser/2.2 (08001F;DTV12VSFC3;0001;0001)
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.6 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.5 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.1 AQUOSBrowser/1.1 (US01DTV;V;0001;0001)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * Espial 6.0
+ * HTML5/Webkit support
+ * Features slide 15 http://www.slideshare.net/Calli_Moon/espial-headend
+ * May 11, 2010
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=espial
+version=6.0
+[ualist]
+Mozilla/5.0 (Linux; U; Linux armv6l; en-US) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.0.8 Version/4.0 Safari/531.2+
+Mozilla/5.0 (Linux; U; Linux ; fr-CA) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.0.4 fr-CA;L7200 Version/4.0 Safari/531.2
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.0.4 AQUOSBrowser/1.0 (JP00DTV;B;0001;0001) InettvBrowser/2.2 (08001F;DTV10VSFC3;0001;0001)
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.0.4 AQUOSBrowser/1.0 (JP00DTV;B;0001;0001) InettvBrowser/2.2
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.0.4 AQUOSBrowser/1.0 (US00DTV;V;0001;0001)
+Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.0.4
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * escape 5
+ * May 5, 2004
+ * MSIE derived
+ * http://www.espial.com/newest-version-of-escape-5-1-outpaces-competitors/
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=escape
+version=5
+[ualist]
+Mozilla/4.76 [en] (Win32;Escape 5.03; U)
+Mozilla/4.61 [en] (Win32; Escape 5.03; I)
+Mozilla/4.0 (compatible; MSIE 5.23; Macintosh; PPC) Escape 5.1.8
+Mozilla/4.0 (compatible; MSIE 5.23; Macintosh; PPC) Escape 5.1.3
+Mozilla/4.0 (compatible; MSIE 5.23; Macintosh; PPC) Escape 5.1.4
+Mozilla/4.0 (compatible; MSIE 5.23; Macintosh; PPC) Escape 5.1.6
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * escape 4
+ * ancient
+ * August 27, 2001
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=escape
+version=4
+[ualist]
+Mozilla/4.61 [en] (Win32; Escape 4.8; U)
+Mozilla/4.76 [en] (Win32;Escape 4.8; U)
+Mozilla/4.61 [en] (Win32; Escape 4.8
+Mozilla/4.61 [en] (Win32; Escape 4.8; U)
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * escape 1
+ * ancient
+ * 1998
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=escape
+version=4
+[ualist]
+[end]
+
+
+ * -------------------------------------------------------------------------------------
+ * Ant Fresco embedded small-footprint browser, digital tv and devices, 2004, succeded by galio
+ * Only available for Acorn (platform). Made by ANT in Britain.
+ * http://en.wikipedia.org/wiki/Fresco_(web_browser)
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=antgalio
+version=2.0
+[ualist]
+Mozilla/5.0 (compatible; ANTGalio/2.1.19.12.020.2.0.00; vxWorks-6.3)
+Mozilla/5.0 (compatible; ANTGalio/2.1.19.06.05; NT6.00/
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * antfresco 1
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=antfresco
+version=1.0
+[ualist]
+Mozilla/4.0 (compatible; ANTFresco 1.20; RISC OS 3.11)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * antfresco 2
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=antfresco
+version=2.0
+[ualist]
+Mozilla/3.04 (compatible; ANTFresco/2.13; RISC OS 4.02)
+Mozilla/3.04 (compatible; NCBrowser/2.35 (1.45.2.1); ANTFresco/2.17; RISC OS-NC 5.13 Laz1UK1802)
+Mozilla/4.0 (compatible; ANTFresco 2.20; RISC OS 3.11)
+[end]
+
+
+
+
+ * -------------------------------------------------------------------------------------
+ * Kylo firefox-based, for use on television (INTERESTING)
+ * versions http://kylo.tv/community/viewforum/5/
+ * older versions - http://kylo.tv/community/viewthread/220/
+ * http://kylo.tv/
+ * -------------------------------------------------------------------------------------
+ 
+ * -------------------------------------------------------------------------------------
+ * Kylo 1.1
+ * April 17, 2012
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=kylo
+version=1.1
+[ualist]
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20120516 Firefox/12.0 Kylo/1.1.0
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20120516 Firefox/12.0 Kylo/1.1.1
+Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/20120516 Firefox/12.0 Kylo/1.1.1
+[end]
+ 
+ * -------------------------------------------------------------------------------------
+ * Kylo 1.0
+ * Sept 7, 2011
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=kylo
+version=1.0
+[ualist]
+Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20110616 Firefox/5.0 Kylo/1.0.0.76013
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2) Gecko/20100222 Firefox/3.6 Kylo/0.8.4.74873
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2) Gecko/20100222 Firefox/3.6 Kylo/0.6.1.70394
+mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.9.2) gecko/20100222 firefox/3.6 kylo/0.6.1.70394
+mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.9.2) gecko/20100222 firefox/3.6 kylo/0.8.4.74873
+mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.9.2) gecko/20100222 firefox/3.6 kylo/0.6.1.70394
+mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.9.2) gecko/20100222 firefox/3.6 kylo/0.8.4.74873
+[end]
+
+
+
+ * -------------------------------------------------------------------------------------
+ * netbox
+ * Rogers cable browser set-top box (Canadian)
+ * Rogers Anyplace TV Home Edition
+ * http://www.engadget.com/2012/12/04/rogers-anyplace-tv-home-edition-lets-canadians-steer-dvr-watch-live/
+ * http://www.rogers.com/web/Rogers.portal?_nfpb=true&_pageLabel=PTV_Landing&asc_refid=nextbox
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * netbox
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Netbox 3
+ * September 2013
+ * -------------------------------------------------------------------------------------
+ 
+[start]
+client=netbox
+version=3
+[ualist]
+Mozilla/3.01 (compatible; Netbox/3.5 R92.5; Linux 2.2)
+Mozilla/3.01 (compatible; NetBox/3.5 R92.3; Linux 2.2)
+Mozilla/3.01 (compatible; Netbox/3.5 R93rc3; Linux 2.2)
+mozilla/3.01 (compatible; netbox/3.5 r92; linux 2.2)
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * netbox 2
+ * April 2013
+ * -------------------------------------------------------------------------------------
+
+[start]
+client=netbox
+version=2
+[ualist]
+[end]
+
+ * -------------------------------------------------------------------------------------
+ * netbox 1
+ * March 2012
+ * -------------------------------------------------------------------------------------
+
+

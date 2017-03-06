@@ -1,0 +1,35 @@
+{
+	"browserName":"googleearth",
+	"browserFork":"googleearth",
+	"browserVersion":"420",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+googleearth/4.2.0180.1134(windows;microsoft windows xp (service pack 2);en-us;kml:2.2;client:free;type:default)
+googleearth/4.2.0181.2634(windows;microsoft windows vista (service pack 0);en-us;kml:2.2;client:free;type:default)
+googleearth/4.2.0181.2634(windows;microsoft windows xp (service pack 2);en-us;kml:2.2;client:free;type:default)
+googleearth/4.2.0181.2634(windows;microsoft windows xp (service pack 2);en;kml:2.2;client:free;type:default)
+googleearth/4.2.0184.9679(windows;microsoft windows xp (service pack 2);en-us;kml:2.2;client:free;type:default)
+googleearth/4.2.0184.9679(windows;microsoft windows xp (service pack 2);en-us;kml:2.2;client:plus;type:default)
+googleearth/4.2.0198.2451(windows;microsoft windows vista (service pack 0);en-us;kml:2.2;client:free;type:default)
+googleearth/4.2.0198.2451(windows;microsoft windows xp (service pack 2);en-gb;kml:2.2;client:free;type:default)
+googleearth/4.2.0198.2451(windows;microsoft windows xp (service pack 2);en-us;kml:2.2;client:free;type:default)
+googleearth/4.2.0198.2451(windows;microsoft windows xp (service pack 2);en-us;kml:2.2;client:plus;type:default)
+googleearth/4.2.0198.2451(windows;microsoft windows xp (service pack 2);ko-kr;kml:2.2;client:free;type:default)
+googleearth/4.2.0198.2451(windows;microsoft windows xp (service pack 2);pt-br;kml:2.2;client:free;type:default)
+googleearth/4.2.0205.5730(macintosh;mac os x (10.5.4);en;kml:2.2;client:free;type:default)
+googleearth/4.2.0205.5730(windows;microsoft windows 2000 (service pack 4);de-de;kml:2.2;client:free;type:default)
+googleearth/4.2.0205.5730(windows;microsoft windows vista (service pack 0);en-us;kml:2.2;client:free;type:default)
+googleearth/4.2.0205.5730(windows;microsoft windows vista (service pack 1);en-us;kml:2.2;client:free;type:default)
+googleearth/4.2.0205.5730(windows;microsoft windows xp (service pack 2);de-de;kml:2.2;client:free;type:default)
+googleearth/4.2.0205.5730(windows;microsoft windows xp (service pack 2);en-us;kml:2.2;client:free;type:default)
+googleearth/4.2.0205.5730(windows;microsoft windows xp (service pack 2);en;kml:2.2;client:free;type:default)
+googleearth/4.2.0205.5730(windows;microsoft windows xp (service pack 2);es-pa;kml:2.2;client:free;type:default)
+googleearth/4.2.0205.5730(windows;microsoft windows xp (service pack 3);en-us;kml:2.2;client:free;type:default)
+]}

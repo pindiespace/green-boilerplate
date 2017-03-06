@@ -1,0 +1,16 @@
+{
+	"browserName":"dillo",
+	"browserFork":"dillo",
+	"browserVersion":"300",
+	"browserEngineName":"fltk",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"http://www.dillo.org/ with fltk engine at http://www.fltk.org/ and windows d+ at http://dplus-browser.sourceforge.net/",
+	"ualist": [
+		"dillo/3.0.2"
+]}

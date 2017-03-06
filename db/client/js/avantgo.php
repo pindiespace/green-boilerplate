@@ -1,0 +1,1 @@
+{"300":{"browser":{"releasedate":"2001-01-01","version":"3.0","versionname":"AvantGo 3.0"}},"400":{"browser":{"version":"4.0","versionname":"AvantGo 4.0","releasedate":"2002-01-01"}},"500":{"browser":{"searchgroup":"15004","releasedate":"2003-07-07","version":"5.0","versionname":"AvantGo 5.0"}}}

@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"1999-01-01","version":"1.0","versionname":"DoCoMo 1.0"}},"200":{"browser":{"searchgroup":"15001","releasedate":"2009-01-01","version":"2.0","versionname":"DoCoMo 2.0"}}}

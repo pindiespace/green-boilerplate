@@ -1,0 +1,24 @@
+{
+	"browserName":"itunes",
+	"browserFork":"itunes",
+	"browserVersion":"700",
+	"browserEngineName":"carbon",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"itunes/7.0.2.16 (macintosh; n; ppc)",
+		"itunes/7.1.1 (macintosh; n; ppc)",
+		"itunes/7.0.2.16 (macintosh; n; ppc)",
+		"itunes/7.4.1 (macintosh; u; ppc mac os x 10.2)",
+		"itunes/7.1.1 (macintosh; n; ppc)",
+		"itunes 7.1.1",
+		"itunes/7.2",
+		"itunes/7.4.1",
+		"itunes/7.4.1 (macintosh; u; ppc mac os x 10.2)",
+		"itunes/7.7.0"
+]}

@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"1996-12-04","version":"1.0","versionname":"Cyberdog 1.0"}},"200":{"browser":{"searchgroup":"15004","releasedate":"1997-04-28","version":"2.0","versionname":"Cyberdog 2.0"}}}

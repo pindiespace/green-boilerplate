@@ -1,0 +1,16 @@
+{
+	"browserName":"nintendo",
+	"browserFork":"netfront",
+	"browserVersion":"170",
+	"browserEngineName":"netfront",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (nintendo 3ds; u; ; en) version/1.7498.eu",
+		"mozilla/5.0 (nintendo 3ds; u; ; en) version/1.7455.eu"
+]}

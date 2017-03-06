@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"2009-02-05","version":"1.0","versionname":"Mobicip 1.0"}},"200":{"browser":{"releasedate":"2009-07-30","version":"2.0","versionname":"Mobicip 2.0"}},"300":{"browser":{"versionname":"Mobicip 3.0","searchgroup":"15001","releasedate":"2012-06-29","version":"3.0"}}}

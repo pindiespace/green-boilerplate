@@ -1,0 +1,1 @@
+{"100":{"browser":{"searchgroup":"15001","releasedate":"2006-01-24","version":"1.0","versionname":"Opera Mini 1 MIDP 1"}},"200":{"browser":{"releasedate":"2006-05-03","version":"2.0","versionname":"Opera Mini 2 MIDP 1"}},"300":{"browser":{"releasedate":"2006-11-03","versionname":"Opera Mini 3 MIDP 1","version":"3.0"}}}

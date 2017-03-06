@@ -1,0 +1,1 @@
+{"50":{"browser":{"searchgroup":"15003","releasedate":"2013-10-13","version":"0.5","versionname":"DPlus 0.5"}}}

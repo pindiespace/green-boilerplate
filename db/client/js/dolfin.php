@@ -1,0 +1,1 @@
+{"100":{"browser":{"releasedate":"2010-04-01","version":"1.0","versionname":"Dolfin 1.0"}},"200":{"browser":{"releasedate":"2011-02-15","version":"2.0","versionname":"Dolfin 2.0"}},"300":{"browser":{"searchgroup":"15001","releasedate":"2011-08-01","version":"3.0","versionname":"Dolfin 3.0"}}}

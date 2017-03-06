@@ -1,0 +1,1 @@
+{"400":{"browser":{"searchgroup":"common","releasedate":"2001-03-01","version":"4.0","versionname":"Omniweb 4.0"}},"500":{"browser":{"searchgroup":"common","releasedate":"2004-07-01","version":"5.0","versionname":"Omniweb 5.0"}},"600":{"browser":{"versionname":"Omniweb 6.0","searchgroup":"common","releasedate":"2013-08-08","version":"6.0"}}}

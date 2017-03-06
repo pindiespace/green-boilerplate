@@ -1,0 +1,25 @@
+{
+	"browserName":"quicktime",
+	"browserFork":"quicktime",
+	"browserVersion":"700",
+	"browserEngineName":"carbon",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"quicktime (qtver=7.0.2a26;os",
+		"quicktime.7.6 (qtver=7.6;os",
+		"quicktime/7.6 (qtver=7.6;cpu",
+		"quicktime/7.6.2 (qtver=7.6.2;os",
+		"quicktime/7.6.2 (verqt=7.6.2;cpu",
+		"quicktime/7.6.6 (qtver=7.6.6;cpu",
+		"quicktime/7.6.8 (qtver=7.6.8;os",
+		"quicktime/7.6.9 (qtver=7.6.9;os",
+		"quicktime\xaa.7.0.4 (qtver=7.0.4;cpu",
+		"quicktime/7.6.2",
+		"quicktime/7.6.4"
+]}

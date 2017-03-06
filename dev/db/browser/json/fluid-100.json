@@ -1,0 +1,18 @@
+{
+	"browserName":"fluid",
+	"browserFork":"safari",
+	"browserVersion":"100",
+	"browserEngineName":"applewebkit",
+	"browserEngineVersion":"528",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"mozilla/5.0 (macintosh; u; intel mac os x 10_5_8; en-us) applewebkit/530.19.2 (khtml, like gecko) fluid/0.9.6 safari/530.19.2",
+		"mozilla/5.0 (windows; u; windows nt 5.1; en-us) applewebkit/525.13 (khtml, like gecko) fluid/0.9.4 safari/525.13",
+		"mozilla/5.0 (macintosh; u; intel mac os x 10_5_6; en-us) applewebkit/528.16 (khtml, like gecko) fluid/0.9.6 safari/528.16",
+		"mozilla/5.0 (macintosh; u; intel mac os x 10_5_8; en-us) applewebkit/530.19.2 (khtml, like gecko) fluid/0.9.6 safari/530.19.2"
+	]}

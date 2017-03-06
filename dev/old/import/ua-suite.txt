@@ -1,0 +1,160 @@
+# -------------------------------------------------------------------
+# user agents for unit testing
+# compiled from 
+# -------------------------------------------------------------------
+[start]
+client=Android
+version=1.0
+[ualist]
+mozilla/5.0 (linux; u; android 1.0; en-us; dream) applewebkit/525.10+ (khtml, like gecko) version/3.0.4 mobile safari/523.12.2
+[end]
+[start]
+client=Android
+version=1.1
+[ualist]
+mozilla/5.0 (linux; u; android 1.1; en-gb; dream) applewebkit/525.10+ (khtml, like gecko) version/3.0.4 mobile safari/523.12.2
+Mozilla/5.0 (Linux; U; Android 1.1; en-gb; dream) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2
+[end]
+[start]
+client=Android
+version=1.5
+[ualist]
+mozilla/5.0 (linux; u; android 1.5; en-us; htc_bahamas build/crb17) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+mozilla/5.0 (linux; u; android 1.5; en-us; sdk build/cupcake) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+mozilla/5.0 (linux; u; android 1.5; fr-fr; gt-i5700 build/cupcake) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+mozilla/5.0 (linux; u; android 1.5; de-ch; htc hero build/cupcake) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+mozilla/5.0 (linux; u; android 1.5; de-de; htc magic build/plat-rc33) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1 firephp/0.3
+mozilla/5.0 (linux; u; android 1.5; en-gb; t-mobile_g2_touch build/cupcake) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+mozilla/5.0 (linux; u; android 1.5; en-us; t-mobile g1 build/crb43) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari 525.20.1
+mozilla/5.0 (linux; u; android 1.5; en-us; sph-m900 build/cupcake) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+mozilla/5.0 (linux; u; android 1.5; de-de; galaxy build/cupcake) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+htc_dream mozilla/5.0 (linux; u; android 1.5; en-ca; build/cupcake) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+[end]
+
+[start]
+client=Android
+version=1.6
+[ualist]
+mozilla/5.0 (linux; u; android 1.6; en-us; sonyericssonx10i build/r1aa056) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+mozilla/5.0 (linux; u; android 1.6; es-es; sonyericssonx10i build/r1fa016) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+mozilla/5.0 (linux; u; android 1.6; en-us; htc_tattoo_a3288 build/drc79) applewebkit/528.5+ (khtml, like gecko) version/3.1.2 mobile safari/525.20.1
+[end]
+
+[start]
+client=Android
+version=2.0
+[ualist]
+mozilla/5.0 (linux; u; android 2.0; en-us; milestone build/ shols_u2_01.03.1) applewebkit/530.17 (khtml, like gecko) version/4.0 mobile safari/530.17
+mozilla/5.0 (linux; u; android 2.0; en-us; droid build/esd20) applewebkit/530.17 (khtml, like gecko) version/4.0 mobile safari/530.17
+mozilla/5.0 (linux; u; android 2.0.1; de-de; milestone build/shols_u2_01.14.0) applewebkit/530.17 (khtml, like gecko) version/4.0 mobile safari/530.17
+
+[end]
+
+[start]
+client=Android
+version=2.1
+[ualist]
+Mozilla/5.0 (Linux; U; Android 2.1; en-us; Nexus One Build/ERD62) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17
+Mozilla/5.0 (Linux; U; Android 2.1-update1; en-au; HTC_Desire_A8183 V1.16.841.1 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17
+Mozilla/5.0 (Linux; U; Android 2.1; en-us; generic) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2
+Mozilla/5.0 (Linux; U; Android Eclair; en-us; sholes) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2
+mozilla/5.0 (linux; u; android 2.1; en-us; nexus one build/erd62) applewebkit/530.17 (khtml, like gecko) version/4.0 mobile safari/530.17
+mozilla/5.0 (linux; u; android 2.1-update1; es-mx; sonyericssone10a build/2.0.a.0.504) applewebkit/530.17 (khtml, like gecko) version/4.0 mobile safari/530.17
+mozilla/5.0 (linux; u; android 2.1; en-us; htc legend build/cupcake) applewebkit/530.17 (khtml, like gecko) version/4.0 mobile safari/530.17
+[end]
+
+[start]
+client=Android
+version=2.2
+[ualist]
+mozilla/5.0 (linux; u; android 2.2; en-us; sprint apa9292kt build/frf91) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.2; en-ca; gt-p1000m build/froyo) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.2; en-us; adr6300 build/frf91) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.2; en-us; droid build/frg22d) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.2; fr-lu; htc legend build/frf91) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.2; en-sa; htc_desirehd_a9191 build/frf91) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.2.1; fr-fr; htc_desirez_a7272 build/frg83d) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.2.1; en-gb; htc_desirez_a7272 build/frg83d) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.2.1; en-ca; lg-p505r build/frg83) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.2.1; de-de; htc_wildfire_a3333 build/frg83d) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+[end]
+
+[start]
+client=Android
+version=2.3
+[ualist]
+mozilla/5.0 (linux; u; android 2.3; en-us) applewebkit/999+ (khtml, like gecko) safari/999.9
+Mozilla/5.0 (Linux; U; Android 2.3; xx-xx; BNTV250A Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1
+mozilla/5.0 (linux; u; android 2.3.3; zh-tw; htc_pyramid build/gri40) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.3.3; zh-tw; htc_pyramid build/gri40) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari
+mozilla/5.0 (linux; u; android 2.3.3; zh-tw; htc pyramid build/gri40) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.3.3; ko-kr; lg-lu3000 build/gri40) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.3.3; en-us; htc_desires_s510e build/gri40) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.3.3; de-de; htc desire build/gri40) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.3.3; de-ch; htc desire build/frf91) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.3.3; en-us; htc_desires_s510e build/gri40) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile
+mozilla/5.0 (linux; u; android 2.3.5; en-us; htc vision build/gri40) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.3.4; fr-fr; htc desire build/grj22) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+mozilla/5.0 (linux; u; android 2.3.4; en-us; t-mobile mytouch 3g slide build/gri40) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Kindle Fire Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+mozilla/5.0 (linux; u; android 2.3.5; zh-cn; htc_incredibles_s710e build/grj90) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1
+[end]
+
+[start]
+client=Android
+version=3.0
+[ualist]
+mozilla/5.0 (linux; u; android 3.0; en-us; xoom build/hri39) applewebkit/525.10+ (khtml, like gecko) version/3.0.4 mobile safari/523.12.2
+mozilla/5.0 (linux; u; android 3.0.1; en-us; gt-p7100 build/hri83) applewebkit/534.13 (khtml, like gecko) version/4.0 safari/534.13
+mozilla/5.0 (linux; u; android 3.0.1; fr-fr; a500 build/hri66) applewebkit/534.13 (khtml, like gecko) version/4.0 safari/534.13
+[end]
+
+[start]
+client=Android
+version=4.0
+[ualist]
+HTC_Eris Mozilla/5.0 (Linux; U; Android 4.0; en-ca; Build/GINGERBREAD) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1
+Mozilla/5.0 (Linux; U; Android 4.0; xx-xx; GT-P5100 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+Mozilla/5.0 (Linux; U; Android 4.0.1; en-us; sdk Build/ICS_MR0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 
+Mozilla/5.0 (Linux; U; Android-4.0.3; en-us; Galaxy Nexus Build/IML74K) AppleWebKit/535.7 (KHTML, like Gecko) CrMo/16.0.912.75 Mobile Safari/535.7
+Mozilla/5.0 (Linux; U; Android 4.0.3; pl-pl; Transformer TF101 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+mozilla/5.0 (linux; u; android 4.0.3; de-ch; htc sensation build/iml74k) applewebkit/534.30 (khtml, like gecko) version/4.0 mobile safari/534.30
+Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Mozilla/5.0 (Linux; U; Android 4.0.3; de-ch; HTC Sensation Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+HUAWEI_T8620_TD/1.0 Android/4.0.3 (Linux; U; Android 4.0.3; zh-cn) Release/05.31.2012 Browser/WAP2.0 (AppleWebKit/534.30) Mobile Safari/534.30
+JLF-MBO/1.0 Linux/2.6.35.7 Android/4.0.4 Release/03.06.2013 Browser/AppleWebKit533.1 (KHTML, like Gecko) Mozilla/5.0 Mobile
+[end]
+
+[start]
+client=Android
+version=4.1
+[ualist]
+Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; Nexus S Build/JRO03E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Mozilla/5.0 (Linux; U; Android 4.1; en-gb; Build/JRN84D) AppleWebKit/534.30 (KHTML like Gecko) Version/4.0 Mobile Safari/534.30 
+Mozilla/5.0 (Linux; U; Android 4.1.1; el-gr; MB525 Build/JRO03H; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Mozilla/5.0 (Linux; U; Android 4.1.1; fr-fr; MB525 Build/JRO03H; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+[end]
+[start]
+client=Android
+version=4.2
+[ualist]
+Mozilla/5.0 (Linux; U; Android 4.2; en-us; Nexus 10 Build/JVP15I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
+Mozilla/5.0 (Linux; U; Android 4.2; ro-ro; LT18i Build/4.1.B.0.431) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Mozilla/5.0 (Linux; Android 4.2.1; Nexus 10 Build/JOP40D) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.37 Safari/537.22
+Mozilla/5.0 (Linux; Android 4.2.1; Nexus 4 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19
+Mozilla/5.0 (Linux; Android 4.3; Nexus 7 Build/JWR66D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.111 Safari/537.36
+[end]
+[start]
+client=Android
+version=4.4
+[ualist]
+Mozilla/5.0 (Linux; Android 4.4; Nexus 7 Build/KOT24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.105 Safari/537.36
+Mozilla/5.0 (Linux; Android 4.4; Nexus 4 Build/KRT16E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.105 Mobile Safari
+[end]
+
+[start]
+client=Playstation
+verison=3.0
+[ualist]
+Mozilla/5.0 (PLAYSTATION 3 4.30) AppleWebKit/531.22.8 (KHTML, like Gecko)
+[end]

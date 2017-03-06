@@ -1,0 +1,16 @@
+{
+	"browserName":"ncsa mosaic",
+	"browserFork":"mosaic",
+	"browserVersion":"300",
+	"browserEngineName":"libwww",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"cannot handle XHTML or CSS",
+	"ualist": [
+		"ncsa mosaic/3.0 (windows 95)"
+]}

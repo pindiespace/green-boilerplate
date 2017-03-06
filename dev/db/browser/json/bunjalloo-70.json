@@ -1,0 +1,17 @@
+{
+	"browserName":"bunjalloo",
+	"browserFork":"bunjalloo",
+	"browserVersion":"70",
+	"browserEngineName":"",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"false",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"nintendo ds - http://code.google.com/p/quirkysoft/wiki/bunjalloo",
+	"ualist": [
+		"bunjalloo/0.7.6(nintendo ds;u;en)",
+		"bunjalloo/0.7.4(nintendo ds;u;en)"
+]}

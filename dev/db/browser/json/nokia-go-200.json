@@ -1,0 +1,22 @@
+{
+	"browserName":"		"nokia_go",
+	"browserFork":"		"nokia_go",
+	"browserVersion":"160",
+	"browserEngineName":"java",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"ualist": [
+		"nokia5320xpressmusic/go/2.0.290",
+		"nokia6120c/go/2.0.290",
+		"nokiac5-00/go/2.0.290",
+		"nokiae72/go/2.0.290",
+		"nokian81/go/2.0.290",
+		"go 2.0.290",
+		"nokiae66/go/2.0.297",
+		"go 2.0.297"
+]}

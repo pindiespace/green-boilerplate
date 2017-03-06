@@ -1,0 +1,17 @@
+{
+	"browserName":"hotjava",
+	"browserFork":"mosaic",
+	"browserVersion":"100",
+	"browserEngineName":"libwww",
+	"browserEngineVersion":"",
+	"browserReleaseDate":"",
+	"browserRendersInCloud":"false",
+	"browserIsAncient":"true",
+	"browserIsFuture":"false",
+	"browserIsSpider":"false",
+	"browserIsBot":"false",
+	"browserComment":"cannot handle XHTML or CSS",
+	"ualist": [
+		"hotjava/1.1.2 fcs",
+		"hotjava/1.0.1/jre1.1.x"
+]}

@@ -1,0 +1,1 @@
+{"500":{"browser":{"releasedate":"2002-01-29","version":"5.0","versionname":"ICE Browser 5"}},"600":{"browser":{"versionname":"ICE Browser 6","searchgroup":"15004","releasedate":"2004-05-01","version":"6.0"}}}

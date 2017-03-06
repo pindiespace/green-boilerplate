@@ -1,0 +1,167 @@
+ * =====================================================================================
+ * 
+ * DEAD BROWSERS
+ * Browsers that should not be able to get onto the Internet for one of the 
+ * following reasons:
+ * No operating system supports them
+ * No server-side transcoder for a mobile browser
+ * No evidence of use or in user-agent logs for at least 5 years
+ * Myip.ms
+ * Botsvsbrowsers.com
+ *
+ *
+ * for REALLY extinct browsers, check
+ * http://www.browserlist.fmajor.com/browser-notes.shtml
+ * http://webtips.dantobias.com/brand-x/
+ *
+ * http://www.browserlist.fmajor.com/browser-list.shtml
+ *
+ * Ancient WAP
+ * http://www.wirelessdevnet.com/channels/printlinks.phtml?category=4
+ *
+ * http://www.tamingthebeast.net/articles/crossbrowercompatibility.htm
+ *
+ * http://www.hoary.org/browse/
+ *
+ * more lists
+ * http://user-agents.me/browser
+ *
+ * macupdate.com
+ *
+ * Discontinued browsers
+ * http://en.wikipedia.org/wiki/Category:Discontinued_web_browsers
+ *
+ * Huge (900 page) list
+ * http://user-agents.my-addr.com
+ *
+ *
+ * =====================================================================================
+ 
+  * -------------------------------------------------------------------------------------
+ * waptiger
+ * WAP emulator - Java WML to HTML converter
+ * no functioning website or visible user agents
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Gelon.net wapalizer
+ * -------------------------------------------------------------------------------------
+
+
+ 
+ * -------------------------------------------------------------------------------------
+ * teashark browser (WAP), transcoder servers aren't there anymore
+ * http://www.navire.fi/teashark/
+ * http://en.wikipedia.org/wiki/Teashark
+ * -------------------------------------------------------------------------------------
+
+ * -------------------------------------------------------------------------------------
+ * Teashark 1 (really stayed in beta)
+ * March 26, 2008
+ * Based on Nokia Java browser
+ * transcoding servers are dead
+ * http://en.wikipedia.org/wiki/Teashark
+ * -------------------------------------------------------------------------------------
+[start]
+client=teashark
+version=1
+[ualist]
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/418.9.1 (KHTML, like Gecko) Safari/419.3 TeaShark/0.8
+[end]
+
+
+
+ * --------------------------------------------------------------------------------------
+ * BOLT browser
+ * http://en.wikipedia.org/wiki/Bolt_%28web_browser%29
+ * Extinct - installations rendered useless 14 December 2011
+ * No Flash, but FLV video
+ * --------------------------------------------------------------------------------------
+
+
+ * --------------------------------------------------------------------------------------
+ * BOLT browser 2.0
+ * WebKit upgrade to 4.03
+ * October 16, 2010
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=bolt
+version=2.0
+[ualist]
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.800) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.700) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.612) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.660) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; BOLT/2.62.4) AppleWebKit/536.5 (KHTML, like Gecko) Version/6.0 Safari/536.5 UNTRUSTED/1.0 3gpp-gba UNTRUSTED/1.0
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.690) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.671) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.514) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+NokiaX2-01/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.52) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17 UNTRUSTED/1.0
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.570) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.516) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.514) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.513) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3
+Haeir C-55/Bakrie Telecom/BOLT v2.31
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17 UNTRUSTED/1.0 3gpp-gba
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.310) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+SonyEricssonG502/R1FA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0 Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17 U
+NokiaC1-01.1/2.0 (03.30) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17 UNTRUSTED/1.0
+Nokia5310XpressMusic/2.0 (10.10) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17 UNTRUSTED/1.0 3gpp-gba UNTRUSTED/1.0
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.100) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.101) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.102) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.000) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.001) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.020) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * BOLT browser 1.7
+ * February 15, 2010
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=bolt
+version=1.7
+[ualist]
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.700) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * BOLT browser 1.6
+ * 100 percent Acid3
+ * December 7, 2009
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=bolt
+version=1.6
+[ualist]
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.600) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.601) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.630) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+[end]
+
+ * --------------------------------------------------------------------------------------
+ * BOLT browser 1.0
+ * October 7, 2009
+ * --------------------------------------------------------------------------------------
+
+[start]
+client=bolt
+version=1
+[ualist]
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.500) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.1
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.510) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.521) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.523) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.600) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.700) AppleWebKit/530 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.130) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17
+Mozilla/5.0 (X11; 78; CentOS; US-en) AppleWebKit/528 (KHTML, like Gecko) Bolt/1.130 Version/4.0 Safari/528.15
+[end]
+
+

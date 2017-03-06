@@ -1,0 +1,1 @@
+{"100":{"browser":{"searchgroup":"15004","releasedate":"2008-11-02","version":"1.0","versionname":"Vonkeror 1.0"}}}
