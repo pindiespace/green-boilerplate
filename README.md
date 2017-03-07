@@ -1,4 +1,4 @@
-## ![Green Boilerplate](assets/logo.png)
+## ![Green Boilerplate](doc/images/logo.png)
 
 ...a boilerplate developed to implement Sustainable Web Design theory.
 
