@@ -2,23 +2,49 @@
 
 ...a boilerplate developed to implement Sustainable Web Design theory.
 
-The goals:
+## The Problem
+
+Green Boilerplate was a project I worked on from 2011 to 2014 alongside with developing a theory of Sustainable web design. At the time, typical websites downloaded polyfills to support browser function in a variety of inefficient ways. Support for older browsers was more important than today (2016+) and lead to part of the 'bloat' of web pages. 
+
+I was interested in developing a boilerplate similar to HTML5 Boilerplate that only loaded feature tests and polyfills as needed. By being more efficient than say, Modernizr, the app would fullfill the "Green Ingredients" strategy for Sustainable Web Design.
+
+In addition, I wanted to incorporate other features of Web Sustainability in the boilerplate. Besides JS feature detects, sever features, networks, site value to its audience (as described on [Tim Berners-Lee's Web Index Project](http://thewebindex.org/)) and even developer workflow influence the sustainability life cycle of web applications. The ultimate goal was to integrate all these expanded feature detects - client-side, server-side and network in a way allowing sustainability to be calculated. The goal was to produce useful "carbon footpring" and "environmental impact" [Life Cycle Analysis (LCA)](https://en.wikipedia.org/wiki/Life-cycle_assessment) computations for individual web projects.
+
+## The Solution
+
+The key to the Green Boilerplate concept was realizing that...
+
+1. Older browsers had fixed user-agents, and weren't being updated. Their feature list was permanent.
+
+2. Newer browsers retained features first added in earlier versions. Only new features need to be tested for by downloading the appropriate JS functions.
+
+3. A server-side script could inject a JSON file directly into markup, reducing HTTP requests.
+
+4. If features were detected server-side, it would also be possible to inject polyfill JS directly into the download, further reducing HTTP requests.
+
+5. If the feature detects, both downloaded and local, could be stored on the user's computer using LocalStorage. That way, the next time the site was visited, the browser wouldn't even have to download the feature database.
+
+## Benefits
+
+Websites typically support older browsers by loading polyfill libraries. In order to conditionally load the polyfill, they a way of detecting browser features. By pre-computing features and adding the results on the server side, the size and more important, user-experienced delays.
+
+A Green Boilerplate system would greatly reduce this issue. Sites could do comprehensive detection of 100s of features, and still have only a little extra JS added to their download, reducing page bloat.
+
+Ultimately, Green Boilerplate was designed to replace custom feature detection scripts and generic systems such as [Modernizr](http://www.modernizr.com) with a solution suited to web sustainability.
+
+## Challenges
 
 1. Create a database of browser features, as well as client, network, and human factor features of web design, following [Sustainable Web Design](http://sustainablevirtualdesign.wordpress.com) theory.
 
 2. Develop a system which 'compiles' a mix of feature-detection (client-side) and hard-coded feature values indexed to user agents for a maximally efficient boilerplate loading polyfills as necessary.
 
-3. Investigate the value of an optimized boilerplate which reduces network traffic by dynamically picking either a JavaScript function or a hard-coded browser feature value to download to a client.
+3. Create an optimized boilerplate which reduces network traffic by dynamically picking either a JavaScript function or a hard-coded browser feature value to inject as a client-side script.
 
-4. Strong support for inclusive design, with appropriate polyfills added as needed even for older web browsers.
+4. Create client-side code which checks LocalStorage for a stored feature list before going on the network.
 
-## Description
+4. Using server-side detection, have the server inject appropriate polyfills as needed for older web browsers.
 
-Green Boilerplate was a project I worked on from 2011 to 2014 alongside with developing a theory of Sustainable web design. At the time, typical websites downloaded polyfills to support browser function in a variety of inefficient ways. Support for older browsers was more important than today (2016+) and lead to part of the 'bloat' of web pages. I was interested in developing a boilerplate similar to HTML5 Boilerplate that only loaded feature tests and polyfills as needed.
-
-In addition, I wanted to incorporate other features of Web Sustainability in the boilerplate. Besides JS feature detects, GBP had provisions for server and network detects. The ultimate goal was to integrate all these feature detects - client-side, server-side and network in a way allowing LCA computations and carbon footprint calculations for individual web projects.
-
-The key to the Green Boilerplate concept was realizing that older browsers had fixed user-agents. So, if one could identify older browsers by their user-agent, their features could be hard-coded into a feature-detection script before it downloaded on the server. 
+## Development and Challenges
 
 For example, Internet Explorer 8 is a 'fossil' web browser - it is not being maintained or updated. The set of user-agents describing IE8 is not changing either. So, if one does a Modernizr-style feature detect on IE8 one time, the resulting support for HTML, CSS, and JavaScript features will not change, and no re-detects are needed. This principle has been applied with success on the [Caniuse website](http://caniuse.com).
 
@@ -48,6 +74,6 @@ A more comprehensive version was developed which included server-side and human 
 
 ![GBP Object Readout Sample Advanced](doc/images/gbp_object_readout_advanced.png)
 
-## History
+## Conclusion
 
 Today, there is less need for a GPB approach. Modern web browsers almost universally support web standards, so the need for feature detects and polyfill loads is much less than in 2011. In addition, the GBP system could be better implemented using server-side JavaScript rather than the PHP in which it was written.
