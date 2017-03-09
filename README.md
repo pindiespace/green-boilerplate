@@ -42,7 +42,7 @@ Previous work with user agents was hindered by less than inclusive databases, an
 
 7. This approach made it practical to create compact JavaScript objects with a very large number of valid feature detects. The image below shows a complete feature readout by GBP prior to loading its JSON feature detection files.
 
-![GBP Object Readout Sample](doc/images/gpb_object_readout.png)
+![GBP Object Readout Sample](doc/images/gbp_object_readout.png)
  
 A more comprehensive version was developed which included server-side and human factors:
 
