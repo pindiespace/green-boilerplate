@@ -18,22 +18,22 @@
 
 2. Newer browsers retained features first added in earlier versions. Only new features need to be tested for by downloading the appropriate JS functions.
 
-``
+```
 var GBP = ( function () {
 
 	...
 
-	html5Canvas: true,
+	html5Canvas: true, // added by server, based on user-agent
 
-	mediaQueries: function () { 
+	mediaQueries: function () { // not in server database, detect dynamically
 
 		// detection code here
 
 	},
 
-	webvr: false,
+	webvr: false, // browser version too old to support this (based on user-agent)
 
-	intl: function () {
+	intl: function () { // user agent has ambiguity, detect dynamically
 
 		// detection code here
 
@@ -42,9 +42,19 @@ var GBP = ( function () {
 	...
 
 
+	function runall () {
+
+		// run all the detections, and replace ourselves with the results
+
+	}
+
+	// wipe out everything except the feature list.
+	
+	this = rundetects();
+
 } )();
 
- ``
+ ```
 
 3. A server-side script could inject a JSON file directly into markup, reducing HTTP requests.
 
