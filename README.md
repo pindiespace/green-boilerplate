@@ -58,21 +58,25 @@ Previous work with user agents was hindered by less than inclusive databases, an
 
 1. A database of older browsers which might require polyfills, connecting their user-agents to an exhaustive list of feature detections. The database program in this archive is called [Green Boilerplate Initializer](http://github.com/pindiespace/green-boilerplate-initializr). GBP Initializr allowed feature data to be entered manually, as well as imported from databases like the [Caniuse](http://caniuse.com) and [Browserscope](http://browserscope.com) libraries. It also allowed import of active feature detects of browsers visiting the Green Boilerplate website. [Green Boilerplate Initializer](http://github.com/pindiespace/green-boilerplate-initializr) stores a complete list of feature detections and feature lists for older browsers.
 
+The example below shows unit tests for the 100+ browsers and 1000+ versions that were incorporated into the database:
+
+![GBP unit Testing of user agents](doc/images/gbp_unit_tests.png)
+
 2. A server-side script which 'bootstrapped' the feature detection libraries, re-encoded as JSON. 
 
 3. A server-side script which checked for a user agent match. If it was present, the pre-computed features (e.g. booleans for JavaScript API support) of the browser were inserted into a script similar to the Modernizr library. On the other hand, if the browser was new or unknown, the server script copied in the equivalent JavaScript feature detection function. The resulting JavaScript program was inserted into the HTML page.
 
-4. The resulting client-side JavaScript is a mix of hard-coded features, and feature detection functions. If the browser was old and well-known (e.g. old versions of Internet Explorer) the downloaded script would be almost entirely hard-coded with pre-calculated feature values. In contrast, new or unknown browsers would have a JavaScript program which was mostly feature detection functions. The example below shows unit tests for the 100+ browsers and 1000+ versions that were incorporated into the database:
+4. The resulting client-side JavaScript is a mix of hard-coded features, and feature detection functions. If the browser was old and well-known (e.g. old versions of Internet Explorer) the downloaded script would be almost entirely hard-coded with pre-calculated feature values. In contrast, new or unknown browsers would have a JavaScript program which was mostly feature detection functions. 
 
-![GBP unit Testing of user agents](doc/images/gbp_unit_tests.png)
+The image below shows a complete feature readout by GBP prior to loading its JSON feature detection files.
+
+![GBP Object Readout Sample](doc/images/gbp_object_readout.png)
 
 5. In addition to reducing the number of feature detects downloaded and computed by the client, GBP implemented a cache using the HTML5 localStorage API. After the first GBP download, features, whether sent from the server or locally detected by the browser JS, were added to storage. When the page was reloaded, the client-side script would use the locally-stored feature list instead of running feature detects a second time.
 
 6. For development environments, the results of local feature detects were relayed to the server, which could in turn incorporate them as hard-coded features keyed to the current user-agent of the browser. In this way, the percent of feature values would increase and the number of dynamic feature detects would decline over time.
 
-7. This approach made it practical to create compact JavaScript objects with a very large number of valid feature detects. The image below shows a complete feature readout by GBP prior to loading its JSON feature detection files.
-
-![GBP Object Readout Sample](doc/images/gbp_object_readout.png)
+7. This approach made it practical to create compact JavaScript objects with a very large number of valid feature detects. 
  
 A more comprehensive version was developed which included server-side and human factors:
 
