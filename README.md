@@ -32,7 +32,9 @@ Previous work with user agents was hindered by less than inclusive databases, an
 
 3. A server-side script which checked for a user agent match. If it was present, the pre-computed features (e.g. booleans for JavaScript API support) of the browser were inserted into a script similar to the Modernizr library. On the other hand, if the browser was new or unknown, the server script copied in the equivalent JavaScript feature detection function. The resulting JavaScript program was inserted into the HTML page.
 
-4. The resulting client-side JavaScript is a mix of hard-coded features, and feature detection functions. If the browser was old and well-known (e.g. old versions of Internet Explorer) the downloaded script would be almost entirely hard-coded with pre-calculated feature values. In contrast, new or unknown browsers would have a JavaScript program which was mostly feature detection functions.
+4. The resulting client-side JavaScript is a mix of hard-coded features, and feature detection functions. If the browser was old and well-known (e.g. old versions of Internet Explorer) the downloaded script would be almost entirely hard-coded with pre-calculated feature values. In contrast, new or unknown browsers would have a JavaScript program which was mostly feature detection functions. The example below shows unit tests for the 100+ browsers and 1000+ versions that were incorporated into the database:
+
+[GBP unit Testing of user agents](doc/images/gbp_unit_tests.png)
 
 5. In addition to reducing the number of feature detects downloaded and computed by the client, GBP implemented a cache using the HTML5 localStorage API. After the first GBP download, features, whether sent from the server or locally detected by the browser JS, were added to storage. When the page was reloaded, the client-side script would use the locally-stored feature list instead of running feature detects a second time.
 
