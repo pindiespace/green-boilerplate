@@ -34,7 +34,7 @@ Previous work with user agents was hindered by less than inclusive databases, an
 
 4. The resulting client-side JavaScript is a mix of hard-coded features, and feature detection functions. If the browser was old and well-known (e.g. old versions of Internet Explorer) the downloaded script would be almost entirely hard-coded with pre-calculated feature values. In contrast, new or unknown browsers would have a JavaScript program which was mostly feature detection functions. The example below shows unit tests for the 100+ browsers and 1000+ versions that were incorporated into the database:
 
-[GBP unit Testing of user agents](doc/images/gbp_unit_tests.png)
+![GBP unit Testing of user agents](doc/images/gbp_unit_tests.png)
 
 5. In addition to reducing the number of feature detects downloaded and computed by the client, GBP implemented a cache using the HTML5 localStorage API. After the first GBP download, features, whether sent from the server or locally detected by the browser JS, were added to storage. When the page was reloaded, the client-side script would use the locally-stored feature list instead of running feature detects a second time.
 
@@ -42,7 +42,11 @@ Previous work with user agents was hindered by less than inclusive databases, an
 
 7. This approach made it practical to create compact JavaScript objects with a very large number of valid feature detects. The image below shows a complete feature readout by GBP prior to loading its JSON feature detection files.
 
- [GBP Object Readout Sample](doc/images/gpb_object_readout.png)
+![GBP Object Readout Sample](doc/images/gpb_object_readout.png)
+ 
+A more comprehensive version was developed which included server-side and human factors:
+
+![GBP Object Readout Sample Advanced](doc/images/gbp_object_readout_advanced.png)
 
 ## History
 
