@@ -8,7 +8,7 @@
 
 **I was interested** in developing a boilerplate similar to HTML5 Boilerplate that only loaded feature tests and polyfills as needed. By being more efficient than say, Modernizr, the app would fullfill the "Green Ingredients" strategy for Sustainable Web Design.
 
-**In addition**, I wanted to incorporate other features of Web Sustainability in the boilerplate. Besides JS feature detects, sever features, networks, site value to its audience (as described on [Tim Berners-Lee's Web Index Project](http://thewebindex.org/)) and even developer workflow influence the sustainability life cycle of web applications. The ultimate goal was to integrate all these expanded feature detects - client-side, server-side and network in a way allowing sustainability to be calculated. The goal was to produce useful "carbon footpring" and "environmental impact" [Life Cycle Analysis (LCA)](https://en.wikipedia.org/wiki/Life-cycle_assessment) computations for individual web projects.
+**In addition**, I wanted to incorporate other features of Web Sustainability in the boilerplate. Besides JS feature detects, sever features, networks, site value to its audience (as described on [Tim Berners-Lee's Web Index Project](http://thewebindex.org/)) and even developer workflow influence the sustainability life cycle of web applications. The ultimate goal was to integrate all these expanded feature detects - client-side, server-side and network in a way allowing sustainability to be calculated. The goal was to produce useful "carbon footprint" and "environmental impact" [Life Cycle Analysis (LCA)](https://en.wikipedia.org/wiki/Life-cycle_assessment) computations for individual web projects.
 
 ## The Solution
 
@@ -17,6 +17,34 @@
 1. Older browsers had fixed user-agents, and weren't being updated. Their feature list was permanent.
 
 2. Newer browsers retained features first added in earlier versions. Only new features need to be tested for by downloading the appropriate JS functions.
+
+``
+var GBP = ( function () {
+
+	...
+
+	html5Canvas: true,
+
+	mediaQueries: function () { 
+
+		// detection code here
+
+	},
+
+	webvr: false,
+
+	intl: function () {
+
+		// detection code here
+
+	}
+
+	...
+
+
+} )();
+
+ ``
 
 3. A server-side script could inject a JSON file directly into markup, reducing HTTP requests.
 
